@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="icon" type="image/x-icon" href="https://lutim.stemy.me/nXpV4tAa/WDVkzjnQ.png">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+          /* For the bar on the top*/
+          #bar1 {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: rgb(56, 197, 56);
+          }
+
+          #bar1 {float: left;}
+
+          #bar1 {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          }
+
+          #bar1 {background-color: rgb(35, 126, 73);}
+          </style>
+          <style>
+            .test {
+              background-color: tomato;
+              color: white;
+              border: 2px solid rgb(22, 22, 22);
+              margin: 20px;
+              padding: 20px;
+            }
+            </style>
+            <style>
+              #test {
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+              }
+            </style>
+            <style>
+              /*For the "most popular browsers" bit*/
+              .all-browsers {
+                margin: 0;
+                padding: 5px;
+                background-color: lightgray;
+              }
+
+              .all-browsers > h1, .browser {
+                margin: 10px;
+                padding: 5px;
+              }
+
+              .browser {
+                background: white;
+              }
+
+              .browser > h2, p {
+                margin: 4px;
+                font-size: 90%;
+              }
+              </style>
+              <style>
+                /* For the 'aside' element (If I ever use it)*/
+              aside {
+                width: 30%;
+                padding-left: 15px;
+                margin-left: 15px;
+                float: right;
+                font-style: italic;
+                background-color: rgb(24, 221, 106);
+              }
+              </style>
+              <style>  
+              /*The top header*/        
+                html {
+                  font-family: 'Open Sans', sans-serif;
+                  background: url(pattern.png);
+                }
+          
+                header {
+                  height: 150px;
+                }
+          
+                header img {
+                  width: 100px;
+                  position: absolute;
+                  right: 32.5px;
+                  top: 32.5px;
+                }
+          
+                #header123 {
+                  font-size: 50px;
+                  line-height: 140px;
+                  margin: 0 0 0 32.5px;
+                }
+                </style>
+              <script>
+                //Web storage api code
+                function clickCounter() {
+                  if (typeof(Storage) !== "undefined") {
+                    if (localStorage.clickcount) {
+                      localStorage.clickcount = Number(localStorage.clickcount)+1;
+                    } else {
+                      localStorage.clickcount = 1;
+                    }
+                    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s)!";
+                  } else {
+                    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                  }
+                }
+                </script>
+    </head>
+    <body style="background-color: #a0d6b4;">
+        <header>
+          <h1 id="header123">My website</h1>
+          <img src="https://lutim.stemy.me/nXpV4tAa/WDVkzjnQ.png" alt="Website icon">
+          <li id="bar1"><a href="https://bitwarden.com">Bitwarden</a></li>
+          <li id="bar1"><a href="https://en.wikipedia.org">Wikipedia</a></li>
+          <li id="bar1"><a href="https://www.protonmail.com">Protonmail</a></li>
+          <li id="bar1"><a href="https://duckduckgo.com">Duckduckgo search<a></li>
+          <li id="bar1"><a href="https://apod.nasa.gov/apod/astropix.html">Astronomy picture of the day</a></li>
+          <li id="bar1"><a href="https://open.spotify.com">Spotify</a></li>
+          <li id="bar1"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash">Javascript tutorial</a></li>
+          <li id="bar1"><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps">CSS tutorial</a></li>
+          <li id="bar1"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">HTML tutorial</a></li>
+        </header>
+        <h1><br>this is a header!</h1>
+        <p> <big>this is big!</big> <small>this is small!</small> <b><i>this is bold and italic!</i></b></p>
+        <p style="color:rgb(64, 165, 34);">some green colored text!</p>
+        <p style="background-color: rgb(0, 225, 255);"> this has a cyan background!</p>
+        <p> This Paregraph <br> has a few <br> breaks!</p>
+        <h1 style="font-size:60px;">large heading</h1>
+        <h1> normal size heading</h1>
+        <h1>This is heading 1</h1>
+        <p>This is some <mark>text</mark>.</p>
+        <p>This is <del>an image</del> <ins>a paragraph</ins>.</p>
+        <p>This is <sub>subscripted</sub> text.</p>
+        <p>This is <sup>superscripted</sup> text.</p>
+        <p>Browsers usually indent blockquote elements.</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For nearly 60 years, WWF has been protecting the future of nature. 
+            The world's leading conservation organization, 
+            WWF works in 100 countries and is supported by more than one million members in the United States and close to 
+            five million globally.
+        </blockquote>
+        <p id="P1">WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        <hr>
+        <h2>This is heading 2</h2>
+        <p>This is some other text.</p>
+        <p style="color:cyan;">This is a paragraph.</p>
+        <p style="font-family:verdana"> Another paragraph</p>
+        <p style="text-align:center;">Centered paragraph.</p>
+        <p style="text-align:right;">Right-aligned paragraph.</p>
+        <h1 style="background-color:DodgerBlue;">Hello World</h1>
+        <p style="background-color:Tomato;">Text...</p>
+        <p style="color:DodgerBlue;">Text...</p>
+        <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+        <h2 style="background-color:chartreuse">Hallo</h2>
+        <a href="https://open.spotify.com/" target="_blank">Spotify</a>
+        <h2>Absolute URLs</h2>
+        <p><a href="https://www.w3.org/">W3C</a></p>
+        <p><a href="https://www.duckduckgo.com/">Duckduckgo</a></p>
+        <button onclick="document.location='https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML'" >HTML</button>
+        <p><a href="#P1">jump to para 1</a></p>
+        <h1 style="font-size:3vw;">Responsive Text</h1>
+        <p style="font-size:2vw;">Resize the browser window to see how the text size scales.</p>
+        <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code> 
+        <p><samp>Test 1<br>Test 2</samp>
+        <p>The area of a triangle is: 1/2 x 
+          <var>b</var> x 
+          <var>h</var>, where 
+          <var>b</var> is the base, and 
+          <var>h</var> is the vertical height.</p> 
+    </body>
+    <article>
+    <h1>Article</h1>
+    <section>
+      <h2>Section</h2>
+      Some text, Some text....
+      <section>
+        <h3>Section 2</h3>
+        Some text, Some text....
+      </section>
+    </section>
+</article>
+<article>
+  </section>
+<article>
+    <section>
+        <h1>random stuff</h1>
+    </section>
+    <section>
+        <img alt="test" style="width:128px;height:128px" src="https://music.youtube.com/img/favicon_144.png">
+        <img alt="Milky way in radio waves" style="width:450px;height:256px" 
+        src="https://lutim.stemy.me/jo749tXt/K7M8I6hw.png">
+    </section>
+</article>
+  <article>
+      <section>
+        <p>The pre tag preserves both spaces and line breaks:</p>
+        <pre>
+           test test test test
+        
+           test test test test
+
+           test test test test
+        </pre>
+      </section>  
+      <section>
+        <h2>HTML Emojis</h2>
+        <p style="font-size:48px">
+          &#128512; &#128516;
+          </p>
+      </section> 
+  </article>
+  <article>
+    <section>
+      <h1>Javascript stuff</h1>
+      <noscript><h1> Sorry, your browser does not support JavaScript! </h1></noscript>
+      <button onclick="myFunction()">Find Browser</button>
+      <p id="demo"></p>
+      <script>
+      function myFunction() { 
+      if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
+      {
+      alert('Opera');
+      }
+      else if(navigator.userAgent.indexOf("Edg") != -1 )
+      {
+      alert('Edge');
+      }
+      else if(navigator.userAgent.indexOf("Chrome") != -1 )
+      {
+      alert('Chrome');
+      }
+      else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+      {
+      alert('Firefox');
+      }
+      else 
+      {
+      alert('unknown');
+      }
+      }
+      </script>
+    </section>
+    <section>
+      <button type="button"onclick="document.getElementById('para1').innerHTML = Date()">Click me to display Date and Time.</button>
+      <p id="para1"></p>
+    </section>
+    <section>
+    <button type="button" onClick="window.location.reload();">Reload</button>
+     </section>
+    <section>
+    <p id="demo5">hello!</p>
+        <button type="button" onclick="document.getElementById('demo5').innerHTML = 'Hanlo world!'">Click Me!</button>
+    </section>
+    <section>
+      <h2>HTML Tables</h2>
+      <table>
+        <tr>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Paris</td>
+          <td>Washington D.C</td>
+          <td>Switzerland</td>
+        </tr>
+        <tr>
+          <td>New york city</td>
+          <td>Telengana</td>
+          <td>France</td>
+        </tr>
+        <tr>
+          <td>los angeles</td>
+          <td>california</td>
+          <td>United States</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h1>Color picker</h1>
+      <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#a0d6b4" style="width:85%;">
+      <p>
+        My fav color is turquise green (#a0d6b4)
+      </p>
+    </section>
+  </article>
+  <article>
+    <section>
+      <div class="test">
+        <h2>Test!</h2>
+        <p>This is a test!</p>
+      </div>
+    </section>
+    <section>
+      <h1 id="test">Test</h1>
+    </section>
+  </article>
+  <article class="all-browsers">
+    <h1>Most Popular Browsers</h1>
+    <article class="browser">
+      <h2>Google Chrome</h2>
+      <p>Google Chrome is a web browser developed by Google, released in 2008. 
+        Chrome is the world's most popular web browser today!</p>
+    </article>
+    <article class="browser">
+      <h2>Mozilla Firefox</h2>
+      <p>Mozilla Firefox is an open-source web browser developed by Mozilla.
+         Firefox has been the second most popular web browser since January, 2018.</p>
+    </article>
+    <article class="browser">
+      <h2>Microsoft Edge</h2>
+      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. 
+        Microsoft Edge replaced Internet Explorer.</p>
+    </article>
+  </article>
+  <article>
+    <p>Radio buttons</p>
+    <form>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+    </form> 
+    <section>
+      <p>Checkboxes</p>
+      <form>
+        <input type="Checkbox" id="item1" name="item1" value="test1">
+        <label for="item1">Test 1</label><br>
+        <input type="Checkbox" id="item2" name="item2" value="test2">
+        <label for="item2">Test 2</label><br>
+        <input type="Checkbox" id="item3" name="item3" value="test3">
+        <label for="item2">Test 3</label><br>
+      </form>
+    </section>
+  </article>
+  <article>
+    <section>
+      <h2>Canvas</h2>
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+          <script>
+          var c = document.getElementById("myCanvas");
+          var ctx = c.getContext("2d");
+          
+          var grd = ctx.createLinearGradient(0, 0, 200, 0);
+          grd.addColorStop(0, "red");
+          grd.addColorStop(1, "white");
+          
+          ctx.fillStyle = grd;
+          ctx.fillRect(10, 10, 150, 80);
+          </script> 
+          <section>
+           </section>
+    </section>
+  </article>
+  <article>
+    <section>
+      <h2>SVG</h2>
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"
+        stroke="green" stroke-width="4" fill="yellow" />
+      Sorry, your browser does not support inline SVG.
+      </svg>
+    </section>
+  </article>
+  <article>
+    <section>
+      <div style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420">
+          <source src="https://raw.githubusercontent.com/mdn/learning-area/main/html/multimedia-and-embedding/video-and-audio-content/rabbit320.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </div> 
+      <script> 
+      var myVideo = document.getElementById("video1"); 
+      function playPause() { 
+        if (myVideo.paused) 
+          myVideo.play(); 
+        else 
+          myVideo.pause(); 
+      } 
+      function makeBig() { 
+          myVideo.width = 560; 
+      } 
+      function makeSmall() { 
+          myVideo.width = 320; 
+      } 
+      function makeNormal() { 
+          myVideo.width = 420; 
+      } 
+      </script>
+    </section>
+  </article>
+  <article>
+    <section>
+      <p>Just audio</p>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    </section>
+  </article>
+  <article>
+    <section>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G-24wA_ofis" 
+      title="YouTube video player" frameborder="0" 
+      allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  </article>
+  <article>
+    <h1>HTML APIs</h1>
+    <section>
+      <h2>Geolocation</h2>
+      <p>Click the button to get your coordinates</p>
+      <button onclick="getLocation()">Try It</button>
+      <p id="demo2"></p>
+      <script>
+      var x = document.getElementById("demo2");
+      
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+      
+      function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+      }
+
+      function showError(error) {
+      switch(error.code) {
+      case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+      case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+      case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+      case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+         }
+      } 
+      </script>
+    </section>
+    <section>
+      <h2>Web storage</h2>
+      <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+      <div id="result"></div>
+      <p>Click the button to see the counter increase.</p>
+      <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+    </section>
+    <section>
+      <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+      <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+      <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+    </section>
+    <section>
+      <button onclick="window.alert(30+11)">30+11 is..</button>
+    </section>
+    <section>
+      <script>console.log("hello!")</script>
+    </section>
+    <section>
+      <p id="statements"></p>
+      <script>
+        //Javascript statements
+        var e, f;
+
+        e=5;
+        f=6;
+        let g=e+f
+        document.getElementById("statements").innerHTML =
+        "The value of var g (e+f,5+6) is " + g + ".";  
+        </script>
+    </section>
+    <section>
+      <h2> Click the following button to get the value of PI. </h2>
+      <p id = "para"></p>
+      <button onclick = "get()">
+      Click me
+      </button>
+      <script> 
+      function get() 
+      { 
+      document.getElementById("para").innerHTML = "The value of PI is: " + Math.PI;
+      } 
+      </script> 
+    </section>
+  </article>
+  <div class="w3-container w3-teal">
+  <footer>
+    <p>Prajwal G; Personal site For Webdev &#128512;</p>
+    <p><a href="malto:pg.7693@protonmail.com">pg.7693@protonmail.com</a></p>
+  </footer>
+  </div>
+</html>
