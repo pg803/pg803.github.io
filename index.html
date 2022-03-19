@@ -511,6 +511,13 @@
       </script> 
     </section>
     <section>
+      <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+      </div>
+      <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Submit guess" class="guessSubmit">
       <script>
       let randomNumber = Math.floor(Math.random() * 100) + 1;
 
@@ -588,13 +595,6 @@
      randomNumber = Math.floor(Math.random() * 100) + 1;
     }
       </script>      
-      <div class="resultParas">
-        <p class="guesses"></p>
-        <p class="lastResult"></p>
-        <p class="lowOrHi"></p>
-      </div>
-      <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-      <input type="submit" value="Submit guess" class="guessSubmit">
     </section>
   </article>
   <div class="w3-container w3-teal">
