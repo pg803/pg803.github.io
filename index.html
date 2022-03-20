@@ -606,6 +606,20 @@
     }
       </script>      
     </section>
+    <section>
+      <button id="button_A">Press me</button>
+      <h3 id="heading_A"></h3>
+      <script>
+        const buttonA = document.querySelector('#button_A');
+        const headingA = document.querySelector('#heading_A');
+
+        buttonA.onclick = () => {
+          const name=prompt('whats your name?');
+          alert(`hello ${name},nice to meet you!`);
+          headingA.textcontent = `welcome ${name}`;
+        }
+      </script>
+    </section>
   </article>
   <div class="w3-container w3-teal">
   <footer>
