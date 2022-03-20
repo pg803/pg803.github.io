@@ -267,11 +267,11 @@
       <p id="para1"></p>
     </section>
     <section>
-    <button type="button" onClick="window.location.reload();">Reload</button>
+    <button type="button" onClick="window.location.reload();">Reload page</button>
      </section>
     <section>
     <p id="demo5">hello!</p>
-        <button type="button" onclick="document.getElementById('demo5').innerHTML = 'Hanlo world!'">Click Me!</button>
+        <button type="button" onclick="document.getElementById('demo5').innerHTML = 'Hallo world!'">Click Me!</button>
     </section>
     <section>
       <h2>HTML Tables</h2>
@@ -363,6 +363,7 @@
       <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
         Your browser does not support the HTML canvas tag.</canvas>
           <script>
+          //Canvas script
           var c = document.getElementById("myCanvas");
           var ctx = c.getContext("2d");
 
@@ -452,6 +453,7 @@
         "<br>Longitude: " + position.coords.longitude;
       }
 
+      //Code to show errors
       function showError(error) {
       switch(error.code) {
       case error.PERMISSION_DENIED:
@@ -491,12 +493,14 @@
     <section>
       <aside>
         Code for it:
+        <code>
         var e, f;
         e=5;
         f=6;
         let g=e+f
         document.getElementById("statements").innerHTML =
         "The value of var g (e+f,5+6) is " + g + ".";
+      </code>
       </aside>
       <p id="statements"></p>
       <script>
@@ -517,6 +521,7 @@
       Click me
       </button>
       <script>
+      //Shows 15 decimal points
       function get()
       {
       document.getElementById("para").innerHTML = "The value of PI is: " + Math.PI;
@@ -622,7 +627,7 @@
 
       buttonA.onclick = () => {
         const name = prompt('What is your name?');
-        alert(`Hello ${name}, nice to see you!`);
+        alert(`Hello ${name}!`);
         headingA.textContent = `Welcome ${name}`;
       }
       </script>
