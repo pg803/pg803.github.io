@@ -591,6 +591,26 @@
       }
       </script>
     </section>
+    <section>
+      <button>Start</button>
+      <p>Stopped</p>
+      <script>
+      const btn = document.querySelector('button');
+      const txt = document.querySelector('p');
+
+      btn.addEventListener('click', updateBtn);
+
+      function updateBtn(){
+        if (btn.textContent === 'start') {
+          btn.textContent = 'stop';
+          txt.textContent = 'Started.';
+        } else {
+          btn.textContent = 'Start machine';
+          txt.textContent = 'The machine is stopped.';
+        }
+      }
+      </script>
+      </section>
   </article>
   <footer>
     <p>P G; Personal site For Webdev &#128512;</p>
