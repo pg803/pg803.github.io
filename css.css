@@ -1,0 +1,50 @@
+/*The top header*/
+  header {height: 150px;}
+
+  header img {
+    width: 100px;
+    position: absolute;
+    right: 32.5px;
+    top: 32.5px;
+  }
+
+  #header123 {
+    font-size: 50px;
+    line-height: 140px;
+    margin: 0 0 0 32.5px;
+  }
+
+/**/
+.test {
+ background-color: tomato;
+ color: white;
+ border: 2px solid rgb(22, 22, 22);
+ margin: 20px;
+ padding: 20px;
+}
+
+#test {
+ background-color: lightblue;
+ color: black;
+ padding: 40px;
+ text-align: center;
+}
+
+/*For the "most popular browsers" bit*/
+              .all-browsers {
+                margin: 0;
+                padding: 5px;
+                background-color: lightgray;
+              }
+
+              .all-browsers > h1, .browser {
+                margin: 10px;
+                padding: 5px;
+              }
+
+              .browser {background: white;}
+
+              .browser > h2, p {
+                margin: 4px;
+                font-size: 90%;
+              }
