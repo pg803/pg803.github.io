@@ -389,6 +389,27 @@
       </script>
     </section>
   </article>
+  <article>
+    <section>
+      <p>Count numbers: <output id="result"></output></p>
+      <button onclick="startWorker()">Start Worker</button>
+      <button onclick="stopWorker()">Stop Worker</button>
+      <script>
+      var w;
+
+     function startWorker() {
+      if(typeof(Worker) !== "undefined") {
+      if(typeof(w) == "undefined") {
+        w = new Worker("demo_workers.js");
+      }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+  }
+}
+      </script>
   <footer>
     <p>P G; Personal site For Webdev &#128512;</p>
     <p><a href="malto:pg.7693@protonmail.com">pg.7693@protonmail.com</a></p>
