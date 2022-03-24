@@ -391,7 +391,7 @@
   </article>
   <article>
     <section>
-      <p>Count numbers: <output id="result"></output></p>
+      <p>Count numbers: <output id="result2"></output></p>
       <button onclick="startWorker()">Start Worker</button>
       <button onclick="stopWorker()">Stop Worker</button>
       <script>
@@ -403,10 +403,10 @@ function startWorker() {
       w = new Worker("demo_workers.js");
     }
     w.onmessage = function(event) {
-      document.getElementById("result").innerHTML = event.data;
+      document.getElementById("result2").innerHTML = event.data;
     };
   } else {
-    document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+    document.getElementById("result2").innerHTML = "Sorry! No Web Worker support.";
   }
 }
 
