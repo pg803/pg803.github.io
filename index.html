@@ -1,424 +1,381 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="This is a website">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Website</title>
-        <link rel="icon" type="image/x-icon" href="https://lutim.stemy.me/nXpV4tAa/WDVkzjnQ.png">
-        <script src="/webstorage.js" defer ></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="/css.css" rel="stylesheet">
-    </head>
-    <body style="background-color: #00ccbf;">
-        <header>
-          <h1 style="font-size:7vw" id="header123">My website</h1>
-          <img  sizes="(max-width: 600px) 480px,800px" src="https://lutim.stemy.me/nXpV4tAa/WDVkzjnQ.png" alt="Website icon">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="pg803.github.io">My website </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">MDN HTML</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps">MDN CSS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps">MDN JS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pg803/pg803.github.io">Github Page</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="https://bitwarden.com/">Bitwarden</a></li>
-            <li><a class="dropdown-item" href="https://www.theverge.com/">The verge</a></li>
-            <li><a class="dropdown-item" href="https://apod.nasa.gov/apod/astropix.html">APOD</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-        </header>
-        <br>
-        <h1><br>this is a header!</h1>
-        <p> <big>this is big!</big> <small>this is small!</small> <b><i>this is bold and italic!</i></b></p>
-        <p style="color:rgb(64, 165, 34);">some green colored text!</p>
-        <p style="background-color: rgb(0, 225, 255);"> this has a cyan background!</p>
-        <p> This Paregraph <br> has a few <br> breaks!</p>
-        <h1 style="font-size:60px;">large heading</h1>
-        <h1> normal size heading</h1>
-        <h1>This is heading 1</h1>
-        <p>This is some <mark>text</mark>.</p>
-        <p>This is <del>an image</del> <ins>a paragraph</ins>.</p>
-        <p>This is <sub>subscripted</sub> text.</p>
-        <p>This is <sup>superscripted</sup> text.</p>
-        <p>Browsers usually indent blockquote elements.</p>
-        <blockquote cite="http://www.worldwildlife.org/who/index.html">
-            For nearly 60 years, WWF has been protecting the future of nature.
-            The world's leading conservation organization,
-            WWF works in 100 countries and is supported by more than one million members in the United States and close to
-            five million globally.
-        </blockquote>
-        <p id="P1">WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-        <hr>
-        <h2>This is heading 2</h2>
-        <p>This is some other text.</p>
-        <p style="color:cyan;">This is a paragraph.</p>
-        <p style="font-family:verdana"> Another paragraph</p>
-        <p style="text-align:center;">Centered paragraph.</p>
-        <p style="text-align:right;">Right-aligned paragraph.</p>
-        <h1 style="background-color:DodgerBlue;">Hello World</h1>
-        <p style="background-color:Tomato;">Text...</p>
-        <p style="color:DodgerBlue;">Text...</p>
-        <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
-        <h2 style="background-color:chartreuse">Hallo</h2>
-        <a href="https://open.spotify.com/" target="_blank">Spotify</a>
-        <h2>Absolute URLs</h2>
-        <p><a href="https://www.w3.org/">W3C</a></p>
-        <p><a href="https://www.duckduckgo.com/">Duckduckgo</a></p>
-        <button onclick="document.location='https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML'" >HTML</button>
-        <p><a href="#P1">jump to para 1</a></p>
-        <h1 style="font-size:3vw;">Responsive Text</h1>
-        <p style="font-size:2vw;">Resize the browser window to see how the text size scales.</p>
-        <code>
-        x = 5;
-        y = 6;
-        z = x + y;
-        </code>
-        <p><samp>Test 1<br>Test 2</samp>
-        <p>The area of a triangle is: 1/2 x
-          <var>b</var> x
-          <var>h</var>, where
-          <var>b</var> is the base, and
-          <var>h</var> is the vertical height.</p>
-    <article>
-    <h1>Article</h1>
-    <section>
-      <h2>Section</h2>
-      Some text, Some text....
-      <section>
-        <h3>Section 2</h3>
-        Some text, Some text....
-      </section>
-    </section>
-</article>
-<article>
-  </section>
-<article>
-    <section>
-        <img alt="Chicago" style="width:128px;height:128px" src="https://lutim.stemy.me/aEhxyjtb/wkTlswq1.jpg">
-    </section>
-</article>
-  <article>
-      <section>
-        <p>The pre tag preserves both spaces and line breaks:</p>
-        <pre>
+<head>
+	<meta charset="UTF-8">
+	<meta content="This is a website" name="description">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>My Website</title>
+	<link href="https://lutim.stemy.me/nXpV4tAa/WDVkzjnQ.png" rel="icon" type="image/x-icon">
+	<script defer src="/webstorage.js">
+	</script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css.css" rel="stylesheet">
+</head>
+<body style="background-color: #00ccbf;">
+	<header>
+		<h1 id="header123" style="font-size:7vw">My website</h1><img alt="Website icon" sizes="(max-width: 600px) 480px,800px" src="https://lutim.stemy.me/nXpV4tAa/WDVkzjnQ.png">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="pg803.github.io">My website</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">MDN HTML</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps">MDN CSS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps">MDN JS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://github.com/pg803/pg803.github.io">Github Page</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button">Dropdown</a>
+							<ul aria-labelledby="navbarDropdown" class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="https://bitwarden.com/">Bitwarden</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="https://www.theverge.com/">The verge</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="https://apod.nasa.gov/apod/astropix.html">APOD</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header><br>
+	<h1><br>
+	this is a header!</h1>
+	<p><big>this is big!</big> <small>this is small!</small> <b><i>this is bold and italic!</i></b></p>
+	<p style="color:rgb(64, 165, 34);">some green colored text!</p>
+	<p style="background-color: rgb(0, 225, 255);">this has a cyan background!</p>
+	<p>This Paregraph<br>
+	has a few<br>
+	breaks!</p>
+	<h1 style="font-size:60px;">large heading</h1>
+	<h1>normal size heading</h1>
+	<h1>This is heading 1</h1>
+	<p>This is some <mark>text</mark>.</p>
+	<p>This is <del>an image</del> <ins>a paragraph</ins>.</p>
+	<p>This is <sub>subscripted</sub> text.</p>
+	<p>This is <sup>superscripted</sup> text.</p>
+	<p>Browsers usually indent blockquote elements.</p>
+	<blockquote cite="http://www.worldwildlife.org/who/index.html">
+		For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.
+	</blockquote>
+	<p id="P1">WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+	<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+	<hr>
+	<h2>This is heading 2</h2>
+	<p>This is some other text.</p>
+	<p style="color:cyan;">This is a paragraph.</p>
+	<p style="font-family:verdana">Another paragraph</p>
+	<p style="text-align:center;">Centered paragraph.</p>
+	<p style="text-align:right;">Right-aligned paragraph.</p>
+	<h1 style="background-color:DodgerBlue;">Hello World</h1>
+	<p style="background-color:Tomato;">Text...</p>
+	<p style="color:DodgerBlue;">Text...</p>
+	<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+	<h2 style="background-color:chartreuse">Hallo</h2><a href="https://open.spotify.com/" target="_blank">Spotify</a>
+	<h2>Absolute URLs</h2>
+	<p><a href="https://www.w3.org/">W3C</a></p>
+	<p><a href="https://www.duckduckgo.com/">Duckduckgo</a></p><button onclick="document.location='https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML'">HTML</button>
+	<p><a href="#P1">jump to para 1</a></p>
+	<h1 style="font-size:3vw;">Responsive Text</h1>
+	<p style="font-size:2vw;">Resize the browser window to see how the text size scales.</p><code>x = 5; y = 6; z = x + y;</code>
+	<p><samp>Test 1<br>
+	Test 2</samp></p>
+	<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+	<article>
+		<h1>Article</h1>
+		<section>
+			<h2>Section</h2>Some text, Some text....
+			<section>
+				<h3>Section 2</h3>Some text, Some text....
+			</section>
+		</section>
+	</article>
+	<article>
+		<article>
+			<section>
+				<img alt="Chicago" src="https://lutim.stemy.me/aEhxyjtb/wkTlswq1.jpg" style="width:128px;height:128px">
+			</section>
+		</article>
+		<article>
+			<section>
+				<p>The pre tag preserves both spaces and line breaks:</p>
+				<pre>
            test test test test
 
            test test test test
 
            test test test test
         </pre>
-      </section>
-      <section>
-        <h2>HTML Emojis</h2>
-        <p style="font-size:48px">
-          &#128512; &#128516;
-          </p>
-      </section>
-  </article>
-  <article>
-    <section>
-      <h1>Javascript stuff</h1>
-      <noscript><h1> Sorry, your browser does not support JavaScript! </h1></noscript>
-      <button onclick="myFunction()">Find Browser</button>
-      <p id="demo"></p>
-      <script src="/user.js" deter></script>
-    </section>
-    <section>
-      <button type="button"onclick="document.getElementById('para1').innerHTML = Date()">Click me to display Date and Time.</button>
-      <p id="para1"></p>
-    </section>
-    <section>
-    <button type="button" onClick="window.location.reload();">Reload page</button>
-     </section>
-    <section>
-    <p id="demo5">hello!</p>
-        <button type="button" onclick="document.getElementById('demo5').innerHTML = 'Hallo world!'">Click Me!</button>
-    </section>
-    <section>
-      <h2>HTML Tables</h2>
-      <table>
-        <tr>
-          <th>City</th>
-          <th>State</th>
-          <th>Country</th>
-        </tr>
-        <tr>
-          <td>Paris</td>
-          <td>Washington D.C</td>
-          <td>Switzerland</td>
-        </tr>
-        <tr>
-          <td>New york city</td>
-          <td>Wyoming</td>
-          <td>France</td>
-        </tr>
-        <tr>
-          <td>los angeles</td>
-          <td>california</td>
-          <td>United States</td>
-        </tr>
-      </table>
-    </section>
-    <section>
-      <h1>Color picker</h1>
-      <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#00ffef" style="width:85%;">
-      <p>
-        My fav color is turquise blue (#00ffef )
-      </p>
-    </section>
-  </article>
-  <article>
-    <section>
-      <div class="test">
-        <h2>Test!</h2>
-        <p>This is a test!</p>
-      </div>
-    </section>
-    <section>
-      <h1 id="test">Test</h1>
-    </section>
-  </article>
-  <article class="all-browsers">
-    <h1>Most Popular Browsers</h1>
-    <article class="browser">
-      <h2>Google Chrome</h2>
-      <p>Google Chrome is a web browser developed by Google, released in 2008.
-        Chrome is the world's most popular web browser today!</p>
-    </article>
-    <article class="browser">
-      <h2>Mozilla Firefox</h2>
-      <p>Mozilla Firefox is an open-source web browser developed by Mozilla.
-         Firefox has been the second most popular web browser since January, 2018.</p>
-    </article>
-    <article class="browser">
-      <h2>Microsoft Edge</h2>
-      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015.
-        Microsoft Edge replaced Internet Explorer.</p>
-    </article>
-  </article>
-  <article>
-    <p>Radio buttons</p>
-    <form>
-      <input type="radio" id="html" name="fav_language" value="HTML">
-      <label for="html">HTML</label><br>
-      <input type="radio" id="css" name="fav_language" value="CSS">
-      <label for="css">CSS</label><br>
-      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-      <label for="javascript">JavaScript</label>
-    </form>
-    <section>
-      <p>Checkboxes</p>
-      <form>
-        <input type="Checkbox" id="item1" name="item1" value="test1">
-        <label for="item1">Test 1</label><br>
-        <input type="Checkbox" id="item2" name="item2" value="test2">
-        <label for="item2">Test 2</label><br>
-        <input type="Checkbox" id="item3" name="item3" value="test3">
-        <label for="item2">Test 3</label><br>
-      </form>
-    </section>
-  </article>
-  <article>
-    <section>
-      <h2>Canvas</h2>
-      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-        Your browser does not support the HTML canvas tag.</canvas>
-          <script>
-          //Canvas script
-          var c = document.getElementById("myCanvas");
-          var ctx = c.getContext("2d");
+			</section>
+			<section>
+				<h2>HTML Emojis</h2>
+				<p style="font-size:48px">&#128512; &#128516;</p>
+			</section>
+		</article>
+		<article>
+			<section>
+				<h1>Javascript stuff</h1><noscript>
+				<h1>Sorry, your browser does not support JavaScript!</h1></noscript> <button onclick="myFunction()">Find Browser</button>
+				<p id="demo"></p>
+				<script src="/user.js">
+				</script>
+			</section>
+			<section>
+				<button onclick="document.getElementById('para1').innerHTML = Date()" type="button">Click me to display Date and Time.</button>
+				<p id="para1"></p>
+			</section>
+			<section>
+				<button onclick="window.location.reload();" type="button">Reload page</button>
+			</section>
+			<section>
+				<p id="demo5">hello!</p><button onclick="document.getElementById('demo5').innerHTML = 'Hallo world!'" type="button">Click Me!</button>
+			</section>
+			<section>
+				<h2>HTML Tables</h2>
+				<table>
+					<tr>
+						<th>City</th>
+						<th>State</th>
+						<th>Country</th>
+					</tr>
+					<tr>
+						<td>Paris</td>
+						<td>Washington D.C</td>
+						<td>Switzerland</td>
+					</tr>
+					<tr>
+						<td>New york city</td>
+						<td>Wyoming</td>
+						<td>France</td>
+					</tr>
+					<tr>
+						<td>los angeles</td>
+						<td>california</td>
+						<td>United States</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h1>Color picker</h1><input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:85%;" type="color" value="#00ffef">
+				<p>My fav color is turquise blue (#00ffef )</p>
+			</section>
+		</article>
+		<article>
+			<section>
+				<div class="test">
+					<h2>Test!</h2>
+					<p>This is a test!</p>
+				</div>
+			</section>
+			<section>
+				<h1 id="test">Test</h1>
+			</section>
+		</article>
+		<article class="all-browsers">
+			<h1>Most Popular Browsers</h1>
+			<article class="browser">
+				<h2>Google Chrome</h2>
+				<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+			</article>
+			<article class="browser">
+				<h2>Mozilla Firefox</h2>
+				<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+			</article>
+			<article class="browser">
+				<h2>Microsoft Edge</h2>
+				<p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+			</article>
+		</article>
+		<article>
+			<p>Radio buttons</p>
+			<form>
+				<input id="html" name="fav_language" type="radio" value="HTML"> <label for="html">HTML</label><br>
+				<input id="css" name="fav_language" type="radio" value="CSS"> <label for="css">CSS</label><br>
+				<input id="javascript" name="fav_language" type="radio" value="JavaScript"> <label for="javascript">JavaScript</label>
+			</form>
+			<section>
+				<p>Checkboxes</p>
+				<form>
+					<input id="item1" name="item1" type="checkbox" value="test1"> <label for="item1">Test 1</label><br>
+					<input id="item2" name="item2" type="checkbox" value="test2"> <label for="item2">Test 2</label><br>
+					<input id="item3" name="item3" type="checkbox" value="test3"> <label for="item2">Test 3</label><br>
+				</form>
+			</section>
+		</article>
+		<article>
+			<section>
+				<h2>Canvas</h2>
+				<canvas height="100" id="myCanvas" style="border:1px solid #d3d3d3;" width="200">
+					Your browser does not support the HTML canvas tag.
+				</canvas>
+				<script>
+				      //Canvas script
+				      var c = document.getElementById("myCanvas");
+				      var ctx = c.getContext("2d");
 
-          var grd = ctx.createLinearGradient(0, 0, 200, 0);
-          grd.addColorStop(0, "red");
-          grd.addColorStop(1, "white");
+				      var grd = ctx.createLinearGradient(0, 0, 200, 0);
+				      grd.addColorStop(0, "red");
+				      grd.addColorStop(1, "white");
 
-          ctx.fillStyle = grd;
-          ctx.fillRect(10, 10, 150, 80);
-          </script>
-          <section>
-           </section>
-    </section>
-  </article>
-  <article>
-    <section>
-      <h2>SVG</h2>
-      <svg width="100" height="100">
-        <circle cx="50" cy="50" r="40"
-        stroke="green" stroke-width="4" fill="yellow" />
-      Sorry, your browser does not support inline SVG.
-      </svg>
-    </section>
-  </article>
-  <article>
-    <section>
-      <div style="text-align:center">
-        <button onclick="playPause()">Play/Pause</button>
-        <button onclick="makeBig()">Big</button>
-        <button onclick="makeSmall()">Small</button>
-        <button onclick="makeNormal()">Normal</button>
-        <br><br>
-        <video id="video1" width="420">
-          <source src="https://raw.githubusercontent.com/mdn/learning-area/main/html/multimedia-and-embedding/video-and-audio-content/rabbit320.mp4" type="video/mp4">
-          Your browser does not support HTML video.
-        </video>
-      </div>
-      <script>
-      var myVideo = document.getElementById("video1");
-      function playPause() {
-        if (myVideo.paused)
-          myVideo.play();
-        else
-          myVideo.pause();
-      }
-      function makeBig() {
-          myVideo.width = 560;
-      }
-      function makeSmall() {
-          myVideo.width = 320;
-      }
-      function makeNormal() {
-          myVideo.width = 420;
-      }
-      </script>
-    </section>
-  </article>
-  <article>
-  </article>
-  <article>
-    <h1>HTML APIs</h1>
-    <section>
-      <h2>Geolocation</h2>
-      <p>Click the button to get your coordinates</p>
-      <button onclick="getLocation()">Try It</button>
-      <p id="demo2"></p>
-      <script src="/geolocation.js" deter></script>
-    </section>
-    <section>
-      <h2>Web storage</h2>
-      <!--Javascript code on the top in <head>-->
-      <p><button onclick="clickCounter()" type="button">Click me!</button></p>
-      <div id="result"></div>
-      <p>Click the button to see the counter increase.</p>
-      <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
-    </section>
-    <section>
-      <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
-      <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
-      <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
-    </section>
-    <section>
-      <button onclick="window.alert(30+11)">30+11 is..</button>
-    </section>
-    <section>
-      <script>console.log("hello!")</script>
-    </section>
-    <section>
-      <p id="statements"></p>
-      <script>
-        //Javascript statements
-        var e, f;
+				      ctx.fillStyle = grd;
+				      ctx.fillRect(10, 10, 150, 80);
+				</script>
+				<section></section>
+			</section>
+		</article>
+		<article>
+			<section>
+				<h2>SVG</h2><svg height="100" width="100">
+				<circle cx="50" cy="50" fill="yellow" r="40" stroke="green" stroke-width="4"></circle>Sorry, your browser does not support inline SVG.</svg>
+			</section>
+		</article>
+		<article>
+			<section>
+				<div style="text-align:center">
+					<button onclick="playPause()">Play/Pause</button> <button onclick="makeBig()">Big</button> <button onclick="makeSmall()">Small</button> <button onclick="makeNormal()">Normal</button><br>
+					<br>
+					<video id="video1" width="420"><source src="https://raw.githubusercontent.com/mdn/learning-area/main/html/multimedia-and-embedding/video-and-audio-content/rabbit320.mp4" type="video/mp4"> Your browser does not support HTML video.</video>
+				</div>
+				<script>
+				  var myVideo = document.getElementById("video1");
+				  function playPause() {
+				    if (myVideo.paused)
+				      myVideo.play();
+				    else
+				      myVideo.pause();
+				  }
+				  function makeBig() {
+				      myVideo.width = 560;
+				  }
+				  function makeSmall() {
+				      myVideo.width = 320;
+				  }
+				  function makeNormal() {
+				      myVideo.width = 420;
+				  }
+				</script>
+			</section>
+		</article>
+		<article></article>
+		<article>
+			<h1>HTML APIs</h1>
+			<section>
+				<h2>Geolocation</h2>
+				<p>Click the button to get your coordinates</p><button onclick="getLocation()">Try It</button>
+				<p id="demo2"></p>
+				<script src="/geolocation.js">
+				</script>
+			</section>
+			<section>
+				<h2>Web storage</h2><!--Javascript code on the top in <head>-->
+				<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+				<div id="result"></div>
+				<p>Click the button to see the counter increase.</p>
+				<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+			</section>
+			<section>
+				<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button> <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px"> <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+			</section>
+			<section>
+				<button onclick="window.alert(30+11)">30+11 is..</button>
+			</section>
+			<section>
+				<script>
+				console.log("hello!")
+				</script>
+			</section>
+			<section>
+				<p id="statements"></p>
+				<script>
+				    //Javascript statements
+				    var e, f;
 
-        e=5;
-        f=6;
-        let g=e+f
-        document.getElementById("statements").innerHTML =
-        "The value of var g (e+f,5+6) is " + g + ".";
-        </script>
-    </section>
-    <section>
-      <h2> Click the following button to get the value of PI. </h2>
-      <p id = "para"></p>
-      <button onclick = "get()">
-      Click me
-      </button>
-      <script>
-      //Shows 15 decimal points
-      function get()
-      {
-      document.getElementById("para").innerHTML = "The value of PI is: " + Math.PI;
-      }
-      </script>
-    </section>
-    <section>
-      <h1>Number guessing game</h1>
-      <div class="resultParas">
-        <p class="guesses"></p>
-        <p class="lastResult"></p>
-        <p class="lowOrHi"></p>
-      </div>
-      <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-      <input type="submit" value="Submit guess" class="guessSubmit">
-      <script src="/game.js" deter></script>
-    </section>
-    <section>
-      <h1>Variables</h1>
-      <button id="button_A">Press me</button>
-      <h3 id="heading_A"></h3>
-      <script>
-        const buttonA = document.querySelector('#button_A');
-        const headingA = document.querySelector('#heading_A');
+				    e=5;
+				    f=6;
+				    let g=e+f
+				    document.getElementById("statements").innerHTML =
+				    "The value of var g (e+f,5+6) is " + g + ".";
+				</script>
+			</section>
+			<section>
+				<h2>Click the following button to get the value of PI.</h2>
+				<p id="para"></p><button onclick="get()">Click me</button>
+				<script>
+				  //Shows 15 decimal points
+				  function get()
+				  {
+				  document.getElementById("para").innerHTML = "The value of PI is: " + Math.PI;
+				  }
+				</script>
+			</section>
+			<section>
+				<h1>Number guessing game</h1>
+				<div class="resultParas">
+					<p class="guesses"></p>
+					<p class="lastResult"></p>
+					<p class="lowOrHi"></p>
+				</div><label for="guessField">Enter a guess:</label> <input class="guessField" id="guessField" type="text"> <input class="guessSubmit" type="submit" value="Submit guess">
+				<script src="/game.js">
+				</script>
+			</section>
+			<section>
+				<h1>Variables</h1><button id="button_A">Press me</button>
+				<h3 id="heading_A"></h3>
+				<script>
+				    const buttonA = document.querySelector('#button_A');
+				    const headingA = document.querySelector('#heading_A');
 
-      buttonA.onclick = () => {
-        const name = prompt('What is your name?');
-        alert(`Hello ${name}!`);
-        headingA.textContent = `Welcome ${name}`;
-      }
-      </script>
-    </section>
-  </article>
-  <article>
-    <section>
-      <p>Count numbers: <output id="result2"></output></p>
-      <button onclick="startWorker()">Start Worker</button>
-      <button onclick="stopWorker()">Stop Worker</button>
-      <script>
-var w;
+				  buttonA.onclick = () => {
+				    const name = prompt('What is your name?');
+				    alert(`Hello ${name}!`);
+				    headingA.textContent = `Welcome ${name}`;
+				  }
+				</script>
+			</section>
+		</article>
+		<article>
+			<section>
+				<p>Count numbers: <output id="result2"></output></p><button onclick="startWorker()">Start Worker</button> <button onclick="stopWorker()">Stop Worker</button>
+				<script>
+				var w;
 
-function startWorker() {
-  if (typeof(Worker) !== "undefined") {
-    if (typeof(w) == "undefined") {
-      w = new Worker("demo_workers.js");
-    }
-    w.onmessage = function(event) {
-      document.getElementById("result2").innerHTML = event.data;
-    };
-  } else {
-    document.getElementById("result2").innerHTML = "Sorry! No Web Worker support.";
-  }
-}
+				function startWorker() {
+				if (typeof(Worker) !== "undefined") {
+				if (typeof(w) == "undefined") {
+				  w = new Worker("demo_workers.js");
+				}
+				w.onmessage = function(event) {
+				  document.getElementById("result2").innerHTML = event.data;
+				};
+				} else {
+				document.getElementById("result2").innerHTML = "Sorry! No Web Worker support.";
+				}
+				}
 
-function stopWorker() {
-  w.terminate();
-  w = undefined;
-}
-</script>
-  <footer>
-    <p>P G; Personal site For Webdev &#128512;</p>
-    <p><a href="malto:pg.7693@protonmail.com">pg.7693@protonmail.com</a></p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+				function stopWorker() {
+				w.terminate();
+				w = undefined;
+				}
+				</script>
+				<footer>
+					<p>P G; Personal site For Webdev &#128512;</p>
+					<p><a href="malto:pg.7693@protonmail.com">pg.7693@protonmail.com</a></p>
+				</footer>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+				</script>
+			</section>
+		</article>
+	</article>
 </body>
 </html>
