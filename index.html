@@ -18,9 +18,10 @@
 			<a href="https://www.w3schools.com/html/default.asp">HTML</a>
 			<a href="https://www.w3schools.com/css/default.asp">CSS</a>
 			<a href="https://www.w3schools.com/js/default.asp">JS</a>
+			<a href="https://github.com/pg803/pg803.github.io">Github</a>
 			<a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 		</div>
-	</header>
+	</header><br>
 	<h1>this is a header!</h1>
 	<p><small>this is small!</small> <b><i>this is bold and italic!</i></b></p>
 	<p style="color:rgb(64, 165, 34);">some green colored text!</p>
@@ -84,13 +85,42 @@
 	<p style="font-size:48px">&#128512; &#128516;</p>
 	<section>
 		<h1>Javascript stuff</h1><noscript>
-		<h1>Sorry, your browser does not support JavaScript!</h1></noscript> <button onclick="myFunction()">Find Browser</button>
+		<h1>Sorry, your browser does not support JavaScript!</h1></noscript>
+		<button onclick="myFunction()">Find Browser</button>
 		<p id="demo"></p>
-		<script src="/user.js">
+		<script>
+		function myFunction() {
+					if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 )
+					{
+					alert('Opera');
+					}
+					else if(navigator.userAgent.indexOf("Edg") != -1 )
+					{
+					alert('Edge');
+					}
+					else if(navigator.userAgent.indexOf("Chrome") != -1 )
+					{
+					alert('Chrome');
+					}
+					else if(navigator.userAgent.indexOf("Firefox") != -1 )
+					{
+					alert('Firefox');
+					}
+					else if(navigator.userAgent.indexOf("Safari") != -1 )
+					{
+					alert('Safari');
+					}
+					else
+					{
+					alert('unknown');
+					}
+					}
 		</script>
-	</section><button onclick="document.getElementById('para1').innerHTML = Date()" type="button">Click me to display Date and Time.</button>
+	</section>
+	<button onclick="document.getElementById('para1').innerHTML = Date()" type="button">Click me to display Date and Time.</button>
 	<p id="para1"></p><button onclick="window.location.reload();" type="button">Reload page</button>
-	<p id="demo5">hello!</p><button onclick="document.getElementById('demo5').innerHTML = 'Hallo world!'" type="button">Click Me!</button>
+	<p id="demo5">hello!</p>
+	<button onclick="document.getElementById('demo5').innerHTML = 'Hallo world!'" type="button">Click Me!</button>
 	<section>
 		<h2>HTML Tables</h2>
 		<table>
@@ -225,30 +255,30 @@
 			<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
 		</section><button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button> <img alt="Bulb is off" id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px"> <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button> <button onclick="window.alert(30+11)">30+11 is..</button>
 		<script>
-		                                            console.log("hello!")
+	        console.log("hello!")
 		</script>
 		<section>
 			<h2 id="statements">The</h2>
 			<script>
-			                                                              //Javascript statements
-			                                                              var e, f;
+			    //Javascript statements
+			    var e, f;
 
-			                                                              e=5;
-			                                                              f=6;
-			                                                              let g=e+f
-			                                                              document.getElementById("statements").innerHTML =
-			                                                              "value of var g (e+f,5+6) is " + g + ".";
+          e=5;
+          f=6;
+	        let g=e+f
+	        document.getElementById("statements").innerHTML =
+	        "value of var g (e+f,5+6) is " + g + ".";
 			</script>
 		</section>
 		<section>
 			<h2>Click the following button to get the value of PI.</h2>
 			<p id="para"></p><button onclick="get()">Click me</button>
 			<script>
-			                                                            //Shows 15 decimal points
-			                                                            function get()
-			                                                            {
-			                                                            document.getElementById("para").innerHTML = "The value of PI is: " + Math.PI;
-			                                                            }
+			   //Shows 15 decimal points
+			   function get()
+			   {
+			   document.getElementById("para").innerHTML = "The value of PI is: " + Math.PI;
+			   }
 			</script>
 		</section>
 		<section>
