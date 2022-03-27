@@ -6,3 +6,4 @@ Some resources:
 [Stackoverflow](https://stackoverflow.com)
 [Roadmap.sh](https://roadmap.sh)
 [Front end checklist](https://github.com/thedaviddias/Front-End-Checklist)
+[Interneting is hard](https://www.internetingishard.com)
