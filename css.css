@@ -120,14 +120,14 @@ p {
 }
 
 .name {
-  background-color: #3424db;
+  background-color: #3124c6;
   font-weight: bold;
   border-radius: 5px 5px 0 0;
   font-size: 20px;
 }
 
 .contact {
-  background-color: #3424db;
+  background-color: #3124c6;
   border-bottom: 1px solid #100633;
   margin-bottom: 8px;
 }
@@ -137,10 +137,5 @@ p {
 }
 
 .about {
-  background-color: #3124c6;
-}
-
-span {
-  font-size: 18px;
-  font-weight: bold;
+  background-color: #3424db;
 }
