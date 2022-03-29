@@ -105,6 +105,7 @@ label {
   }
   
   .card p {
+	background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
 	padding: 8px 24px 8px 24px;
   }
   
@@ -122,7 +123,7 @@ label {
   }
   
   .contact i {
-	color: #fa3d66;
+	background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
   }
   
   .about {
