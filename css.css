@@ -90,24 +90,7 @@ label {
 
 /* Card
 ------ */
-a:link {
-	color: #fa3d66;
-	text-decoration: none;
-}
 
-a:visited {
-	color: #fa3d66;
-	text-decoration: none;
-}
-
-a::after {
-	content: "";
-	display: block;
-	width: 0;
-	height: 2px;
-	background: #fa3d66;
-	transition: width .3s;
-}
 
 p {
 	margin: 0;
