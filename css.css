@@ -92,8 +92,7 @@ label {
 /* Card
 ------ */
 .card {
-	background: rgb(10,60,56);
-	background: linear-gradient(90deg, rgba(10,60,56,1) 0%, rgba(24,122,119,1) 50%, rgba(0,212,255,1) 100%); 
+	background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
 	display: flex;
 	flex-direction: column;
 	border: 1px solid #100633;
@@ -110,14 +109,14 @@ label {
   }
   
   .name {
-	background-color: #f2f2f2;
+	background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
 	font-weight: bold;
 	border-radius: 5px 5px 0 0;
 	font-size: 20px;
   }
   
   .contact {
-	background-color: #f2f2f2;
+	background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
 	border-bottom: 1px solid #100633;
 	margin-bottom: 8px;
   }
@@ -127,6 +126,6 @@ label {
   }
   
   .about {
-	background-color: #fff;
+	background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
   }
   
