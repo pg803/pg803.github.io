@@ -139,3 +139,8 @@ p {
 .about {
   background-color: #3124c6;
 }
+
+span {
+  font-size: 18px;
+  font-weight: bold;
+}
