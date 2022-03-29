@@ -1,25 +1,158 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Calculator</title>
-    <meta name="description" content="Calculator">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="/calc.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+	<meta content="This is a website" name="description">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>pg803 Website</title>
+    <style>
+/*navbar*/
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.topnav a.active {
+background-color: #00b3a7;
+color: white;
+}
+
+.topnav .icon {
+display: none;
+}
+
+@media screen and (max-width: 600px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+	float: right;
+	display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.topnav.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+}
+}
+
+body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  max-width: 20em;
+}
+
+.container > p {
+  text-align: center;
+}
+
+.calculator {
+  border-radius: 12px;
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  max-width: 15em;
+  overflow: hidden;
+}
+
+.calculator__display {
+  background-color: #222222;
+  color: #fff;
+  font-size: 1.714285714em;
+  padding: 0.5em 0.75em;
+  text-align: right;
+}
+
+.calculator__keys {
+  background-color: #999;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator__keys > * {
+  background-color: #fff;
+  padding: 0.5em 1.25em;
+  position: relative;
+  text-align: center;
+}
+
+.calculator__keys > *:active::before,
+.calculator__keys > .is-depressed::before {
+  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  content: "";
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.operator {
+  background-color: #eee;
+}
+
+.equal {
+  grid-column: -2;
+  grid-row: 2 / span 4;
+}
+    </style>
 </head>
 <body>
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="https://pg803.github.io">Home</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">HTML</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps">CSS</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps">JS</a>
+        <a href="https://github.com/pg803/pg803.github.io/">Github</a>
+        <a href="lorem.html">Lorem ipsum</a>
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa-solid fa-bars"></i></a>
+    </div>    
 <div class="container">
-    <p>
-      This component works exactly like the calculator you know. Click any number to start calculating!
-    </p>
     <div class="calculator">
       <div class="calculator__display">0</div>
 
       <div class="calculator__keys">
-        <button class="key--operator" data-action="add">+</button>
-        <button class="key--operator" data-action="subtract">-</button>
-        <button class="key--operator" data-action="multiply">&times;</button>
-        <button class="key--operator" data-action="divide">÷</button>
+        <button class="operator" data-action="add">+</button>
+        <button class="operator" data-action="subtract">-</button>
+        <button class="operator" data-action="multiply">&times;</button>
+        <button class="operator" data-action="divide">÷</button>
         <button>7</button>
         <button>8</button>
         <button>9</button>
@@ -32,10 +165,151 @@
         <button>0</button>
         <button data-action="decimal">.</button>
         <button data-action="clear">AC</button>
-        <button class="key--equal" data-action="calculate">=</button>
+        <button class="equal" data-action="calculate">=</button>
       </div>
     </div>
   </div>
-  <script src="/calc.js"></script>
+  <script>
+      //Code for calculator
+const calculate = (n1, operator, n2) => {
+  const firstNum = parseFloat(n1)
+  const secondNum = parseFloat(n2)
+  if (operator === 'add') return firstNum + secondNum
+  if (operator === 'subtract') return firstNum - secondNum
+  if (operator === 'multiply') return firstNum * secondNum
+  if (operator === 'divide') return firstNum / secondNum
+}
+
+const getKeyType = key => {
+  const { action } = key.dataset
+  if (!action) return 'number'
+  if (
+    action === 'add' ||
+    action === 'subtract' ||
+    action === 'multiply' ||
+    action === 'divide'
+  ) return 'operator'
+  // For everything else, return the action
+  return action
+}
+
+const createResultString = (key, displayedNum, state) => {
+  const keyContent = key.textContent
+  const keyType = getKeyType(key)
+  const {
+    firstValue,
+    operator,
+    modValue,
+    previousKeyType
+  } = state
+
+  if (keyType === 'number') {
+    return displayedNum === '0' ||
+      previousKeyType === 'operator' ||
+      previousKeyType === 'calculate'
+      ? keyContent
+      : displayedNum + keyContent
+  }
+
+  if (keyType === 'decimal') {
+    if (!displayedNum.includes('.')) return displayedNum + '.'
+    if (previousKeyType === 'operator' || previousKeyType === 'calculate') return '0.'
+    return displayedNum
+  }
+
+  if (keyType === 'operator') {
+    return firstValue &&
+      operator &&
+      previousKeyType !== 'operator' &&
+      previousKeyType !== 'calculate'
+      ? calculate(firstValue, operator, displayedNum)
+      : displayedNum
+  }
+
+  if (keyType === 'clear') return 0
+
+  if (keyType === 'calculate') {
+    return firstValue
+      ? previousKeyType === 'calculate'
+        ? calculate(displayedNum, operator, modValue)
+        : calculate(firstValue, operator, displayedNum)
+      : displayedNum
+  }
+}
+
+const updateCalculatorState = (key, calculator, calculatedValue, displayedNum) => {
+  const keyType = getKeyType(key)
+  const {
+    firstValue,
+    operator,
+    modValue,
+    previousKeyType
+  } = calculator.dataset
+
+  calculator.dataset.previousKeyType = keyType
+
+  if (keyType === 'operator') {
+    calculator.dataset.operator = key.dataset.action
+    calculator.dataset.firstValue = firstValue &&
+      operator &&
+      previousKeyType !== 'operator' &&
+      previousKeyType !== 'calculate'
+      ? calculatedValue
+      : displayedNum
+  }
+
+  if (keyType === 'calculate') {
+    calculator.dataset.modValue = firstValue && previousKeyType === 'calculate'
+      ? modValue
+      : displayedNum
+  }
+
+  if (keyType === 'clear' && key.textContent === 'AC') {
+    calculator.dataset.firstValue = ''
+    calculator.dataset.modValue = ''
+    calculator.dataset.operator = ''
+    calculator.dataset.previousKeyType = ''
+  }
+}
+
+const updateVisualState = (key, calculator) => {
+  const keyType = getKeyType(key)
+  Array.from(key.parentNode.children).forEach(k => k.classList.remove('is-depressed'))
+
+  if (keyType === 'operator') key.classList.add('is-depressed')
+  if (keyType === 'clear' && key.textContent !== 'AC') key.textContent = 'AC'
+  if (keyType !== 'clear') {
+    const clearButton = calculator.querySelector('[data-action=clear]')
+    clearButton.textContent = 'CE'
+  }
+}
+
+const calculator = document.querySelector('.calculator')
+const display = calculator.querySelector('.calculator__display')
+const keys = calculator.querySelector('.calculator__keys')
+
+keys.addEventListener('click', e => {
+  if (!e.target.matches('button')) return
+  const key = e.target
+  const displayedNum = display.textContent
+  const resultString = createResultString(key, displayedNum, calculator.dataset)
+
+  display.textContent = resultString
+  updateCalculatorState(key, calculator, resultString, displayedNum)
+  updateVisualState(key, calculator)
+})
+
+  </script>
+  <script>
+	function myFunction() {
+	 var x = document.getElementById("myTopnav");
+	 if (x.className === "topnav") {
+	   x.className += " responsive";
+	 } else {
+	   x.className = "topnav";
+	 }
+	}
+	</script>
+</body>
 </body>
 </html>
