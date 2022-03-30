@@ -25,6 +25,7 @@ background-color: rgb(52, 163, 163);
 body {
 margin: 0;
 font-family: Arial, Helvetica, sans-serif;
+text-align: center;
 }
 
 .topnav {
