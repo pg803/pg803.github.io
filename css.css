@@ -100,12 +100,14 @@ header {
   }
   
   .description {
+    text-align: center;
     display: flex;
     margin-bottom: 25px;
     line-height: 1.7;
   }
   
   .card {
+    text-align: center;
     display: flex;
     border: 1px solid #100633;
     margin: 18px;
@@ -115,10 +117,12 @@ header {
   }
   
   .card p {
+    text-align: center;
     padding: 8px 24px 8px 24px;
   }
   
   .name {
+    text-align: center;
     background-color: #24c682;
     font-weight: bold;
     border-radius: 5px 5px 0 0;
@@ -126,20 +130,24 @@ header {
   }
   
   .contact {
+    text-align: center;
     background-color: #24c682;
     border-bottom: 1px solid #100633;
     margin-bottom: 8px;
   }
   
   .contact i {
+    text-align: center;
     color: #fa3d66;
   }
   
   .about {
+    text-align: center;
     background-color: #24db74;
   }
   
   .about img {
+    text-align: center;
     max-height: 100%;
     float: right;
   }
