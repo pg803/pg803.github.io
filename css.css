@@ -17,9 +17,7 @@ header img {
   margin: 0 0 0 32.5px;
   text-align: left;
 }
-    
-/* For the footer*/
-    
+
 footer {
   background-color: rgb(52, 163, 163);
 }
@@ -87,8 +85,7 @@ label {
   margin: .4rem 0;
 }
     
-/* Card
------- */
+/* || Card*/
     
 p {
   margin: 0;
@@ -100,28 +97,19 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-            flex-direction: column;
   margin-bottom: 25px;
   line-height: 1.7;
 }
     
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-self: center;
   display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  flex-direction: column;
   border: 1px solid #100633;
   margin: 18px;
   border-radius: 5px;
-  width: 500px;
-    -webkit-box-shadow: 1px 1px 5px 1px rgba(82, 81, 85, 0.25);
-      box-shadow: 1px 1px 5px 1px rgba(82, 81, 85, 0.25);
+  width: 460px;
+  box-shadow: 1px 1px 5px 1px rgba(82, 81, 85, 0.25);
 }
     
 .card p {
