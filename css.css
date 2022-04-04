@@ -37,7 +37,8 @@ header img {
 }
 
 footer {
-  background-color: rgb(52, 163, 163);
+  background-color: #fffdd0;
+  font-weight: 600;
 }
     
 /*navbar*/
@@ -68,7 +69,8 @@ body {
 }
     
 .topnav a.active {
-  background-color: #00b3a7;
+  color:#100633 !important;
+  background-color: #fffdd0;
   color: white;
 }
     
@@ -112,8 +114,6 @@ p {
 }
     
 .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 25px;
   line-height: 1.7;
@@ -127,7 +127,7 @@ p {
   margin: 18px;
   border-radius: 5px;
   width: 460px;
-  box-shadow: 1px 1px 5px 1px rgba(82, 81, 85, 0.25);
+  box-shadow: 2px 2px 5px 5px rgba(82, 81, 85, 0.25);
 }
     
 .card p {
@@ -135,14 +135,14 @@ p {
 }
     
 .name {
-  background-color: #24c682;
+  background-color: #fffdd0;
   font-weight: bold;
   border-radius: 5px 5px 0 0;
   font-size: 20px;
 }
     
 .contact {
-  background-color: #24c682;
+  background-color: #fffdd0;
   border-bottom: 1px solid #100633;
   margin-bottom: 8px;
 }
@@ -152,7 +152,7 @@ p {
 }
     
 .about {
-  background-color: #24db74;
+  background-color: #f8f5ba;
 }
     
 .about img {
