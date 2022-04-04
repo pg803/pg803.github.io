@@ -1,7 +1,7 @@
 /* || General styles*/
 html {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 h2 {
@@ -18,9 +18,9 @@ li, p {
 
 /*The top header*/
   
-  header {
-    height: 150px;
-    }
+header {
+  height: 150px;
+}
 
 header img {
   width: 100px;
