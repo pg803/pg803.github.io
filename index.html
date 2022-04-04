@@ -11,7 +11,6 @@
 	<!-- 100% privacy friendly analytics (Simple analytics) -->
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-	<script defer src="/webstorage.js"></script>
 </head>
 <body style="background-color: #00ccbf;">
 	<header>
@@ -33,71 +32,13 @@
 			<a href="https://github.com/pg803" target="_blank">Github</a>
 			<br>
 		</p>	
-		<!--Add a "About me" card and remove useless things on the website-->
+		<!--TODO: Add a "About me" card and remove useless things on the website-->
 		<p class="about">
 		<img alt="Chicago" src="/chicago-s.jpg" loading="lazy" style="width:128px;height:128px">
 		I am currently learning how <br>
 		to develop web pages, So this<br>
 		whole website is just my testing ground </p>
 	</div>
-	<h2>this is a header!</h2>
-	<p><small>this is small!</small> <b><i>this is bold and italic!</i></b></p>
-	<p style="color:rgb(64, 165, 34);">some green colored text!</p>
-	<p style="background-color: rgb(0, 225, 255);">this has a cyan background!</p>
-	<p>This Paragraph<br>
-	has a few<br>
-	breaks!</p>
-	<h2 style="font-size:60px;">large heading</h2>
-	<h2>normal size heading</h2>
-	<h2>This is heading 1</h2>
-	<p>This is some <mark>text</mark>.</p>
-	<p>This is <del>an image</del> <ins>a paragraph</ins>.</p>
-	<p>This is <sub>subscripted</sub> text.</p>
-	<p>This is <sup>superscripted</sup> text.</p>
-	<p>Browsers usually indent blockquote elements.</p>
-	<blockquote cite="http://www.worldwildlife.org/who/index.html">
-		For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.
-	</blockquote>
-	<p id="P1">WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-	<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-	<hr>
-	<h2>This is heading 2</h2>
-	<p>This is some other text.</p>
-	<p style="color:cyan;">This is a paragraph.</p>
-	<p style="text-align:left;">Left-aligned paragraph.</p>
-	<p style="text-align:center;">Centered paragraph.</p>
-	<p style="text-align:right;">Right-aligned paragraph.</p>
-	<h2 style="background-color:DodgerBlue;">Hello World</h2>
-	<p style="background-color:Tomato;">Text...</p>
-	<p style="color:DodgerBlue;">Text...</p>
-	<h2 style="border:2px solid DodgerBlue;">Hello World</h2>
-	<h2 style="background-color:chartreuse">Hallo</h2><a href="https://open.spotify.com/" target="_blank">Spotify</a>
-	<h2>Absolute URLs</h2>
-	<p><a href="https://www.w3.org/">W3C</a></p>
-	<p><a href="https://www.duckduckgo.com/">Duckduckgo</a></p><button onclick="document.location='https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML'">HTML</button>
-	<p><a href="#P1">jump to para 1</a></p>
-	<h2 style="font-size:3vw;">Responsive Text</h2>
-	<p style="font-size:2vw;">Resize the browser window to see how the text size scales.</p><code>x = 5; y = 6; z = x + y;</code>
-	<p><samp>Test 1<br>
-	Test 2</samp></p>
-	<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
-	<article>
-		<h2>Article</h2>
-		<section>
-			<h2>Section</h2>Some text, Some text....
-			<section>
-				<h3>Section 2</h3>Some text, Some text....
-			</section>
-		</section>
-	</article>
-	<h6>The pre tag preserves both spaces and line breaks:</h6>
-	<pre>
-           test test test test
-
-           test test test test
-
-           test test test test
-        </pre>
 	<h2>HTML Emojis</h2>
 	<p style="font-size:48px">&#128512; &#128516;</p>
 	<section>
@@ -209,39 +150,33 @@
 			</script>
 		</section>
 		<section>
-			<h2>Web storage</h2><!--Javascript code on the top in <head>-->
+			<h2>Web storage</h2>
 			<p><button onclick="clickCounter()" type="button">Click me!</button></p>
 			<div id="result"></div>
 			<p>Click the button to see the counter increase.</p>
 			<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
-		</section><button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button> <img alt="Bulb is off" id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" loading="lazy" style="width:100px"> <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button> <button onclick="window.alert(30+11)">30+11 is..</button>
-		<script>
-		    console.log("hello!")
-		</script>
-		<section>
-			<h2 id="statements">The</h2>
 			<script>
-			    //Javascript statements
-			    var e, f;
-
-				e=5;
-        f=6;
-        let g=e+f
-        document.getElementById("statements").innerHTML =
-        "value of var g (e+f,5+6) is " + g + ".";
+				//Web storage api code
+                function clickCounter() {
+                  if (typeof(Storage) !== "undefined") {
+                    if (localStorage.clickcount) {
+                      localStorage.clickcount = Number(localStorage.clickcount)+1;
+                    } else {
+                      localStorage.clickcount = 1;
+                    }
+                    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s)!";
+                  } else {
+                    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                  }
+                }
 			</script>
-		</section>
-		<section>
-			<h2>Click the following button to get the value of PI.</h2>
+		</section><button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button> <img alt="Bulb is off" id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" loading="lazy" style="width:100px"> <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
 			<p id="para"></p><button onclick="get()">Click me</button>
 			<script>
                 //Shows 15 decimal points
                 function get()
-                {
-                document.getElementById("para").innerHTML = "The value of PI is: " + Math.PI;
-                }
+                {document.getElementById("para").innerHTML = "The value of PI is: " + Math.PI;}
 			</script>
-		</section>
 		<section>
 			<h2>Number guessing game</h2>
 			<div class="resultParas">
