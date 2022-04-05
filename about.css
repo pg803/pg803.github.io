@@ -1,0 +1,25 @@
+/* || General styles*/
+html {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+ul,ol,dl,p {
+    font-size: 1.5rem;
+}
+
+li, p {
+    line-height: 1.5;
+}
+
+/*|| about*/
+.about {
+    text-align: center;
+    box-shadow: 2px 2px 5px 5px rgba(82, 81, 85, 0.25);
+    font-size: 1.5rem;
+}
