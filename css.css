@@ -69,9 +69,8 @@ body {
 }
     
 .topnav a.active {
-  color:#100633 !important;
+  color:#100633;
   background-color: #fffdd0;
-  color: white;
 }
     
 .topnav .icon {
@@ -159,7 +158,6 @@ p {
   max-height: 100%;
   float: right;
 }
-
 
 /* Table Styling */
 

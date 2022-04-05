@@ -95,10 +95,10 @@
 		</canvas>
 		<script>
 		    //Canvas script
-		    var c = document.getElementById("myCanvas");
-		    var ctx = c.getContext("2d");
+		    let c = document.getElementById("myCanvas");
+		    let ctx = c.getContext("2d");
 
-			var grd = ctx.createLinearGradient(0, 0, 200, 0);
+			let grd = ctx.createLinearGradient(0, 0, 200, 0);
             grd.addColorStop(0, "red");
             grd.addColorStop(1, "white");
 
@@ -115,7 +115,7 @@
 			<source src="https://raw.githubusercontent.com/mdn/learning-area/main/html/multimedia-and-embedding/video-and-audio-content/rabbit320.mp4" type="video/mp4"> Your browser does not support HTML video.</video>
 		</div>
 		<script>
-            var myVideo = document.getElementById("video1");
+            let myVideo = document.getElementById("video1");
 		    function playPause() {
 		      if (myVideo.paused)
 		        myVideo.play();
@@ -197,7 +197,7 @@
 		<button onclick="startWorker()">Start Worker</button> 
 		<button onclick="stopWorker()">Stop Worker</button>
 		<script>
-		    var w;
+		    let w;
 			function startWorker() {
 		    if (typeof(Worker) !== "undefined") {
 		    if (typeof(w) == "undefined") {
@@ -226,7 +226,7 @@
 		</footer>
 	<script>
 	function myFunction() {
-	 var x = document.getElementById("myTopnav");
+	 let x = document.getElementById("myTopnav");
 	 if (x.className === "topnav") {
 	   x.className += " responsive";
 	 } else {
