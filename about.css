@@ -17,9 +17,19 @@ li, p {
     line-height: 1.5;
 }
 
+/*|| Title*/
+span{
+    vertical-align: -20px;
+    background-color: #72c0c7;
+    font-size: xxx-large;
+}
+
+em {
+    font-size: 4.5rem;
+}
+
 /*|| about*/
 .about {
-    
     border-radius: 5rem;
     text-align: center;
     background-color: #efedc9;
@@ -27,6 +37,7 @@ li, p {
     font-size: 1.5rem;
 }
 
+/*|| list*/
 ul {
     display: table;
     margin: 0 auto;
