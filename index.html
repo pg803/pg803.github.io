@@ -104,33 +104,6 @@
 			ctx.fillStyle = grd;
             ctx.fillRect(10, 10, 150, 80);
 		</script>
-		<h2>sample video from MDN</h2>
-		<div style="text-align:center">
-			<button onclick="playPause()">Play/Pause</button> 
-			<button onclick="makeBig()">Big</button> 
-			<button onclick="makeSmall()">Small</button> 
-			<button onclick="makeNormal()">Normal</button><br><br>
-			<video id="video1" width="420">
-			<source src="https://raw.githubusercontent.com/mdn/learning-area/main/html/multimedia-and-embedding/video-and-audio-content/rabbit320.mp4" type="video/mp4"> Your browser does not support HTML video.</video>
-		</div>
-		<script>
-            let myVideo = document.getElementById("video1");
-		    function playPause() {
-		      if (myVideo.paused)
-		        myVideo.play();
-		      else
-		        myVideo.pause();
-		    }
-		    function makeBig() {
-		        myVideo.width = 560;
-		    }
-		    function makeSmall() {
-		        myVideo.width = 320;
-		    }
-		    function makeNormal() {
-		        myVideo.width = 420;
-		    }
-		</script>
 		<h2>HTML APIs</h2>
 			<h2>Geolocation</h2>
 			<p>Click the button to get your coordinates</p>
