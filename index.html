@@ -42,12 +42,23 @@
 		<noscript>
 			<p>You need to enable JavaScript to run this.</p>
 		</noscript>
+		<input id="input" placeholder="Enter name..."><br>
+        <button onclick="hello()">Click</button><br>
+        <p id="result"></p>
+        <script>
+            function hello(){
+                var ad =  document.getElementById("input").value;
+                if (ad == "") {
+                    document.getElementById("result").innerHTML = "Please enter a name";
+                } else {
+                    document.getElementById("result").innerHTML = "Hello " + ad;
+                }
+        }
+        </script>
 	<button onclick="document.getElementById('para1').innerHTML = Date()" type="button">Click me to display Date and Time.</button>
 	<p id="para1"></p>
 	<button onclick="window.location.reload();" type="button">Reload page</button>
-	<p id="demo5">hello!</p>
-	<button onclick="document.getElementById('demo5').innerHTML = 'Hallo world!'" type="button">Click Me!</button><br>
-	<button onclick="alert(navigator.userAgent);" type="button">Click me to get useragent</button>
+	<br><button onclick="alert(navigator.userAgent);" type="button">Click me to get useragent</button>
 		<h2>HTML Tables</h2>
 		<table>
 			<tr>
