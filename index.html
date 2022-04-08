@@ -5,9 +5,9 @@
 	<meta content="This is a website" name="description">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>pg803's Website</title>
-	<link href="/iIUk6Iv.png" rel="icon" type="image/x-icon">
+	<link href="Images/iIUk6Iv.png" rel="icon" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-	<link href="/css.css" rel="stylesheet">
+	<link href="CSS/css.css" rel="stylesheet">
 	<link rel="canonical" href="https://pg803.github.io">
 </head>
 <body style="background-color: #f6f5e1;">
@@ -17,7 +17,6 @@
 			<a class ="active" href="https://github.com/pg803/pg803.github.io/"> <i class="fa fa-github" aria-hidden="true"></i>Github</a>
 			<a href="aboutme.html">About me</a>
 			<a href="lorem.html">Random para generator</a>
-			<a href="calc.html">Calculator</a>
 			<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">HTML</a>
 			<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps">CSS</a>
 			<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps">JS</a>
@@ -32,7 +31,7 @@
 			<br>
 		</p>
 		<p class="about">
-		<img alt="Chicago" src="/chicago-s.jpg" loading="lazy" style="width:128px;height:128px">
+		<img alt="Chicago" src="Images/chicago-s.jpg" loading="lazy" style="width:128px;height:128px">
 		I am currently learning how <br>
 		to develop web pages, So this<br>
 		whole website is just my testing ground </p>
@@ -117,7 +116,7 @@
 			<p>Click the button to get your coordinates</p>
 			<button onclick="getLocation()">Try It</button>
 			<p id="demo2"></p>
-			<script src="/geolocation.js">
+			<script src="JS/geolocation.js">
 			</script>
 			<h2>Web storage</h2>
 			<p><button onclick="clickCounter()" type="button">Click me!</button></p>
@@ -159,7 +158,7 @@
 			<label for="guessField">Enter a guess:</label>
 			 <input class="guessField" id="guessField" type="text"> 
 			 <input class="guessSubmit" type="submit" value="Submit guess">
-			<script src="/game.js">
+			<script src="JS/game.js">
 			</script>
 			<h2>Variables</h2><button id="button_A">Press me</button>
 			<h3 id="heading_A">Welcome ____</h3>
@@ -181,7 +180,7 @@
 			function startWorker() {
 		    if (typeof(Worker) !== "undefined") {
 		    if (typeof(w) == "undefined") {
-		      w = new Worker("demo_workers.js");
+		      w = new Worker("JS/demo_workers.js");
 		    }
 		    w.onmessage = function(event) {
 		      document.getElementById("result2").innerHTML = event.data;
@@ -202,7 +201,6 @@
 		<input type="datetime-local" id="aTest" name="aTest">
 		<footer>
 			<p>Pg803; Personal site For Webdev &#128512;</p>
-			<p><a href="malto:pg.7693@protonmail.com">pg.7693@protonmail.com</a></p>
 		</footer>
 	<script>
 	function myFunction() {
