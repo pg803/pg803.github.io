@@ -10,7 +10,7 @@
 	<link href="CSS/css.css" rel="stylesheet">
 	<link rel="canonical" href="https://pg803.github.io">
 </head>
-<body style="background-color: #f6f5e1;">
+<body id="color" style="background-color: #f6f5e1;">
 	<header>
 		<h1 id="header123" style="font-size:7vw">My Website</h1><img alt="Website icon" src="Images/iIUk6Iv.png" loading="lazy">
 		<div class="topnav" id="myTopnav">
@@ -55,6 +55,16 @@
                 }
         }
         </script><br>
+		<h1>Change background color </h1>
+		<input id="inpuit" onchange="clickColor(0, -1, -1, 5)" style="width:85%;" type="color" value="#00ffef"><br>
+		<button onclick="UpdateHTML()">Change color</button><br>
+		<script>
+			function UpdateHTML(){
+				var ab =  document.getElementById("inpuit");
+				document.getElementById('color').style.backgroundColor = ab.value;
+		}
+		</script><br>
+	<h3>Get date</h3><br>	
 	<button onclick="document.getElementById('para1').innerHTML = Date()" type="button">Click me to display Date and Time.</button>
 	<p id="para1"></p><br>
 	<button onclick="window.location.reload();" type="button">Reload page</button><br>
@@ -211,6 +221,6 @@
 	   x.className = "topnav";
 	 }
 	}
-	</script>
+	</script>	
 </body>
 </html>
