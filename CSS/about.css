@@ -42,3 +42,21 @@ ul {
     display: table;
     margin: 0 auto;
 }
+
+/*|| Buttons
+button {
+    background-color: #e4e495;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    display: inline-block;
+}
+
+button:hover{
+    background-color:#f2f280;
+}
+*/
