@@ -11,6 +11,7 @@
 	<link rel="canonical" href="https://pg803.github.io">
 </head>
 <body id="color" style="background-color: #f6f5e1;">
+	<!--TODO: Add dark mode to all pages-->
 	<header>
 		<h1 id="header123" style="font-size:7vw">My Website</h1><img alt="Website icon" src="Images/iIUk6Iv.png" loading="lazy">
 		<div class="topnav" id="myTopnav">
@@ -149,10 +150,6 @@
                   }
                 }
 			</script>
-            <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button> 
-			<img alt="Bulb is off" id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" loading="lazy" style="width:100px"> 
-			<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
-			<br><br><br>
 			<p id="para"></p>
 			<button onclick="get()">Click me to get the value of Pi</button>
 			<script>
@@ -172,7 +169,7 @@
 			<script src="JS/game.js">
 			</script>
 			<h2>Variables</h2><button id="button_A">Press me</button>
-			<h3 id="heading_A">Welcome ____</h3>
+			<b><p id="heading_A"></p></b>
 			<script>
 			    const buttonA = document.querySelector('#button_A');
 			    const headingA = document.querySelector('#heading_A');
