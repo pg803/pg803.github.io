@@ -44,16 +44,16 @@
 		<noscript>
 			<p>You need to enable JavaScript to run this.</p>
 		</noscript>
-		<input id="input" placeholder="Enter name..."><br>
+		<input id="input" placeholder="Enter value..."><br>
         <button onclick="hello()">Submit</button><br>
         <p id="result3"></p>
         <script>
             function hello(){
                 var ad =  document.getElementById("input").value;
                 if (ad == "") {
-                    document.getElementById("result3").innerHTML = "Please enter a name";
+                    document.getElementById("result3").innerHTML = "Please enter a value ";
                 } else {
-                    document.getElementById("result3").innerHTML = "Hello " + ad;
+                    document.getElementById("result3").innerHTML = "Value is" + ad;
                 }
         }
         </script><br>
@@ -175,9 +175,9 @@
 			    const headingA = document.querySelector('#heading_A');
 
 			    buttonA.onclick = () => {
-			       const name = prompt('What is your name?');
-			       alert(`Hello ${name}!`);
-			       headingA.textContent = `Welcome ${name}`;
+			       const name = prompt('Enter a value');
+			       alert(`Value is ${name}!`);
+			       headingA.textContent = `value is  ${name}`;
 			       }
 			</script>
 		<h2>Count numbers: <output id="result2"></output></h2>

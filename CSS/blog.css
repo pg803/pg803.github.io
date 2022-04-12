@@ -39,6 +39,7 @@ body {
 }
 
 .topnav a:hover {
+    transition-duration: 0.4s;
     background-color: #ddd !important;
     color: black !important;
 }
