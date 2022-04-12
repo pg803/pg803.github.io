@@ -55,6 +55,7 @@ body {
 }
     
 .topnav a {
+  transition-duration: 0.4s;
   float: left;
   display: block;
   color: #f2f2f2;
