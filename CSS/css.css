@@ -4,6 +4,13 @@ html {
   font-size: 15px;
 }
 
+body {
+  background-color: #f6f5e1;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
 h2 {
   font-size: 2rem;
 }
@@ -42,12 +49,6 @@ footer {
 }
     
 /*navbar*/
-body {
-  background-color: #f6f5e1;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
     
 .topnav {
   overflow: hidden;
@@ -101,12 +102,7 @@ body {
   text-align: left;
 }
 }
-    
-input,
-label {
-  margin: .4rem 0;
-}
-    
+   
 /* || Card*/
     
 p {
@@ -161,34 +157,3 @@ p {
   max-height: 100%;
   float: right;
 }
-
-/* Table Styling */
-
-table {
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  border: 3px solid royalblue;
-}
-  
-thead th:nth-child(1) {
-  width: 30%;
-}
-  
-thead th:nth-child(2) {
-  width: 20%;
-}
-  
-thead th:nth-child(3) {
-  width: 15%;
-}
-  
-thead th:nth-child(4) {
-  width: 35%;
-}
-  
-th, td {
-  padding: 20px;
-}
-  
-    
