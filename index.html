@@ -13,8 +13,8 @@
 <body id="color">
 	<!--TODO: Add dark mode to all pages-->
 	<header>
-		<h1 id="header123" style="font-size:7vw">My Website</h1><img alt="Website icon" src="Images/iIUk6Iv.png" loading="lazy">
 		<div class="topnav" id="myTopnav">
+			<nav>
 			<a class ="active" href="https://github.com/pg803/pg803.github.io/"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
 			<a href="aboutme.html">About me</a>
 			<a href="blog.html">Blog</a>
@@ -23,20 +23,16 @@
 			<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps">CSS</a>
 			<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps">JS</a>
 			<a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			</nav>
 		</div>
+		<a href="index.html">
+        	<img id="logo" alt="Website icon" src="Images/iIUk6Iv.png" loading="lazy">
+		</a>
 	</header><br><br>
-	<div class="card">
-		<p class="name">About this website</p>
-		<p class="contact">
-			<i class="fa fa-discord" aria-hidden="true"></i>
-			<a href="https://discord.com" target="_blank">SupernovasAreCool#8989</a>
-			<br>
-		</p>
-		<p class="about">
-		<img alt="Chicago" src="Images/chicago-s.jpg" loading="lazy" style="width:128px;height:128px">
-		I am currently learning how <br>
-		to develop web pages, So this<br>
-		whole website is just my testing ground </p>
+	<div class="about">
+		<h2>About this website</h2>
+		<p>I am currently learning how to develop web pages, <br> So this whole website is just my testing ground. <br>
+			You can read the about me page <a href="aboutme.html">Here</a></p>
 	</div>
 	<h2>HTML Emojis</h2>
 	<p style="font-size:48px">&#128512; &#128516;</p>
@@ -186,7 +182,7 @@
 		<input type="datetime-local" id="aTest" name="aTest">
 		<footer>
 			<p>Pg803; Personal site For Webdev &#128512;</p>
-			<p><a href="mailto:pg.7693@proton.me">pg.7693@proton.me</a></p>
+			<p>Contact me: <a href="mailto:pg.7693@proton.me">pg.7693@proton.me</a> or SupernovasAreCool#8989 on <i class="fa fa-discord" aria-hidden="true"></i> discord</p>
 		</footer>
 	<script>
 	function myFunction() {

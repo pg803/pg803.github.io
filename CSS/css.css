@@ -19,15 +19,7 @@ ul,ol,dl,p {
   font-size: 1.5rem;
 }
 
-li, p {
-  line-height: 1.5;
-}
-
 /*The top header*/
-  
-header {
-  height: 150px;
-}
 
 header img {
   width: 100px;
@@ -36,14 +28,8 @@ header img {
   top: 32.5px;
 }
 
-#header123 {
-  font-size: 50px;
-  line-height: 140px;
-  margin: 0 0 0 32.5px;
-  text-align: left;
-}
-
 footer {
+  line-height: 0.45rem;
   background-color: #fffdd0;
   font-weight: 600;
 }
@@ -102,58 +88,39 @@ footer {
   text-align: left;
 }
 }
-   
-/* || Card*/
-    
-p {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
+
+nav a:hover {
+  color: #000;
 }
-    
-.description {
-  display: flex;
-  margin-bottom: 25px;
-  line-height: 1.7;
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
 }
-    
-.card {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #100633;
-  margin: 18px;
-  border-radius: 5px;
-  width: 460px;
-  box-shadow: 2px 2px 5px 5px rgba(82, 81, 85, 0.25);
+
+nav a:hover::before {
+  width: 100%;
 }
-    
-.card p {
-  padding: 8px 24px 8px 24px;
-}
-    
-.name {
-  background-color: #fffdd0;
-  font-weight: bold;
-  border-radius: 5px 5px 0 0;
-  font-size: 20px;
-}
-    
-.contact {
-  background-color: #fffdd0;
-  border-bottom: 1px solid #100633;
-  margin-bottom: 8px;
-}
-    
-.contact i {
-  color: #fa3d66;
-}
-    
-.about {
-  background-color: #f8f5ba;
-}
-    
-.about img {
-  max-height: 100%;
+
+#logo {
+  position: relative;
+  top: -50px;
+  width: 50px;
+  height: 50px;
   float: right;
+  margin-bottom:5px
+}
+
+/* || Card*/
+.about {
+  border-radius: 3rem;
+  text-align: center;
+  background-color: #efedc9;
+  box-shadow: 5px 5px 5px 5px rgba(82, 81, 85, 0.25);
+  font-size: 1.5rem;
 }
