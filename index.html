@@ -60,8 +60,10 @@
 	<h3>Get date</h3><br>	
 	<button onclick="document.getElementById('para1').innerHTML = Date()" type="button">Click me to display Date and Time.</button>
 	<p id="para1"></p><br>
-	<button onclick="window.location.reload();" type="button">Reload page</button><br>
-	<br><button onclick="alert(navigator.userAgent);" type="button">Click me to get useragent</button>
+	<button onclick="myFunction23()">Find Browser</button>
+    <script src="JS/Browser.js"></script>
+	<button onclick="alert(navigator.userAgent);" type="button">Click me to get useragent</button><br>
+	<br><button onclick="window.location.reload();" type="button">Reload page</button>
 		<h2>Color picker</h2>
 		<input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:85%;" type="color" value="#00ffef">
 		<p>My fav color is turquise blue (#00ffef)</p>
