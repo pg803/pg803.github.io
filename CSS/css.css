@@ -1,6 +1,6 @@
 /* || General styles*/
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
 
@@ -30,11 +30,6 @@ footer {
 .topnav {
   overflow: hidden;
   background-color: inherit;
-  height: 65px;
-}
-
-hr {
-  background-color: #000000;
 }
     
 .topnav a {
@@ -104,15 +99,6 @@ nav a:hover::before {
   text-align: center;
   position: relative;
   top: -40px;
-}
-
-/* || Card*/
-.about {
-  border-radius: 3rem;
-  text-align: center;
-  background-color: #efedc9;
-  box-shadow: 5px 5px 5px 5px rgba(82, 81, 85, 0.25);
-  font-size: 1.5rem;
 }
 
 /* || Other styles*/

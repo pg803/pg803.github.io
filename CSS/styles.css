@@ -1,18 +1,13 @@
 /*navbar*/
 body {
-    background-color: #f6f5e1 !important;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    }
+  background-color: #f6f5e1 !important;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
     
 .topnav {
   overflow: hidden;
   background-color: inherit;
-  height: 65px;
-}
-
-hr {
-  background-color: #000000;
 }
     
 .topnav a {
