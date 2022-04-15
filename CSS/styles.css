@@ -7,14 +7,20 @@ body {
     
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: inherit;
+  height: 65px;
+}
+
+hr {
+  background-color: #000000;
 }
     
 .topnav a {
   transition-duration: 0.4s;
   float: left;
   display: block;
-  color: #f2f2f2;
+  font-weight: bold;
+  color: rgb(92, 158, 149);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -23,13 +29,7 @@ body {
     
 .topnav a:hover {
   transition-duration: 0.4s;
-  background-color: #ddd;
   color: black;
-}
-    
-.topnav a.active {
-  color:#100633;
-  background-color: #fffdd0;
 }
     
 .topnav .icon {
@@ -76,13 +76,12 @@ nav a:hover::before {
   width: 100%;
 }
 
-#logo {
+#navlogo {
+  width: 100px;
+  height: 100px;
+  text-align: center;
   position: relative;
-  top: -50px;
-  width: 50px;
-  height: 50px;
-  float: right;
-  margin-bottom:5px
+  top: -40px;
 }
     
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
