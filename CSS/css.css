@@ -25,11 +25,13 @@ footer {
   font-weight: 600;
 }
     
-/*navbar*/
-    
+/*navbar*/   
 .topnav {
   overflow: hidden;
   background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
     
 .topnav a {
