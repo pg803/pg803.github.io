@@ -30,6 +30,11 @@ footer {
 .topnav {
   overflow: hidden;
   background-color: inherit;
+  height: 65px;
+}
+
+hr {
+  background-color: #000000;
 }
     
 .topnav a {
