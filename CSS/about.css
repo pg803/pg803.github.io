@@ -55,7 +55,6 @@ ul {
     overflow: hidden;
     background-color: inherit;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: space-around;
 }

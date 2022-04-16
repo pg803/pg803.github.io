@@ -20,7 +20,6 @@ ul,ol,dl,p {
 }
 
 footer {
-  line-height: 0.45rem;
   background-color: #fffdd0;
   font-weight: 600;
 }
@@ -30,7 +29,6 @@ footer {
   overflow: hidden;
   background-color: inherit;
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: space-around;
 }
