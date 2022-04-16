@@ -31,6 +31,7 @@ footer {
   background-color: inherit;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-around;
 }
     
@@ -60,8 +61,8 @@ footer {
 .topnav a.icon {
   float: right;
   display: block;
-  }
-  }
+}
+}
     
 @media screen and (max-width: 600px) {
 .topnav.responsive {position: relative;}
