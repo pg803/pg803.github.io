@@ -54,5 +54,5 @@ figcaption {
 
 .tip-right {
     grid-column: span 1 / -1;
-    border-left: 2px solid turquoise;
+    border-top: 2px solid turquoise;
 }
