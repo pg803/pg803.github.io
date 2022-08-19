@@ -6,17 +6,11 @@ html {
     text-align: center;
 }
 
-h2 {
-    font-size: 2rem;
-}
+h2 {font-size: 2rem;}
 
-li, p {
-    line-height: 1.5;
-}
+li, p {line-height: 1.5;}
 
-img {
-    max-width: 100%;
-}
+img {max-width: 100%;}
 
 a {
     color: black;
@@ -39,25 +33,30 @@ h1,h2 {
     grid-template-columns: 5fr 12fr 5fr;
 }
 
-.post>* {
-    grid-column: 2 / -2;
-}
+.post>* {grid-column: 2 / -2;}
 
 .post>figure {
     margin: 0;
     grid-column: 1 / -1;
 }
 
-figcaption {
-    font-size: 10px;
-}
+figcaption {font-size: 10px;}
 
 .tip-right {
     grid-column: span 1 / -1;
     border-top: 2px solid turquoise;
+    font-size: 15px;
 }
 
 .capt {
     font-style: italic;
     font-size: 15px;
 }
+
+h3 {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: light;
+}
+
+h4 {font-style: italic;}
