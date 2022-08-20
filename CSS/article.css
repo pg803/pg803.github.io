@@ -12,10 +12,7 @@ li, p {line-height: 1.5;}
 
 img {max-width: 100%;}
 
-a {
-    color: black;
-    text-decoration: underline wavy turquoise;
-}
+a {color: black; text-decoration: underline wavy turquoise;}
 
 /**/
 h1,h2 {
@@ -35,17 +32,14 @@ h1,h2 {
 
 .post>* {grid-column: 2 / -2;}
 
-.post>figure {
-    margin: 0;
-    grid-column: 1 / -1;
-}
+.post>figure {margin: 0;grid-column: 1 / -1;}
 
 figcaption {font-size: 10px;}
 
 .tip-right {
     grid-column: span 1 / -1;
     border-top: 2px solid turquoise;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .capt {
