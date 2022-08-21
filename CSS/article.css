@@ -42,10 +42,7 @@ figcaption {font-size: 10px;}
     font-size: 20px;
 }
 
-.capt {
-    font-style: italic;
-    font-size: 15px;
-}
+.capt {font-style: italic;font-size: 15px;}
 
 h3 {
     font-size: 30px;
