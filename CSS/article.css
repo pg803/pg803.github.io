@@ -1,18 +1,19 @@
 /* || General styles */
 html {
-    background-color: #f6f5e1;
+    /*background-color: #f6f5e1;*/
+    background-image: url("/images/astro-background.jpg");
     font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     text-align: center;
 }
 
-h2 {font-size: 2rem;}
+h2 {font-size: 2rem; color:white}
 
-li, p {line-height: 1.5;}
+li, p {line-height: 1.5; color: white;}
 
 img {max-width: 100%;}
 
-a {color: black; text-decoration: underline wavy turquoise;}
+a {color: white; text-decoration: underline wavy turquoise;}
 
 /**/
 h1,h2 {
@@ -46,8 +47,9 @@ figcaption {font-size: 10px;}
 
 h3 {
     font-size: 30px;
+    color: white;
     font-style: italic;
     font-weight: light;
 }
 
-h4 {font-style: italic;}
+h4 {font-style: italic; color: white;}
