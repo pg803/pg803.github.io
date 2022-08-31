@@ -41,6 +41,7 @@ figcaption {font-size: 10px;}
     grid-column: span 1 / -1;
     border-top: 2px solid turquoise;
     font-size: 20px;
+    color:white;
 }
 
 .capt {font-style: italic;font-size: 15px;}
@@ -53,3 +54,38 @@ h3 {
 }
 
 h4 {font-style: italic; color: white;}
+
+.test3{
+    position: absolute;
+    font-size: 15px;
+    /*grid-column: span 1 / -1;*/
+    right:-800px;
+    color:white;
+}
+
+/*.test3:hover{
+    position: absolute;
+    transition-duration: 0.5s;
+    right:0;
+    font-size: 15px;
+    color:white;
+    /*grid-column: span 1 / -1;}*/
+
+
+.parent{
+    background-color: rgb(48, 62, 63);
+    position: absolute;
+    right:-80px;
+    position: fixed;
+    right: -150px;
+    border-radius: 10px 10px 10px 10px;
+    border-top: 4px solid turquoise;
+    padding-left: 50px;
+    font-size: 15px;
+    color:white;
+    /*grid-column: span 1 / -1;*/
+}
+
+.parent:hover{
+    right:0;
+}
