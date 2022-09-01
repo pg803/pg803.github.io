@@ -79,7 +79,7 @@ h4 {font-style: italic; color: white;}
     position: fixed;
     right: -150px;
     border-radius: 10px 10px 10px 10px;
-    border-top: 4px solid turquoise;
+    /*border-top: 4px solid turquoise;*/
     padding-left: 50px;
     padding-right: 5px;
     font-size: 15px;
