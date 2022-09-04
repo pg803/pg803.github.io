@@ -12,18 +12,15 @@ body {
   color: white;
 }
 
-h2 {
-  font-size: 2rem;
-}
+h2 {font-size: 2rem;}
 
-ul,ol,dl,p {
-  font-size: 1.5rem;
-}
+h3{text-align: right;}
 
-footer {
-  background-color: #fffdd0;
-  font-weight: 600;
-}
+ul,ol,dl,p {font-size: 1.5rem;}
+
+a:link {color: #01534d;}
+
+a:visited {color: #167a73;}
     
 /*navbar*/   
 .topnav {
