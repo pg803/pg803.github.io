@@ -25,13 +25,7 @@ li, p {
 }
 
 /*navbar*/   
-.topnav {
-    overflow: hidden;
-    background-color: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
+.topnav {overflow: hidden;background-color: inherit;display: flex;flex-direction: column;justify-content: space-around;}
       
 .topnav a {
     height: 50px;
