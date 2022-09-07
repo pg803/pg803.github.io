@@ -5,6 +5,14 @@ html {
     font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     text-align: center;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 h2 {font-size: 2rem; color:white}
@@ -63,21 +71,11 @@ h4 {font-style: italic; color: white;}
     color:white;
 }
 
-/*.test3:hover{
-    position: absolute;
-    transition-duration: 0.5s;
-    right:0;
-    font-size: 15px;
-    color:white;
-    /*grid-column: span 1 / -1;}*/
-
-
 .parent{
     background-color: rgb(48, 62, 63);
     position: absolute;
-    right:-80px;
+    right:-100px;
     position: fixed;
-    right: -150px;
     border-radius: 10px 10px 10px 10px;
     /*border-top: 4px solid turquoise;*/
     padding-left: 50px;

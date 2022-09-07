@@ -30,32 +30,17 @@
 		</div>
 	</header>
 		<h1>About this website</h1>
-		<p>I am currently learning how to develop web pages, <br> So this whole website is just my testing ground.<br>
-		Visit my blog <a href="blog.html">Here</a></p>
+		<p>I am currently learning how to develop web pages. <br>The highlight of this website is the blog,<br>
+		<a href="blog.html">so go there</a></p>
 		<br><h2>Javascript stuff</h2>
 		<noscript>
 			<p>You need to enable JavaScript to run this.</p>
 		</noscript>
-		<input id="input" placeholder="Enter value..."><br>
-        <button onclick="hello()">Submit</button><br>
-        <p id="result3"></p>
-        <script>
-            function hello(){
-                var ad =  document.getElementById("input").value;
-                if (ad == "") {
-                    document.getElementById("result3").innerHTML = "Please enter a value ";
-                } else {
-                    document.getElementById("result3").innerHTML = "Value is" + ad;
-                }
-        }
-        </script><br>
-	<button onclick="myFunction23()">Find Browser</button>
+	<button onclick="myFunction23()">Find Browser</button><br>
     <script src="JS/Browser.js"></script>
-	<button onclick="alert(navigator.userAgent);" type="button">Click me to get useragent</button><br>
 	<br><button onclick="window.location.reload();" type="button">Reload page</button>
 		<h2>Color picker</h2>
 		<input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:85%;" type="color" value="#00ffef">
-		<p>My fav color is turquise blue (#00ffef)</p>
 		<h2>Radio buttons</h2>
 		<form>
 			<input id="html" name="fav_language" type="radio" value="HTML"> <label for="html">HTML</label><br>
@@ -79,7 +64,6 @@
 			<p><button onclick="clickCounter()" type="button">Click me!</button></p>
 			<div id="result"></div>
 			<p>Click the button to see the counter increase.</p>
-			<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
 			<script>
 				//Web storage api code
                 function clickCounter() {
@@ -105,18 +89,6 @@
 			 <input class="guessField" id="guessField" type="text"> 
 			 <input class="guessSubmit" type="submit" value="Submit guess">
 			<script src="JS/game.js">
-			</script>
-			<h2>Variables</h2><button id="button_A">Press me</button>
-			<b><p id="heading_A"></p></b>
-			<script>
-			    const buttonA = document.querySelector('#button_A');
-			    const headingA = document.querySelector('#heading_A');
-
-			    buttonA.onclick = () => {
-			       const name = prompt('Enter a value');
-			       alert(`Value is ${name}!`);
-			       headingA.textContent = `value is  ${name}`;
-			       }
 			</script>
 		<h2>Count numbers: <output id="result2"></output></h2>
 		<button onclick="startWorker()">Start Worker</button> 
