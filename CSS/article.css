@@ -63,14 +63,6 @@ h3 {
 
 h4 {font-style: italic; color: white;}
 
-.test3{
-    position: absolute;
-    font-size: 15px;
-    /*grid-column: span 1 / -1;*/
-    right:-800px;
-    color:white;
-}
-
 .parent{
     background-color: rgb(48, 62, 63);
     position: absolute;
@@ -85,7 +77,4 @@ h4 {font-style: italic; color: white;}
     /*grid-column: span 1 / -1;*/
 }
 
-.parent:hover{
-    transition-duration: 0.5s;
-    right:0;
-}
+.parent:hover{transition-duration: 0.5s;right:0;}
