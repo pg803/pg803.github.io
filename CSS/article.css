@@ -1,6 +1,6 @@
 /* || General styles */
 html {
-    /*background-color: #f6f5e1;*/
+    /*background-color: #1c1b22;*/
     background-image: url("https://raw.githubusercontent.com/pg803/pg803.github.io/main/Images/astro-background.jpg");
     font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -10,12 +10,7 @@ html {
     animation-fill-mode: forwards;
 }
 
-@keyframes fadeInAnimation {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-h2 {font-size: 2rem; color:white}
+@keyframes fadeInAnimation {0% {opacity: 0;}100% {opacity: 1;}}
 
 li, p {line-height: 1.5; color: white;}
 
@@ -25,25 +20,22 @@ a {color: white; text-decoration: underline wavy turquoise;}
 
 /**/
 h1,h2 {
-    font-size: 80px;
+    font-size: 3rem;
     font-style: italic;
     font-weight: 100;
     margin: 0;
+    color:white;
 }
+
+.test420{border-bottom:4px solid #676668;}
 
 .post {
-    display: grid;
+    /*display: grid;*/
     max-width: 1000px;
     margin: 200px auto;
-    grid-gap: 10px 50px;
-    grid-template-columns: 5fr 12fr 5fr;
+    /*grid-gap: 10px 50px;
+    grid-template-columns: 5fr 12fr 5fr;*/
 }
-
-.post>* {grid-column: 2 / -2;}
-
-.post>figure {margin: 0;grid-column: 1 / -1;}
-
-figcaption {font-size: 10px;}
 
 .tip-right {
     grid-column: span 1 / -1;
