@@ -123,14 +123,17 @@ h1 {
   left: 90px;
 }
 
-button {
-  background-color: #282820;
+#blogs {
+  background-color: #4f46e5;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 5px;
+  text-decoration: none;
+  left: 90px;
+  position:absolute;
   text-align: center;
-  border-radius: 10px;
-  font-size: 16px;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 13px;
   transition-duration: 0.4s;
   display: inline-block;
 }
