@@ -55,12 +55,12 @@ a:visited {color: #40b1a9;}
     
 .topnav .icon {display: none;}
 
-.sticky {
+/*.sticky {
   position: fixed;
   top: 0px;
   width: 100%;
   backdrop-filter: blur(8px);
-}
+}*/
 
 .updown{
   color:rgb(92, 158, 149) !important;
@@ -117,10 +117,10 @@ nav > .linkies a::before {
 }
 
 /* || Other styles*/
-h1 {
+#heading {
   font-weight: 800;
   position: absolute;
-  left: 90px;
+  left: 20px;
 }
 
 #blogs {
@@ -129,7 +129,7 @@ h1 {
   color: white;
   padding: 5px 5px;
   text-decoration: none;
-  left: 90px;
+  left: 20px;
   position:absolute;
   text-align: center;
   border-radius: 10px 0px 0px 10px;
@@ -138,31 +138,19 @@ h1 {
   display: inline-block;
 }
 
-button:hover{background-color:#2c586b;}
-
-/* || Card */
-.card {
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  padding: 20px;
-  margin-top: 20px;
-  width: 500px;
-  /*box-shadow: 5px 5px 5px 5px rgba(82, 81, 85, 0.25);*/
-  border-radius: 2.14rem;
-  float: left;
+#paragraphs{
+  display: inline;
+  color:#9fa1a1;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  position: absolute;
+  left: 20px;
+  vertical-align: -50px;
 }
 
-.link {
-  border: none;
-  color: white;
-  position: unset;
-  font-size: xx-large;
-  transition-duration: 0.4s;
-  display: inline-block;
-  font-size: 30px;
+footer{
+  position: absolute;
+  bottom: -3px;
+  padding: 30px;
+  color: #6a6d6e;
 }
-.link a:link {color: #57d4cc;}
-.link a:visited {color: #40b1a9;}
-.link a:focus {border-bottom: 1px solid;background: #98e4e4;}
-.link a:hover {border-bottom: 1px solid;background: #aafef7;}
-.link a:active {background: #015353;color: #aafafe;}
