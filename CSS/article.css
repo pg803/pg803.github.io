@@ -1,7 +1,6 @@
 /* || General styles */
 html {
-    /*background-color: #1c1b22;*/
-    background-image: url("https://raw.githubusercontent.com/pg803/pg803.github.io/main/Images/astro-background.jpg");
+    background-color: #212324;
     font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     text-align: center;
@@ -12,50 +11,37 @@ html {
 
 @keyframes fadeInAnimation {0% {opacity: 0;}100% {opacity: 1;}}
 
-li, p {line-height: 1.5; color: white;}
+li, p {line-height: 1.5;}
 
-img {max-width: 100%;}
-
-a {color: white; text-decoration: underline wavy turquoise;}
+a {color: white; text-decoration: underline turquoise;}
 
 i{color:white;}
 
 /**/
 h1,h2 {
-    font-size: 3rem;
-    font-style: italic;
+    font-size: 2rem;
     font-weight: 100;
     margin: 0;
     color:white;
 }
 
-.test420{border-bottom:4px solid #676668;}
-
 .post {
-    /*display: grid;*/
+    border-radius: 25px;
     max-width: 1000px;
     margin: 200px auto;
-    /*grid-gap: 10px 50px;
-    grid-template-columns: 5fr 12fr 5fr;*/
+    background-color: #18191a;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    color: #99a0ac;
 }
 
-.tip-right {
-    grid-column: span 1 / -1;
-    border-top: 2px solid turquoise;
-    font-size: 20px;
-    color:white;
-}
+.capt{font-style: italic;font-size: 15px;}
 
-.capt {font-style: italic;font-size: 15px;}
+h3 {font-size: 30px;color: white;font-weight: light;}
 
-h3 {
-    font-size: 30px;
-    color: white;
-    font-style: italic;
-    font-weight: light;
-}
-
-h4 {font-style: italic; color: white;}
+h4 {color: white;}
 
 .parent{
     background-color: rgb(48, 62, 63);
@@ -63,12 +49,12 @@ h4 {font-style: italic; color: white;}
     right:-100px;
     position: fixed;
     border-radius: 10px 10px 10px 10px;
-    /*border-top: 4px solid turquoise;*/
     padding-left: 50px;
     padding-right: 5px;
     font-size: 15px;
     color:white;
-    /*grid-column: span 1 / -1;*/
 }
 
 .parent:hover{transition-duration: 0.5s;right:0;}
+
+img{width: 100%;height: auto;}
