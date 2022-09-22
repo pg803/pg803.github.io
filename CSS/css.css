@@ -32,6 +32,7 @@ a:hover{color:#20cfc4}
     
 /*navbar*/   
 .topnav {
+  color:#979898;
   overflow: hidden;
   background-color: inherit;
   display: flex;
@@ -78,13 +79,10 @@ a:hover{color:#20cfc4}
   100% {transform: translateY(-2%);}
 }
 
-nav{height: 50px;}
+nav a:hover {color: white;}
 
-nav > .linkies a:hover::before {width: 100%;}
-
-nav > .linkies a:hover {color: #fff;}
-
-nav > .linkies a::before {
+nav a::before {
+  color:#979898;
   content: '';
   display: block;
   height: 5px;
@@ -94,9 +92,14 @@ nav > .linkies a::before {
   transition: all ease-in-out 250ms;
 }
 
-.linkies{position: relative;top:-10px;}
+.linkies{
+  position: relative;
+  top:-10px;
+  display: block;
+  visibility: visible;
+}
     
- /*@media screen and (max-width: 600px) {
+ @media screen and (max-width: 600px) {
 .topnav a:not(:first-child) {display: none;}
 .topnav a.icon {
   float: right;
@@ -116,7 +119,7 @@ nav > .linkies a::before {
   display: block;
   text-align: left;
 }
-}*/
+}
 
 /* || Other styles*/
 #heading {
