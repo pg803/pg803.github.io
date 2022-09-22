@@ -79,7 +79,7 @@ a:hover{color:#20cfc4}
   100% {transform: translateY(-2%);}
 }
 
-nav a:hover {color: white;}
+nav a:hover {color: gray!important;;}
 
 nav a::before {
   color:#979898;
