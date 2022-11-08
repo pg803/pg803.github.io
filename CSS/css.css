@@ -15,20 +15,17 @@ body {
   animation-fill-mode: forwards;
 }
 
-@keyframes fadeInAnimation {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
+@keyframes fadeInAnimation {0% {opacity: 0;}100% {opacity: 1;}}
 
 h2 {font-size: 2rem;}
 
-ul,ol,dl,p {font-size: 1.5rem;}
+a {color: white;text-decoration: none;}
 
-a:link {color: #57d4cc;}
+#blog:link {color: #57d4cc!important;}
 
-a:visited {color: #40b1a9;}
+#blog:visited {color: #40b1a9!important;}
 
-a:hover{color:#20cfc4}
+#blog:hover{color:#20cfc4!important;}
     
 /*navbar*/   
 .topnav {
@@ -128,6 +125,8 @@ nav a::before {
   left: 20px;
 }
 
+#subheading{line-height: 5em;}
+
 #blogs {
   background-color: #4f46e5;
   border: none;
@@ -154,9 +153,47 @@ nav a::before {
   text-align: left;;
 }
 
-footer{
-  position: absolute;
-  bottom: -3px;
-  padding: 30px;
-  color: #6a6d6e;
+.Fun{right: -400px;top: -70px;position: relative;}
+
+footer{line-height: 5em;padding: 30px;color: #6a6d6e;}
+
+/* Blog */
+.card {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 350px;
+  /*box-shadow: 5px 5px 5px 5px rgba(82, 81, 85, 0.25);*/
+  border-radius: 2.14rem;
+  float: left;
+  font-size: 10px;
+  text-align: left;
+}
+  
+.content{font-size:1rem;color:gray;margin-left: 25px;}
+
+.text{
+  color:rgba(253, 45, 120, 1);
+  font-weight: 500;
+  font-size: 0.75rem;
+  margin-left: 25px;
+}
+
+.date{
+  color:#c1c5c5;
+  font-weight:500;
+  font-size:0.75rem;
+  margin-left:25px;
+}
+
+.link {
+  border: none;
+  color: white;
+  position: unset;
+  font-size: xx-large;
+  transition-duration: 0.4s;
+  display: inline-block;
+  font-size: 20px
 }
