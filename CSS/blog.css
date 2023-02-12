@@ -138,7 +138,7 @@ button:hover{background-color:#2c586b;}
   margin-top: 20px;
   margin-left: 15px;
   width: 350px;
-  /*box-shadow: 5px 5px 5px 5px rgba(82, 81, 85, 0.25);*/
+  box-shadow: 0 0 20px rgba(0,139,253,0.25);
   border-radius: 2.14rem;
   float: left;
   font-size: 10px;
@@ -180,4 +180,19 @@ footer{
   bottom: -3px;
   padding: 30px;
   color: #6a6d6e;
+}
+
+h1{
+  position: relative;
+  width: 92%;
+  left: 4%;
+  padding: 10px 0;
+  font-family: 'Roboto mono',monospace;
+  color: #0381bb;
+  font-size: 40px;
+  display: flex;
+  /*align-items: center;*/
+  justify-content: space-around;
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgba(0,139,253,0.25);
 }
