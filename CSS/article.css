@@ -15,7 +15,7 @@ li, p {line-height: 1.5;}
 
 a {color: white; text-decoration: underline turquoise;}
 
-i{color:white;}
+i{color: #99a0ac;;}
 
 /**/
 h1,h2 {
@@ -43,7 +43,7 @@ h3 {font-size: 30px;color: white;font-weight: light;}
 
 h4 {color: white;}
 
-.parent{
+/*.parent{
     background-color: rgb(48, 62, 63);
     position: absolute;
     right:-100px;
@@ -55,6 +55,6 @@ h4 {color: white;}
     color:white;
 }
 
-.parent:hover{transition-duration: 0.5s;right:0;}
+.parent:hover{transition-duration: 0.5s;right:0;}*/
 
 img{width: 100%;height: auto;}
