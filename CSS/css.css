@@ -121,7 +121,7 @@ nav a::before {
 /* || Other styles*/
 #heading {
   font-weight: 800;
-  position: absolute;
+  /*position: absolute;*/
   left: 20px;
 }
 
@@ -145,7 +145,7 @@ nav a::before {
 #paragraphs{
   display: inline;
   color:#9fa1a1;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
   position: absolute;
   left: 20px;
