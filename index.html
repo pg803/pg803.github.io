@@ -41,7 +41,6 @@
 		<a id="blog" href="blog.html">blog</a>.<br> If you have any ideas for this website, let me know.<br>
 		This site is pretty incomplete right now.
 	</h1>
-	<!--<img src="Images/output-onlinepngtools.png" alt="text" class="Fun">-->
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<h1 id="subheading">Some "Blogs"</h1>
 	<div class="parent">
@@ -62,8 +61,7 @@
 				<p class="text">Space</p>
 				<div class="content">
 					<div class="link"><a href="Blog/star.html">What's the closest star?</a></div>
-					<p>So, What is the closest star? Most people might say Alpha Centauri, Without realizing the problem in that answer. (And to all the people saying the Sun, You're not wrong, But where's the fun?)
-						And to an extent, this is indeed the correct answer*.
+					<p>So, What is the closest star? Most people might say Alpha Centauri, Without realizing the problem in that answer. (And to all the people saying the Sun, Well, you're not wrong.)
 					</p>
 				</div>
 				<div class="date">
@@ -84,30 +82,26 @@
 			</div>
 		</div>
 	</div>
+	<h2>Random stuff - Number guessing</h2>
+	<div class="resultParas">
+		<p class="guesses"></p>
+		<p class="lastResult"></p>
+		<p class="lowOrHi"></p>
+	</div>
+	<label for="guessField">Enter a guess:</label>
+	 <input class="guessField" id="guessField" type="text"> 
+	 <input class="guessSubmit" type="submit" value="Submit guess">
+	<script src="/JS/game.js"></script><br><br><br><br><br><br><br><br><br><br>
 	<footer>pg803. Built from scratch.<a href="https://github.com/pg803/pg803.github.io/" style="position: relative;right:-10px;"><i class="fa fa-github" aria-hidden="true"></i></a></footer>
 	<script>
-	function myFunction() {
-	 let x = document.getElementById("myTopnav");
-	 if (x.className === "topnav") {
-	   x.className += " responsive";
-	 } else {
-	   x.className = "topnav";
-	 }
-	}
-	</script>	
-	<!--<script>
-		window.onscroll = function(){myFunction2()};
-
-		var navbar = document.getElementById("myTopnav");
-		var sticky = navbar.offsetTop;
-
-		function myFunction2(){
-			if(window.pageYOffset >= sticky){
-				navbar.classList.add("sticky")
-			} else{
-				navbar.classList.remove("sticky");
-			}
+		function myFunction() {
+		 let x = document.getElementById("myTopnav");
+		 if (x.className === "topnav") {
+		   x.className += " responsive";
+		 } else {
+		   x.className = "topnav";
+		 }
 		}
-	</script>-->
+	</script>	
 </body>
 </html>
