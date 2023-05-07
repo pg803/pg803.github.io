@@ -13,5 +13,3 @@ Some resources:
 [Roadmap.sh](https://roadmap.sh)
 
 [Front end checklist](https://github.com/thedaviddias/Front-End-Checklist)
-
-[Interneting is hard](https://www.internetingishard.com)
