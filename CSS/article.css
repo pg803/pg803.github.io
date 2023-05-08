@@ -53,6 +53,8 @@ h4 {color: white;}
     padding-right: 5px;
     font-size: 15px;
     color:white;
+    height: 24px;
+    transform: translateY(328px);
 }
 
 .parent:hover{transition-duration: 0.5s;right:0;}
