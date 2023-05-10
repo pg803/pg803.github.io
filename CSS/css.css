@@ -227,3 +227,5 @@ h1,h2{
   margin-top: 34px;
   transform: translateY(10px);
 }
+
+#myTopnav nav h3{position: relative;left: 400px;}
