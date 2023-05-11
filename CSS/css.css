@@ -57,12 +57,7 @@ a {color: white;text-decoration: none;}
     
 .topnav .icon {display: none;}
 
-/*.sticky {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  backdrop-filter: blur(8px);
-}*/
+/*.sticky {position: fixed;top: 0px;width: 100%;backdrop-filter: blur(8px);}*/
 
 .updown{
   color:rgb(92, 158, 149) !important;
@@ -121,11 +116,7 @@ nav a::before {
 }
 
 /* || Other styles*/
-#heading {
-  font-weight: 800;
-  /*position: absolute;*/
-  left: 20px;
-}
+#heading {font-weight: 800;left: 20px;}
 
 #subheading{line-height: 5em;transform: translateY(-50px);}
 
