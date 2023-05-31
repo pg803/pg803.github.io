@@ -193,13 +193,7 @@ footer{line-height: 5em;padding: 30px;color: #6a6d6e;}
   font-size: 20px
 }
 
-/*button{
-  border: none;
-  color: #0381bb;
-  background-color: #212324;
-  padding: 1em;
-  box-shadow: 0 0 20px rgba(0,139,253,0.25);
-}*/
+button{border-radius: 5px;background-color: #979898;border: none;padding: 5px;}
 
 h1,h2{
   position: relative;
