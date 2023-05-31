@@ -193,13 +193,13 @@ footer{line-height: 5em;padding: 30px;color: #6a6d6e;}
   font-size: 20px
 }
 
-button{
+/*button{
   border: none;
   color: #0381bb;
   background-color: #212324;
   padding: 1em;
   box-shadow: 0 0 20px rgba(0,139,253,0.25);
-}
+}*/
 
 h1,h2{
   position: relative;
@@ -221,4 +221,4 @@ h1,h2{
 
 #myTopnav nav h3{position: relative;left: 400px;}
 
-input{color:black;}
+button,input{color:black;}
