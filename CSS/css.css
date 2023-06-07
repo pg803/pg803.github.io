@@ -229,3 +229,5 @@ h1,h2{
 }
 
 button,input{color:black;}
+
+footer img{display: inline-block;transform: translateX(71px)translateY(3px);}
