@@ -49,12 +49,8 @@ a {color: white;text-decoration: none;}
     
 .topnav .icon {display: none;}
 
-/*.sticky {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  backdrop-filter: blur(8px);
-}*/
+
+.sticky {position: fixed;top: 0px;width: 100%;background-color:#2b2f3170; opacity: 7;}
 
 .updown{
   color:rgb(92, 158, 149) !important;
