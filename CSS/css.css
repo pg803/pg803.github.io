@@ -159,7 +159,7 @@ nav a::before {
 
 .Fun{right: -400px;top: -70px;position: relative;}
 
-footer{line-height: 5em;padding: 30px;color: #6a6d6e;}
+footer{line-height: 5em;padding: 30px;color: #6a6d6e; text-align: left;}
 
 /* Blog */
 .card {
@@ -230,4 +230,6 @@ h1,h2{
 
 button,input{color:black;}
 
-footer img{display: inline-block;transform: translateX(71px)translateY(3px);}
+footer img{display: inline-block;transform: translateX(819px)translateY(4px);}
+
+.center{transform: translateX(0px)translateY(73px);}
