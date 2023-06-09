@@ -23,6 +23,12 @@ a {color: white;text-decoration: none;}
 #blog:visited {color: #40b1a9!important;}
 
 #blog:hover{color:#20cfc4!important;}
+
+::-webkit-scrollbar {width: 10px;}
+
+::-webkit-scrollbar-track {background: #f1f1f1;}
+ 
+::-webkit-scrollbar-thumb {background: #888; }
     
 /*navbar*/   
 .topnav {

@@ -20,6 +20,12 @@ body {
 h2 {font-size: 2rem;}
   
 a {color: white;text-decoration: none;}
+
+::-webkit-scrollbar {width: 10px;}
+
+::-webkit-scrollbar-track {background: #f1f1f1;}
+ 
+::-webkit-scrollbar-thumb {background: #888; }
       
 /*navbar*/   
 .topnav {
