@@ -26,6 +26,8 @@ a {color: white;text-decoration: none;}
 ::-webkit-scrollbar-track {background: #f1f1f1;}
  
 ::-webkit-scrollbar-thumb {background: #888; }
+
+.center{transform: translateX(0px)translateY(73px);}
       
 /*navbar*/   
 .topnav {
