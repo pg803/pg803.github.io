@@ -102,6 +102,8 @@ nav a::before {
   visibility: visible;
   animation: fadeInAnimation ease 1.5s;
 }
+
+#linkies p{padding-top: 20px;}
     
  @media screen and (max-width: 600px) {
 .topnav a:not(:first-child) {display: none;}
