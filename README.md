@@ -6,8 +6,6 @@ Some resources:
 
 [MDN Web docs](https://developer.mozilla.org/en-US/)
 
-[w3schools](https://www.w3schools.com/)
-
 [Stackoverflow](https://stackoverflow.com)
 
 [Roadmap.sh](https://roadmap.sh)
