@@ -236,3 +236,12 @@ button,input{color:black;}
 footer img{display: inline-block;transform: translateX(819px)translateY(4px);}
 
 .center{transform: translateX(0px)translateY(73px);}
+
+.special{
+  border-width: 0px;
+  font-size: 33px;
+  line-height: 37.4px;
+  box-shadow: 0px 12px 23px -18px rgba(0,139,253,1);
+}
+
+.test2{font-size: 20px;}
