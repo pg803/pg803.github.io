@@ -14,7 +14,6 @@ function showPosition(position) {
   "<br>Longitude: " + position.coords.longitude;
 }
 
-//Code to show errors
 function showError(error) {
 switch(error.code) {
 case error.PERMISSION_DENIED:

@@ -1,4 +1,4 @@
-//number guessing game
+//number guessing game - none of this is mine, I just followed a tutorial to learn how to do this.
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 
 const guesses = document.querySelector('.guesses');
