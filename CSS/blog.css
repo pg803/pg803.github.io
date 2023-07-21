@@ -143,12 +143,24 @@ button:hover{background-color:#2c586b;}
   padding: 20px;
   margin-top: 20px;
   margin-left: 15px;
+  margin-right: 337px;
   width: 350px;
   box-shadow: 0 0 20px rgba(0,139,253,0.25);
   border-radius: 2.14rem;
   float: left;
   font-size: 10px;
   text-align: left;
+  transform: translateY(-50px);
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-bottom: 31px;
+  padding-top: 25px;
+  width: 49%;
+  left: 14%;
+  top: 8em;
+  right: 273px;
+  border-top-left-radius: 32px;
+  position: relative;
 }
   
 .content{
