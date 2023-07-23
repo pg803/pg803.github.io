@@ -32,7 +32,7 @@ a {color: white;text-decoration: none;}
     
 /*navbar*/   
 .topnav {
-  color:#979898;
+  color:#26292a;
   overflow: hidden;
   background-color: inherit;
   display: flex;
@@ -60,7 +60,14 @@ a {color: white;text-decoration: none;}
     
 .topnav .icon {display: none;}
 
-.sticky {position: fixed;top: 0px;width: 100%;background-color:#2b2f3170; opacity: 7;}
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color:#2b2f3170; 
+  opacity: 7;
+  z-index:1
+}
 
 .updown{
   color:rgb(92, 158, 149) !important;
@@ -253,3 +260,11 @@ footer img{display: inline-block;transform: translateX(819px)translateY(4px);}
 }
 
 .test2{font-size: 20px;}
+
+#para1{
+  position: absolute;
+  right: 50px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  z-index: 1;
+}
