@@ -177,14 +177,14 @@ button:hover{background-color:#2c586b;}
 }
 
 .text{
-  color:rgba(253, 45, 120, 1);
+  color:rgba(7,224,197,255);
   font-weight: 500;
   font-size: 0.75rem;
   margin-left: 25px;
 }
 
 .date{
-  color:#c1c5c5;
+  color:rgba(253, 45, 120, 1);
   font-weight:500;
   font-size:0.75rem;
   margin-left:25px;
