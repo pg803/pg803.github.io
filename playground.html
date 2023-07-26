@@ -30,25 +30,25 @@
 			</div>
 			</nav>
 		</div>
-	</header>
-    <h1>Random stuff</h1>
-    <h2>Javascript stuff</h2>
+	</header><br><br><br>
+    <h1 class="special">Random stuff</h1><br><br>
+    <h2 class="special">Javascript stuff</h2>
 		<noscript>
 			<p>You need to enable JavaScript to run this.</p>
 		</noscript>
 	<button onclick="myFunction23()">Find Browser</button><br>
     <script src="JS/Browser.js"></script>
 	<br><button onclick="window.location.reload();" type="button">Reload page</button>
-		<h2>Color picker</h2>
+		<h2 class="special">Color picker</h2><br><br>
 		<input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:85%;" type="color" value="#00ffef">
-		<h2 class="special">HTML APIs</h2>
-			<h2>Geolocation</h2>
+		<h2 class="special">HTML APIs</h2><br><br><br><br>
+			<h2 class="special">Geolocation</h2>
 			<p>Click the button to get your coordinates</p>
 			<button onclick="getLocation()">Try It</button>
 			<p id="demo2"></p>
 			<script src="JS/geolocation.js">
-			</script>
-			<h2>Web storage</h2>
+			</script><br><br>
+			<h2 class="special">Web storage</h2>
 			<p><button onclick="clickCounter()" type="button">Click me!</button></p>
 			<div id="result"></div>
 			<p>Click the button to see the counter increase.</p>
@@ -66,8 +66,8 @@
                     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
                   }
                 }
-			</script>
-			<h2>Number guessing game</h2>
+			</script><br><br>
+			<h2 class="special">Number guessing game</h2>
 			<div class="resultParas">
 				<p class="guesses"></p>
 				<p class="lastResult"></p>
@@ -77,8 +77,8 @@
 			 <input class="guessField" id="guessField" type="text"> 
 			 <input class="guessSubmit" type="submit" value="Submit guess">
 			<script src="JS/game.js">
-			</script>
-		<h2>Count numbers: <output id="result2"></output></h2>
+			</script><br><br><br>
+		<h2 class="special">Count numbers: <output id="result2"></output></h2>
 		<button onclick="startWorker()">Start Worker</button> 
 		<button onclick="stopWorker()">Stop Worker</button>
 		<script>
@@ -100,7 +100,10 @@
             w.terminate();
             w = undefined;
             }
-		</script>
+		</script><br><br><br><br><br><br>
+		<footer>
+			pg803. Built from scratch.<a href="https://github.com/pg803/pg803.github.io/" style="position: relative;right:-10px;"><i class="fa fa-github" aria-hidden="true"></i></a>
+		</footer>
 	<script>
 	function myFunction() {
 	 let x = document.getElementById("myTopnav");
