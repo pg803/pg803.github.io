@@ -171,7 +171,14 @@ nav a::before {
 
 .Fun{right: -400px;top: -70px;position: relative;}
 
-footer{line-height: 5em;padding: 30px;color: #6a6d6e; text-align: left;}
+footer{
+  line-height: 2.3em;
+  color: #6a6d6e; 
+  text-align: left;
+  transform: translateX(-971px) translateY(538px);
+  padding-bottom:58px;
+  text-align: left;
+}
 
 /* Blog */
 .card {
