@@ -60,3 +60,5 @@ h4 {color: white;}
 .parent:hover{transition-duration: 0.5s;right:0;}
 
 img{width: 100%;height: auto;}
+
+.capt{color:rgba(7,224,197,255);font-style: normal;}
