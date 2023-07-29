@@ -302,3 +302,13 @@ footer img{display: inline-block;transform: translateX(819px)translateY(4px);}
   line-height: 1.25rem;
   z-index: 1;
 }
+
+.quote-box{
+  background-color: rgb(33, 33, 33);
+  box-shadow: 0 0 20px rgba(0,139,253,0.25);
+  margin-top: 120px;
+  margin-left: 337px;
+  margin-right: 337px;
+  padding: 50px;
+  border-radius: 20px;
+}
