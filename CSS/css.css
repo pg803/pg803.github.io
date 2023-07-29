@@ -128,10 +128,38 @@ nav a::before {
   top: 0;
 }
 .topnav.responsive a {
+  background-color: rgb(35, 37, 37);
   float: none;
   display: block;
   text-align: left;
 }
+}
+
+@media screen and (max-width: 600px) {
+  .card{
+    padding: 20px;
+    left: 73px!important;
+  }
+  #heading{
+    left: 250px!important;
+    width: 0px!important;
+    box-shadow: 0 0 20px rgba(0,139,253,0.25)!important;
+  }
+  #paragraphs{
+    display: inline;
+    color:#9fa1a1;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    position: inherit!important;
+    vertical-align: -50px;
+    text-align: center!important;
+    box-shadow: none !important;
+    width: 0px!important;
+  }
+  #picof{
+    vertical-align: -300px;
+    transform: translateX(-350px)!important;
+  }
 }
 
 /* || Other styles*/
@@ -172,12 +200,11 @@ nav a::before {
 .Fun{right: -400px;top: -70px;position: relative;}
 
 footer{
-  line-height: 2.3em;
-  color: #6a6d6e; 
-  text-align: left;
-  transform: translateX(-971px) translateY(538px);
-  padding-bottom:58px;
-  text-align: left;
+  position: fixed;
+  bottom: 0px;
+  padding: 30px;
+  color: #6a6d6e;
+  z-index: 1;
 }
 
 /* Blog */

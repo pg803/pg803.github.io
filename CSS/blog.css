@@ -119,10 +119,18 @@ nav a::before {
   top: 0;
 }
 .topnav.responsive a {
+  background-color: rgb(35, 37, 37);
   float: none;
   display: block;
   text-align: left;
 }
+}
+
+@media screen and (max-width: 600px) {
+  .card{
+    padding-right: 50px!important;
+    left: 73px!important;
+  }
 }
 
   
@@ -201,10 +209,11 @@ button:hover{background-color:#2c586b;}
 }
 
 footer{
-  position: absolute;
-  bottom: -1200px;
+  position: fixed;
+  bottom: 0px;
   padding: 30px;
   color: #6a6d6e;
+  z-index: 1;
 }
 
 h1{
