@@ -160,6 +160,12 @@ nav a::before {
     vertical-align: -300px;
     transform: translateX(-350px)!important;
   }
+  .quote-box{
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+    padding: 0px!important;
+    border-radius: 20px!important;
+  }
 }
 
 /* || Other styles*/
