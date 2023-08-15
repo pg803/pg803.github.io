@@ -263,3 +263,7 @@ h1{
 @-moz-keyframes fadein3{0%{opacity: 0;-moz-transform: translateX(50px);}100%{opacity: 1;-moz-transform: translateX(0);}}
 @-o-keyframes fadein3{0%{opacity: 0;-o-transform: translateX(50px);}100%{opacity: 1;-o-transform: translateX(0);}}
 @keyframes fadein3{  0%{opacity: 0;transform: translateX(50px);}100%{opacity: 1;transform: translateX(0);}}
+
+.parent.card{
+  transform: translateY(-25px)translateX(0px)!important;
+}
