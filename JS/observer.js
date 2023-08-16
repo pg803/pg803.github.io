@@ -1,7 +1,7 @@
-const header = document.querySelector("header");
-const sectionOne = document.querySelector("paragraphs");
+const header = document.querySelector(".header");
+const sectionOne = document.querySelector("heading");
 
-const faders = document.querySelectorAll(".fade-in");
+const faders = document.querySelectorAll("fadein1");
 const sliders = document.querySelectorAll(".slide-in");
 
 const sectionOneOptions = {
