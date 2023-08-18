@@ -174,25 +174,24 @@ h1{
   left: 4%;
   padding: 10px 0;
   font-family: 'Roboto mono',monospace;
-  color: #0381bb;
+  color: rgba(7,224,197,255);
   font-size: 40px;
   display: flex;
   /*align-items: center;*/
   justify-content: space-around;
   border-radius: 2px;
-  box-shadow: 0 0 20px rgba(0,139,253,0.25);
 }
   
 /* || Card */
 .card {
-  background-color: rgba(0,0,0,0.5);
+  /*background-color: rgba(0,0,0,0.5);*/
   color: white;
   padding: 20px;
   margin-top: 20px;
   margin-left: 15px;
   margin-right: 337px;
   width: 350px;
-  box-shadow: 0 0 20px rgba(0,139,253,0.25);
+  /*box-shadow: 0 0 20px rgba(0,139,253,0.25);*/
   border-radius: 2.14rem;
   float: left;
   font-size: 10px;
@@ -208,6 +207,19 @@ h1{
   right: 273px;
   border-top-left-radius: 32px;
   position: relative;
+}
+
+.special{
+  border-width: 0px;
+  font-size: 33px;
+  line-height: 37.4px;
+  box-shadow: 0px 12px 23px -18px rgba(7,224,197,255);
+}
+
+.inner .card .content .date {
+  position: relative;
+  top: 4px;
+  left: -25px;
 }
   
 .content{
@@ -232,7 +244,7 @@ h1{
 
 .link {
   border: none;
-  color: white;
+  color: rgba(7,224,197,255);
   position: unset;
   font-size: xx-large;
   transition-duration: 0.4s;

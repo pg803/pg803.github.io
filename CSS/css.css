@@ -231,12 +231,12 @@ h1,h2{
   left: 4%;
   padding: 10px 0;
   font-family: 'Roboto mono',monospace;
-  color: #0381bb;
+  color: rgba(7,224,197,255);
   font-size: 40px;
   display: flex;
   justify-content: space-around;
   border-radius: 2px;
-  box-shadow: 0 0 20px rgba(0,139,253,0.25);
+  box-shadow: 0 0 20px rgba(7,224,197,255);
   margin-bottom: 34px;
   margin-top: 34px;
   transform: translateY(10px);
@@ -246,12 +246,12 @@ h1,h2{
   border-width: 0px;
   font-size: 33px;
   line-height: 37.4px;
-  box-shadow: 0px 12px 23px -18px rgba(0,139,253,1);
+  box-shadow: 0px 12px 23px -18px rgba(7,224,197,255);
 }
 
 .quote-box{
   background-color: rgb(33, 33, 33);
-  box-shadow: 0 0 20px rgba(0,139,253,0.25);
+  box-shadow: 0 0 7px rgba(7,224,197,255);
   margin-top: 120px;
   margin-left: 337px;
   margin-right: 337px;
@@ -261,14 +261,14 @@ h1,h2{
 
 /* Blog */
 .card {
-  background-color: rgba(0,0,0,0.5);
+  /*background-color: rgba(0,0,0,0.5);*/
   color: white;
   padding: 20px;
   margin-top: 20px;
   margin-left: 15px;
   margin-right: 337px;
   width: 350px;
-  box-shadow: 0 0 20px rgba(0,139,253,0.25);
+  /*box-shadow: 0 0 20px rgba(0,139,253,0.25);*/
   border-radius: 2.14rem;
   float: left;
   font-size: 10px;
@@ -284,6 +284,12 @@ h1,h2{
 }
   
 .content{font-size:1rem;color:gray;margin-left: 25px;}
+
+.inner .card .content .date {
+  position: relative;
+  top: 4px;
+  left: -25px;
+}
 
 .text{
   color:rgba(7,224,197,255);
