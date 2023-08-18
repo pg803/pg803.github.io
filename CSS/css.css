@@ -56,7 +56,6 @@ a {color: white;text-decoration: none;}
   backdrop-filter: blur(15px);
 }
 
-    
 .topnav a:hover {transition-duration: 0.4s; color:white;}
     
 .topnav .icon {display: none;}
@@ -344,9 +343,7 @@ button,input{color:black;}
   border-color: hsl(205, 86%, 81%);
 }
 
-.parent .card{
-  transform: translateX(38px)translateY(27px)!important;
-}
+.parent .card{transform: translateX(38px)translateY(27px)!important;}
 
 /*.fade-in{opacity: 0;transition: opacity 250ms ease-in;}.fade-in.appear{opacity: 1;}.quote-box{transition: transform 400ms ease-in;}.quote-box.appear{transform: translatex(0);}*/
 
