@@ -307,7 +307,7 @@ h1,h2{
 
 .link {
   border: none;
-  color: white;
+  color: rgba(7,224,197,255);
   position: unset;
   font-size: xx-large;
   transition-duration: 0.4s;
