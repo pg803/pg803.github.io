@@ -56,7 +56,7 @@ a {color: white;text-decoration: none;}
   backdrop-filter: blur(15px);
 }
 
-.topnav a:hover {transition-duration: 0.4s; color:white;}
+.topnav a:hover {transition-duration: 0.4s; color:white;transform: translateX(0px)translateY(-7px);}
     
 .topnav .icon {display: none;}
 
@@ -64,7 +64,6 @@ a {color: white;text-decoration: none;}
   position: fixed;
   top: 0px;
   width: 100%;
-  background-color:#2b2f3170; 
   opacity: 7;
   z-index:1
 }
