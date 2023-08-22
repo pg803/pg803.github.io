@@ -276,4 +276,4 @@ h1{
 @-o-keyframes fadein3{0%{opacity: 0;-o-transform: translateX(50px);}100%{opacity: 1;-o-transform: translateX(0);}}
 @keyframes fadein3{  0%{opacity: 0;transform: translateX(50px);}100%{opacity: 1;transform: translateX(0);}}
 
-.parent.card{transform: translateY(-25px)translateX(0px)!important;}
+.parent .card{transform: translateX(0px)translateY(-27px)!important;}
