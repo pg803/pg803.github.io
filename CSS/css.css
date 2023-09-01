@@ -344,8 +344,6 @@ button,input{color:black;}
 
 .parent .card{transform: translateX(38px)translateY(27px)!important;}
 
-/*.fade-in{opacity: 0;transition: opacity 250ms ease-in;}.fade-in.appear{opacity: 1;}.quote-box{transition: transform 400ms ease-in;}.quote-box.appear{transform: translatex(0);}*/
-
 .fadein1{
   -webkit-animation: fadein1 1.2s both;
   -moz-animation: fadein1 1.2s both;
