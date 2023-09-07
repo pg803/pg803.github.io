@@ -1,13 +1,16 @@
-const api_url = "https://api.quotable.io/random"
+const api_url = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
 const quote = document.getElementById('quote');
 const author = document.getElementById('author');
 
-async function getquote(url) {
-    const response = await fetch(url);
-    var data = await response.json();
-    console.log(data);
-    quote.innerHTML = data.content;
-    author.innerHTML = data.author;
+// Function to fetch JSONP data
+function fetchJSONP(url) {
+    return fetch('https://cors-anywhere.herokuapp.com/' + url)
+        .then(response => response.json());
 }
 
-getquote(api_url)
+fetchJSONP(api_url)
+    .then(data => {
+        quote.innerHTML = data.quoteText;
+        author.innerHTML = data.quoteAuthor;
+    })
+    .catch(error => console.error(error));
