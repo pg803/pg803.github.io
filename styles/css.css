@@ -186,7 +186,13 @@ nav a::before {
 }
 
 /* || Page text styles*/
-#heading {font-weight: 800;font-size:40px!important; left: 20px;width: 676px;font-family: "IBM Plex Mono", monospace;}
+#heading {
+  font-weight: 800;
+  font-size:40px!important; 
+  left: 20px;
+  width: 676px;
+  font-family: "IBM Plex Mono", monospace;
+}
 
 #subheading{line-height: 5em;transform: translateY(-50px);}
 
