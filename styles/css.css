@@ -1,9 +1,6 @@
 /* || General styles*/
-html {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 15px;
-}
-  
+html {font-family: "IBM Plex Mono", monospace; font-size: 15px;}
+
 body {
   background-color: #151617;
   margin: 0;
@@ -13,32 +10,41 @@ body {
   animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  overflow-x: hidden;
 }
-  
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @keyframes fadeInAnimation {0% {opacity: 0;}100% {opacity: 1;}}
-  
+
 h2 {font-size: 2rem;}
-  
+
 a {color: white;text-decoration: none;}
+
+#blog:link {color: #57d4cc!important;}
+
+#blog:visited {color: #40b1a9!important;}
+
+#blog:hover{color:#20cfc4!important;}
 
 ::-webkit-scrollbar {width: 10px;}
 
 ::-webkit-scrollbar-track {background: #f1f1f1;}
  
 ::-webkit-scrollbar-thumb {background: #888; }
-
-.center{transform: translateX(0px)translateY(73px);}
-      
+    
 /*navbar*/   
 .topnav {
-  color:#979898;
+  color:#26292a;
   overflow: hidden;
   background-color: inherit;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-    
+
 .topnav a {
   height: 50px;
   transition-duration: 0.4s;
@@ -51,20 +57,20 @@ a {color: white;text-decoration: none;}
   text-decoration: none;
   font-size: 0.875rem;
   line-height: 1.25rem;
+  backdrop-filter: blur(15px);
 }
-    
-.topnav a:hover {transition-duration: 0.4s; color:white;}
+
+.topnav a:hover {transition-duration: 0.4s; color:white;transform: translateX(0px)
+  translateY(-7px);}
     
 .topnav .icon {display: none;}
-
 
 .sticky {
   position: fixed;
   top: 0px;
   width: 100%;
-  background-color:#2b2f3170; 
   opacity: 7;
-  z-index: 1;
+  z-index:1
 }
 
 .updown{
@@ -74,6 +80,12 @@ a {color: white;text-decoration: none;}
 }
 
 .updown:hover{color:red !important;}
+
+.updown2{
+  color:rgb(92, 158, 149) !important;
+  font-size: 30px !important;
+  animation: 3s updown 1s infinite;
+}
 
 @keyframes updown {
   0% {transform: translateY(-2%);}
@@ -99,6 +111,7 @@ nav a::before {
   top:-10px;
   display: block;
   visibility: visible;
+  animation: fadeInAnimation ease 1.5s;
 }
 
 #linkies p{padding-top: 20px;}
@@ -126,6 +139,10 @@ nav a::before {
 }
 }
 
+#myTopnav nav h3{position: relative;left: 400px;}
+
+#myTopnav nav{height: 68px}
+
 #para1{
   position: absolute;
   right: 50px;
@@ -134,55 +151,118 @@ nav a::before {
   z-index: 1;
 }
 
-/* responsive style */
+/* Responive styles */
 @media screen and (max-width: 600px) {
   .card{
-    padding-right: 50px!important;
+    padding: 20px;
     left: 73px!important;
+  }
+  #heading{
+    left: 250px!important;
+    width: 0px!important;
+    box-shadow: 0 0 20px rgba(0,139,253,0.25)!important;
+  }
+  #paragraphs{
+    display: inline;
+    color:#9fa1a1;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    position: inherit!important;
+    vertical-align: -50px;
+    text-align: center!important;
+    box-shadow: none !important;
+    width: 0px!important;
+  }
+  #picof{
+    vertical-align: -300px;
+    transform: translateX(-350px)!important;
+  }
+  .quote-box{
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+    padding: 0px!important;
+    border-radius: 20px!important;
   }
 }
 
-  
-/* || Text styles*/
-h1 {font-weight: 800;}
-  
-button {
-  background-color: #282820;
+/* || Page text styles*/
+#heading {font-weight: 800;font-size:40px!important; left: 20px;width: 676px;font-family: "IBM Plex Mono", monospace;}
+
+#subheading{line-height: 5em;transform: translateY(-50px);}
+
+#blogs {
+  background-color: #4f46e5;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 5px;
+  text-decoration: none;
+  left: 20px;
+  position:absolute;
   text-align: center;
-  border-radius: 10px;
-  font-size: 16px;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 13px;
   transition-duration: 0.4s;
   display: inline-block;
 }
-  
-button:hover{background-color:#2c586b;}
+
+#paragraphs{
+  display: inline;
+  color:#9fa1a1;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  position: absolute;
+  left: 20px;
+  vertical-align: -50px;
+  text-align: center!important;
+  box-shadow: none !important;
+  width: 714px;
+}
+
+#picof{position: relative; top: -113px; left: 951px;}
 
 footer{
   position: fixed;
   bottom: 0px;
   padding: 30px;
-  color: #6a6d6e;
+  color: #A49C90;
   z-index: 1;
 }
 
-h1{
+h1,h2{
   position: relative;
   width: 92%;
   left: 4%;
   padding: 10px 0;
-  font-family: 'Roboto mono',monospace;
+  font-family: "IBM Plex Mono", monospace!important;
   color: rgba(7,224,197,255);
   font-size: 40px;
   display: flex;
-  /*align-items: center;*/
   justify-content: space-around;
   border-radius: 2px;
+  box-shadow: 0 0 20px rgba(7,224,197,255);
+  margin-bottom: 34px;
+  margin-top: 34px;
+  transform: translateY(10px);
 }
-  
-/* || Card */
+
+.special{
+  border-width: 0px;
+  font-size: 33px;
+  line-height: 37.4px;
+  box-shadow: 0px 12px 23px -18px rgba(7,224,197,255);
+}
+
+.quote-box{
+  background-color: rgb(33, 33, 33);
+  box-shadow: 0 0 7px rgba(7,224,197,255);
+  margin-top: 120px;
+  margin-left: 337px;
+  margin-right: 337px;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+/* Blog */
 .card {
   /*background-color: rgba(0,0,0,0.5);*/
   color: white;
@@ -197,35 +277,21 @@ h1{
   font-size: 10px;
   text-align: left;
   transform: translateY(-50px);
-  padding-right: 200px;
-  padding-left: 50px;
-  padding-bottom: 31px;
-  padding-top: 25px;
+  padding-right: 50px;
+  padding-left: 21px;
   width: 49%;
-  left: 14%;
-  top: 8em;
+  left: 273px;
   right: 273px;
   border-top-left-radius: 32px;
   position: relative;
 }
-
-.special{
-  border-width: 0px;
-  font-size: 33px;
-  line-height: 37.4px;
-  box-shadow: 0px 12px 23px -18px rgba(7,224,197,255);
-}
+  
+.content{font-size:1rem;color:gray;margin-left: 25px;}
 
 .inner .card .content .date {
   position: relative;
   top: 4px;
   left: -25px;
-}
-  
-.content{
-  font-size:1rem;
-  color:gray;
-  margin-left: 25px;
 }
 
 .text{
@@ -252,6 +318,39 @@ h1{
   font-size: 20px
 }
 
+/* || Some more other styles */
+
+button,input{color:black;}
+
+.center{transform: translateX(0px)
+  translateY(73px);}
+
+.test2{font-size: 20px;}
+
+.btn {
+  text-transform: uppercase;
+  background: #49a6e9;
+  color: hsl(205, 86%, 17%);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: all 0.3s linear;
+  font-size: 0.875rem;
+  border: 2px solid #49a6e9;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  color: #49a6e9;
+  background: hsl(205, 86%, 81%);
+  border-color: hsl(205, 86%, 81%);
+}
+
+.parent .card{transform: translateX(38px)
+  translateY(27px)!important;}
+
 .fadein1{
   -webkit-animation: fadein1 1.2s both;
   -moz-animation: fadein1 1.2s both;
@@ -275,5 +374,3 @@ h1{
 @-moz-keyframes fadein3{0%{opacity: 0;-moz-transform: translateX(50px);}100%{opacity: 1;-moz-transform: translateX(0);}}
 @-o-keyframes fadein3{0%{opacity: 0;-o-transform: translateX(50px);}100%{opacity: 1;-o-transform: translateX(0);}}
 @keyframes fadein3{  0%{opacity: 0;transform: translateX(50px);}100%{opacity: 1;transform: translateX(0);}}
-
-.parent .card{transform: translateX(0px)translateY(-27px)!important;}
