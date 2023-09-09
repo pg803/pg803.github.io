@@ -206,7 +206,7 @@ nav a::before {
 }
 
 #paragraphs{
-  display: inline;
+  display: table-cell;
   color:#9fa1a1;
   font-size: 1.2rem;
   line-height: 1.5rem;
@@ -216,9 +216,16 @@ nav a::before {
   text-align: center!important;
   box-shadow: none !important;
   width: 714px;
+  transform: translateY(50px)!important;
 }
 
-#picof{position: relative; top: -113px; left: 951px;}
+#picof{
+  position: relative; 
+  top: -113px; 
+  left: 951px;
+  transform: translateX(52px)
+  translateY(33px)!important;
+}
 
 footer{
   position: fixed;
