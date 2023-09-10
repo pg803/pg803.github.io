@@ -6,11 +6,9 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>Pg803's Website</title>
 	<link href="Images/iIUk6Iv.png" rel="icon" type="image/x-icon">
-	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">   
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-	<link rel="stylesheet" href="main.css">
+	<link href="styles/main.css" rel="stylesheet">
 	<link rel="canonical" href="https://pg803.github.io">
-	<link href="styles/css.css" rel="stylesheet">
 	<!--<script src="/JS/observer.js"></script>-->
 	<script>
 		setInterval(function test(){
@@ -20,24 +18,24 @@
 	</script>
 </head>
 <body>
-    <header class="flex justify-stretch align-middle"><br>
+    <header><br>
 		<div class="topnav" id="myTopnav">
 			<nav class="sticky">
             <a href="index.html" class="updown">Pg</a>
 			<div class="linkies" id="linkies">
-				<a href="https://github.com/pg803/pg803.github.io/" class="m-2"><i class="fa fa-github" aria-hidden="true""></i> Github</a>
-				<a href="index.html" class="m-2">Home</a>
-				<a href="blog.html" class="m-2">Blog</a>
-				<a href="playground.html" class="m-2">Random stuff</a>
-				<a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true" class="m-2"></i></a>
-				<a href="" id="para1" class="m-2"></a><br>
+				<a href="https://github.com/pg803/pg803.github.io/"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+				<a href="index.html">Home</a>
+				<a href="blog.html">Blog</a>
+				<a href="playground.html">Random stuff</a>
+				<a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+				<a href="" id="para1"></a><br>
 			</div>
 			</nav>
 		</div>
 	</header><br><br>
 	<br><div class="center">
-	<div class="flex justify-start mx-20 text-teal-600 text-4xl shadow-inner shadow-teal-500/40 hover:shadow-indigo-500/40">Just a random website</div>
-	<h1 id="paragraphs" class="fadein1	">I'm just learning webdev, and this website is mainly only for my
+	<h1 id="heading" class="fadein1">Just a random website</h1>
+	<h1 id="paragraphs" class="fadein1">I'm just learning webdev, and this website is mainly only for my
 		<a id="blog" href="blog.html">blog</a>.<br>
 	</h1><img src="/Images/output-onlinepngtools.png" alt="A picture of the favicon" id="picof" class="updown2 fadein3"></div>
 	<br><br><br><br><br><br><br><br><br>
@@ -47,8 +45,7 @@
 		<blockquote id="quote" class="slide-in">Loading</blockquote><br><br>
 		<i id="author">Loading</i>
 		</div>
-	</div><br><br><br><br><br><br><br><br>
-	<!--<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4!important">This is a test</div>-->
+	</div><br><br><br><br><br><br><br><br>	
 	<h1 class="special" id="subheading">Some "Blogs"</h1>
 	<div class="parent">
 		<div class="inner">
@@ -80,8 +77,9 @@
 					</p>
 				</div>
 			</div>
+		</div>
 	</div><br><br><br><br><br><br>
-	<script src="/scripts/quotes.js"></script>
+	<script src="/JS/quotes.js"></script>
 	<footer>
 		pg803. 100% non-GMO html+css<a href="https://github.com/pg803/pg803.github.io/" style="position: relative;right:-10px;"><i class="fa fa-github" aria-hidden="true"></i></a>
 	</footer>
