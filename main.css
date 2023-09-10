@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* || General styles*/
 html {font-family: "IBM Plex Mono", monospace; font-size: 15px;}
 
@@ -12,10 +16,6 @@ body {
   animation-fill-mode: forwards;
   overflow-x: hidden;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @keyframes fadeInAnimation {0% {opacity: 0;}100% {opacity: 1;}}
 
