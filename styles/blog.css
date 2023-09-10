@@ -5,7 +5,7 @@ html {
 }
   
 body {
-  background-color: #151617;
+  background: url(/Images/test.jpeg) fixed center no-repeat;
   margin: 0;
   font-family: "IBM Plex Mono", monospace;
   text-align: center;

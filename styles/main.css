@@ -2,7 +2,8 @@
 html {font-family: "IBM Plex Mono", monospace; font-size: 15px;}
 
 body {
-  background-color: #151617;
+  background: url(/Images/test.jpeg) fixed center no-repeat;
+  background-size: 1500px;
   margin: 0;
   font-family: "IBM Plex Mono", monospace;
   text-align: center;
@@ -150,17 +151,16 @@ nav a::before {
 /* Responive styles */
 @media screen and (max-width: 600px) {
   .card{
-    padding: 20px;
-    left: 73px!important;
+    transform: scale(0.8)!important;
   }
   #heading{
-    left: 250px!important;
+    left: 150px!important;
     width: 0px!important;
     box-shadow: 0 0 20px rgba(0,139,253,0.25)!important;
   }
   #paragraphs{
     display: inline;
-    color:#9fa1a1;
+    color:white;
     font-size: 1.2rem;
     line-height: 1.5rem;
     position: inherit!important;
@@ -203,7 +203,7 @@ nav a::before {
 
 #paragraphs{
   display: inline;
-  color:#9fa1a1;
+  color:white;
   font-size: 1.2rem;
   line-height: 1.5rem;
   position: absolute;
@@ -235,7 +235,7 @@ h1,h2{
   display: flex;
   justify-content: space-around;
   border-radius: 2px;
-  box-shadow: 0 0 20px rgba(7,224,197,255);
+  /*box-shadow: 0 0 20px rgba(7,224,197,255);*/
   margin-bottom: 34px;
   margin-top: 34px;
   transform: translateY(10px);
@@ -249,7 +249,7 @@ h1,h2{
 }
 
 .quote-box{
-  background-color: rgb(33, 33, 33);
+  background-color: rgba(34, 38, 38, 0.5);
   box-shadow: 0 0 7px rgba(7,224,197,255);
   margin-top: 120px;
   margin-left: 337px;
@@ -260,29 +260,28 @@ h1,h2{
 
 /* Blog */
 .card {
-  /*background-color: rgba(0,0,0,0.5);*/
-  color: white;
+  background-color: rgba(34, 38, 38, 0.5);
+  color: white!important;
   padding: 20px;
   margin-top: 20px;
   margin-left: 15px;
-  margin-right: 337px;
   width: 350px;
-  /*box-shadow: 0 0 20px rgba(0,139,253,0.25);*/
   border-radius: 2.14rem;
   float: left;
   font-size: 10px;
   text-align: left;
   transform: translateY(-50px);
+  padding-top: 50px;
   padding-right: 50px;
   padding-left: 21px;
-  width: 49%;
-  left: 273px;
-  right: 273px;
+  width: 25%;
   border-top-left-radius: 32px;
   position: relative;
 }
   
 .content{font-size:1rem;color:gray;margin-left: 25px;}
+
+.inner{display: flex;}
 
 .inner .card .content .date {
   position: relative;
@@ -352,6 +351,11 @@ button,input{color:black;}
   -moz-animation: fadein1 1.2s both;
   -o-animation: fadein1 1.2s both;
   animation: fadein1 1.2s both; 
+}
+
+.background{
+  /*background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);*/
+  height: 608px;
 }
 
 @-webkit-keyframes fadein1{0%{opacity: 0;-webkit-transform: translateX(-50px);}100%{opacity: 1;-webkit-transform: translateX(0);}}
