@@ -129,7 +129,7 @@ nav a::before {
   top: 0;
 }
 .topnav.responsive a {
-  background-color: rgb(35, 37, 37);
+  background-color: rgb(35, 37, 37, 0.75);
   float: none;
   display: block;
   text-align: left;
@@ -149,7 +149,7 @@ nav a::before {
 }
 
 /* Responive styles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .card{
     transform: scale(0.8)!important;
   }
@@ -157,6 +157,7 @@ nav a::before {
     left: 150px!important;
     width: 0px!important;
     box-shadow: 0 0 20px rgba(0,139,253,0.25)!important;
+    transform: translateX(165px)!important;
   }
   #paragraphs{
     display: inline;
