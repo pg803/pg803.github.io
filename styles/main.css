@@ -157,7 +157,6 @@ nav a::before {
     left: 150px!important;
     width: 0px!important;
     box-shadow: 0 0 20px rgba(0,139,253,0.25)!important;
-    transform: translateX(165px)!important;
   }
   #paragraphs{
     display: inline;
@@ -180,6 +179,7 @@ nav a::before {
     padding: 0px!important;
     border-radius: 20px!important;
   }
+  img {width: 50%;height: auto;}
 }
 
 /* || Page text styles*/
