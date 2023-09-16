@@ -148,6 +148,12 @@ nav a::before {
   z-index: 1;
 }
 
+#myTopnav .updown img{
+  display: inline-block;
+  transform: translateX(4px)translateY(-27px);
+  height: 75px;
+}
+
 /* Responive styles */
 @media screen and (max-width: 1000px) {
   .card{
@@ -183,37 +189,32 @@ nav a::before {
 }
 
 /* || Page text styles*/
-#heading {font-weight: 800;left: 20px;width: 676px;font-family: "IBM Plex Mono", monospace;}
-
-#subheading{line-height: 5em;transform: translateY(-50px);}
-
-#blogs {
-  background-color: #4f46e5;
-  border: none;
-  color: white;
-  padding: 5px 5px;
-  text-decoration: none;
+#heading {
+  font-weight: 800;
   left: 20px;
-  position:absolute;
-  text-align: center;
-  border-radius: 10px 0px 0px 10px;
-  font-size: 13px;
-  transition-duration: 0.4s;
-  display: inline-block;
+  width: 676px;
+  font-family: Gtwalsheimprotrial, sans-serif!important;
+  height:87px;
+  transform:translatex(230px) translatey(134px) !important;
+  line-height: 3.5rem;
 }
 
-#paragraphs{
-  display: inline;
-  color:white;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  position: absolute;
-  left: 20px;
-  vertical-align: -50px;
-  text-align: center!important;
-  box-shadow: none !important;
-  width: 714px;
+@media (min-width:1001px){
+  #heading{
+   width:888px;
+  }
+ }
+
+ .background .center h2{transform:translatex(31px) translatey(34px);}
+
+.subheading{
+  line-height: 5em;
+  transform: translateY(70px);
+  font-family: Gtwalsheimprotrial, sans-serif!important;
+  color: white!important;
 }
+
+#subheading{transform:translatex(-8px) translatey(68px);}
 
 #picof{position: relative; top: -113px; left: 350px;}
 
@@ -242,13 +243,6 @@ h1,h2{
   transform: translateY(10px);
 }
 
-.special{
-  border-width: 0px;
-  font-size: 33px;
-  line-height: 37.4px;
-  box-shadow: 0px 12px 23px -18px rgba(7,224,197,255);
-}
-
 .quote-box{
   background-color: rgba(34, 38, 38, 0.5);
   box-shadow: 0 0 7px rgba(7,224,197,255);
@@ -257,6 +251,7 @@ h1,h2{
   margin-right: 337px;
   padding: 50px;
   border-radius: 20px;
+  transform: translateY(133px);
 }
 
 /* Blog */
@@ -320,6 +315,33 @@ h1,h2{
   font-size: 20px
 }
 
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-top-left-radius: 2.14rem;
+  border-top-right-radius: 2.14rem;
+}
+
+.card .link{
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.inner div a{transform: translateX(-37px)translateY(100px);}
+
+
+.inner div .date{transform: translateY(85px);}
+
+.parent .card{
+  transform: translateX(38px)translateY(27px);
+  min-height: 203px;
+}
+
 /* || Some more other styles */
 button,input{color:black;}
 
@@ -349,41 +371,12 @@ button,input{color:black;}
   border-color: hsl(205, 86%, 81%);
 }
 
-.parent .card{
-  transform: translateX(38px)translateY(27px);
-  min-height: 203px;
-}
-
 .fadein1{
   -webkit-animation: fadein1 1.2s both;
   -moz-animation: fadein1 1.2s both;
   -o-animation: fadein1 1.2s both;
   animation: fadein1 1.2s both; 
 }
-
-.background{height: 608px;}
-
-.card img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
-  border-top-left-radius: 2.14rem;
-  border-top-right-radius: 2.14rem;
-}
-
-.card .link{
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-}
-
-.inner div a{transform: translateX(-37px)translateY(100px);}
-
-
-.inner div .date{transform: translateY(85px);}
 
 @-webkit-keyframes fadein1{0%{opacity: 0;-webkit-transform: translateX(-50px);}100%{opacity: 1;-webkit-transform: translateX(0);}}
 @-moz-keyframes fadein1{0%{opacity: 0;-moz-transform: translateX(-50px);}100%{opacity: 1;-moz-transform: translateX(0);}}
@@ -401,3 +394,5 @@ button,input{color:black;}
 @-moz-keyframes fadein3{0%{opacity: 0;-moz-transform: translateX(50px);}100%{opacity: 1;-moz-transform: translateX(0);}}
 @-o-keyframes fadein3{0%{opacity: 0;-o-transform: translateX(50px);}100%{opacity: 1;-o-transform: translateX(0);}}
 @keyframes fadein3{  0%{opacity: 0;transform: translateX(50px);}100%{opacity: 1;transform: translateX(0);}}
+
+.background{height: 608px;}
