@@ -20,12 +20,6 @@ h2 {font-size: 2rem;}
 
 a {color: white;text-decoration: none;}
 
-#blog:link {color: #57d4cc!important;}
-
-#blog:visited {color: #40b1a9!important;}
-
-#blog:hover{color:#20cfc4!important;}
-
 ::-webkit-scrollbar {width: 10px;}
 
 ::-webkit-scrollbar-track {background: #f1f1f1;}
@@ -57,8 +51,7 @@ a {color: white;text-decoration: none;}
   backdrop-filter: blur(15px);
 }
 
-.topnav a:hover {transition-duration: 0.4s; color:white;transform: translateX(0px)
-  translateY(-7px);}
+.topnav a:hover {transition-duration: 0.4s; color:white;transform: translateX(0px)translateY(-7px);}
     
 .topnav .icon {display: none;}
 
@@ -75,8 +68,6 @@ a {color: white;text-decoration: none;}
   font-size: 30px !important;
   animation: updown 1.5s ease infinite;
 }
-
-.updown:hover{color:red !important;}
 
 .updown2{
   color:rgb(92, 158, 149) !important;
@@ -113,15 +104,12 @@ nav a::before {
 
 #linkies p{padding-top: 20px;}
     
- @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 .topnav a:not(:first-child) {display: none;}
 .topnav a.icon {
   float: right;
   display: block;
 }
-}
-    
-@media screen and (max-width: 600px) {
 .topnav.responsive {position: relative;}
 .topnav.responsive .icon {
   position: absolute;
@@ -164,17 +152,6 @@ nav a::before {
     width: 0px!important;
     box-shadow: 0 0 20px rgba(0,139,253,0.25)!important;
   }
-  #paragraphs{
-    display: inline;
-    color:white;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    position: inherit!important;
-    vertical-align: -50px;
-    text-align: center!important;
-    box-shadow: none !important;
-    width: 0px!important;
-  }
   #picof{
     vertical-align: -300px;
     transform: translateX(-350px)!important;
@@ -199,13 +176,9 @@ nav a::before {
   line-height: 3.5rem;
 }
 
-@media (min-width:1001px){
-  #heading{
-   width:888px;
-  }
- }
+@media (min-width:1001px){#heading{width:888px;}}
 
- .background .center h2{transform:translatex(31px) translatey(34px);}
+.background .center h2{transform:translatex(31px) translatey(34px);}
 
 .subheading{
   line-height: 5em;
@@ -237,7 +210,6 @@ h1,h2{
   display: flex;
   justify-content: space-around;
   border-radius: 2px;
-  /*box-shadow: 0 0 20px rgba(7,224,197,255);*/
   margin-bottom: 34px;
   margin-top: 34px;
   transform: translateY(10px);
@@ -345,23 +317,18 @@ h1,h2{
 /* || Some more other styles */
 button,input{color:black;}
 
-.center{transform: translateX(0px)
-  translateY(73px);}
+.center{transform: translateX(0px)translateY(73px);}
 
 .test2{font-size: 20px;}
 
 .btn {
-  text-transform: uppercase;
-  background: #49a6e9;
-  color: hsl(205, 86%, 17%);
   padding: 0.375rem 0.75rem;
   letter-spacing: 1px;
   display: inline-block;
   transition: all 0.3s linear;
   font-size: 0.875rem;
-  border: 2px solid #49a6e9;
+  border: 2px solid black;
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
 }
 
