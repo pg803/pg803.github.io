@@ -126,7 +126,10 @@ nav a::before {
 
 #myTopnav nav h3{position: relative;left: 400px;}
 
-#myTopnav nav{height: 68px}
+#myTopnav nav{
+  height: 68px;
+  transform: translateY(8px);
+}
 
 #para1{
   position: absolute;
@@ -148,13 +151,17 @@ nav a::before {
     transform: scale(0.8)!important;
   }
   #heading{
-    left: 150px!important;
-    width: 0px!important;
-    box-shadow: 0 0 20px rgba(0,139,253,0.25)!important;
+    transform: translateX(194px)translateY(0px)!important;
+    width: 10px!important;
+    font-size: 2rem;
+    height: 0!important;
+    width: 0!important;
+    left: 0!important;
+    line-height: inherit!important;
   }
-  #picof{
-    vertical-align: -300px;
-    transform: translateX(-350px)!important;
+  .subheading{
+    font-size: 1rem!important;
+    transform: translateY(200px)!important;
   }
   .quote-box{
     margin-left: 0px!important;
@@ -162,7 +169,8 @@ nav a::before {
     padding: 0px!important;
     border-radius: 20px!important;
   }
-  img {width: 50%;height: auto;}
+  img {width: auto;height: auto;}
+  .card{padding-bottom: 100px!important;}
 }
 
 /* || Page text styles*/
@@ -172,7 +180,7 @@ nav a::before {
   width: 676px;
   font-family: Gtwalsheimprotrial, sans-serif!important;
   height:87px;
-  transform:translatex(230px) translatey(134px) !important;
+  transform:translatex(230px) translatey(134px)!important;
   line-height: 3.5rem;
 }
 
@@ -212,7 +220,6 @@ h1,h2{
   border-radius: 2px;
   margin-bottom: 34px;
   margin-top: 34px;
-  transform: translateY(10px);
 }
 
 .quote-box{
@@ -230,10 +237,8 @@ h1,h2{
 .card {
   background-color: rgba(34, 38, 38, 0.5);
   color: white!important;
-  padding: 20px;
   margin-top: 20px;
   margin-left: 15px;
-  width: 350px;
   border-radius: 2.14rem;
   font-size: 10px;
   text-align: left;
@@ -338,28 +343,30 @@ button,input{color:black;}
   border-color: hsl(205, 86%, 81%);
 }
 
-.fadein1{
-  -webkit-animation: fadein1 1.2s both;
-  -moz-animation: fadein1 1.2s both;
-  -o-animation: fadein1 1.2s both;
-  animation: fadein1 1.2s both; 
+.fadein1{animation: fadein1 1.2s both; }
+
+@keyframes fadein1{
+   0%{
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-@-webkit-keyframes fadein1{0%{opacity: 0;-webkit-transform: translateX(-50px);}100%{opacity: 1;-webkit-transform: translateX(0);}}
-@-moz-keyframes fadein1{0%{opacity: 0;-moz-transform: translateX(-50px);}100%{opacity: 1;-moz-transform: translateX(0);}}
-@-o-keyframes fadein1{0%{opacity: 0;-o-transform: translateX(-50px);}100%{opacity: 1;-o-transform: translateX(0);}}
-@keyframes fadein1{  0%{opacity: 0;transform: translateX(-50px);}100%{opacity: 1;transform: translateX(0);}}
+.fadein3{animation: fadein3 1.2s both; }
 
-.fadein3{
-  -webkit-animation: fadein3 1.2s both;
-  -moz-animation: fadein3 1.2s both;
-  -o-animation: fadein3 1.2s both;
-  animation: fadein3 1.2s both; 
+@keyframes fadein3{
+  0%{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-
-@-webkit-keyframes fadein3{0%{opacity: 0;-webkit-transform: translateX(50px);}100%{opacity: 1;-webkit-transform: translateX(0);}}
-@-moz-keyframes fadein3{0%{opacity: 0;-moz-transform: translateX(50px);}100%{opacity: 1;-moz-transform: translateX(0);}}
-@-o-keyframes fadein3{0%{opacity: 0;-o-transform: translateX(50px);}100%{opacity: 1;-o-transform: translateX(0);}}
-@keyframes fadein3{  0%{opacity: 0;transform: translateX(50px);}100%{opacity: 1;transform: translateX(0);}}
 
 .background{height: 608px;}
