@@ -36,7 +36,20 @@
 			<p>You need to enable JavaScript to run this.</p>
 		</noscript>
 	<button onclick="myFunction23()">Find Browser</button><br>
-    <script src="JS/Browser.js"></script>
+    <script>
+	function myFunction23() { 
+    	if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
+    	{alert('Opera');}
+    	else if(navigator.userAgent.indexOf("Edg") != -1 )
+    	{alert('Edge');}
+    	else if(navigator.userAgent.indexOf("Chrome") != -1 )
+    	{alert('Chrome');}
+    	else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+    	{alert('Firefox');}
+    	else 
+    	{alert('unknown');}
+	}	
+	</script>
 	<br><button onclick="window.location.reload();" type="button">Reload page</button>
 		<h2 class="special">Color picker</h2><br><br>
 		<input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:85%;" type="color" value="#00ffef">
@@ -51,7 +64,6 @@
 			<div id="result"></div>
 			<p>Click the button to see the counter increase.</p>
 			<script>
-				//Web storage api code
                 function clickCounter() {
                   if (typeof(Storage) !== "undefined") {
                     if (localStorage.clickcount) {
@@ -65,17 +77,6 @@
                   }
                 }
 			</script><br><br>
-			<h2 class="special">Number guessing game</h2>
-			<div class="resultParas">
-				<p class="guesses"></p>
-				<p class="lastResult"></p>
-				<p class="lowOrHi"></p>
-			</div>
-			<label for="guessField">Enter a guess:</label>
-			 <input class="guessField" id="guessField" type="text"> 
-			 <input class="guessSubmit" type="submit" value="Submit guess">
-			<script src="JS/game.js">
-			</script><br><br><br>
 		<h2 class="special">Count numbers: <output id="result2"></output></h2>
 		<button onclick="startWorker()">Start Worker</button> 
 		<button onclick="stopWorker()">Stop Worker</button>
