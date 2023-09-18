@@ -131,18 +131,18 @@ nav a::before {
   transform: translateY(8px);
 }
 
+#myTopnav .updown img{
+  display: inline-block;
+  transform: translateX(4px)translateY(-27px);
+  height: 75px;
+}
+
 #para1{
   position: absolute;
   right: 50px;
   font-size: 0.875rem;
   line-height: 1.25rem;
   z-index: 1;
-}
-
-#myTopnav .updown img{
-  display: inline-block;
-  transform: translateX(4px)translateY(-27px);
-  height: 75px;
 }
 
 /* Responive styles */
