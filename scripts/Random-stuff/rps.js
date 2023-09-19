@@ -1,4 +1,5 @@
-L, W = 0;
+L = 0;
+W = 0;
 function getComputerChoice(){
     const GameChoices = ['R', 'P', 'S'];
 
