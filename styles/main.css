@@ -19,12 +19,6 @@ body {
 h2 {font-size: 2rem;}
 
 a {color: white;text-decoration: none;}
-
-::-webkit-scrollbar {width: 10px;}
-
-::-webkit-scrollbar-track {background: #f1f1f1;}
- 
-::-webkit-scrollbar-thumb {background: #888; }
     
 /*navbar*/   
 .topnav {
@@ -67,12 +61,6 @@ a {color: white;text-decoration: none;}
   color:rgb(92, 158, 149) !important;
   font-size: 30px !important;
   animation: updown 1.5s ease infinite;
-}
-
-.updown2{
-  color:rgb(92, 158, 149) !important;
-  font-size: 30px !important;
-  animation: 3s updown 1s infinite;
 }
 
 @keyframes updown {
@@ -184,6 +172,14 @@ nav a::before {
   line-height: 3.5rem;
 }
 
+section{
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+
+.center section h1{transform: translateX(0px)translateY(70px)!important;}
+
 @media (min-width:1001px){#heading{width:888px;}}
 
 .background .center h2{transform:translatex(31px) translatey(34px);}
@@ -207,19 +203,12 @@ footer{
   z-index: 1;
 }
 
-h1,h2{
-  position: relative;
+h1{
   width: 92%;
-  left: 4%;
   padding: 10px 0;
   font-family: "IBM Plex Mono", monospace!important;
   color: rgba(7,224,197,255);
   font-size: 40px;
-  display: flex;
-  justify-content: space-around;
-  border-radius: 2px;
-  margin-bottom: 34px;
-  margin-top: 34px;
 }
 
 .quote-box{
@@ -343,30 +332,14 @@ button,input{color:black;}
   border-color: hsl(205, 86%, 81%);
 }
 
-.fadein1{animation: fadein1 1.2s both; }
-
-@keyframes fadein1{
-   0%{
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(0);
-  }
+/*Animate on scroll*/
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
 }
 
-.fadein3{animation: fadein3 1.2s both; }
-
-@keyframes fadein3{
-  0%{
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(0);
-  }
+.show{
+  filter: blur(0px);
+  opacity: 1;
 }
-
-.background{height: 608px;}
