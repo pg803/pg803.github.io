@@ -1,4 +1,3 @@
-//geolocation api code
 var x = document.getElementById("demo2");
 
 function getLocation() {

@@ -19,7 +19,7 @@
     <header><br>
 		<div class="topnav" id="myTopnav">
 			<nav class="sticky">
-            <a href="index.html" class="updown">Pg</a>
+            <a href="index.html" class="updown"><img src="/Images/img.png" alt="A picture of the favicon"></a>
 			<div class="linkies" id="linkies">
 				<a href="https://github.com/pg803/pg803.github.io/"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
 				<a href="index.html">Home</a>
@@ -30,11 +30,8 @@
 			</div>
 			</nav>
 		</div>
-	</header><br><br><br>
-    <h1 class="special">Random stuff</h1><br><br>
-		<noscript>
-			<p>You need to enable JavaScript to run this.</p>
-		</noscript>
+	</header>br><br><br>
+    <h1 class="hidden">Random stuff</h1><br><br>
 	<button onclick="myFunction23()">Find Browser</button><br>
     <script>
 	function myFunction23() { 
@@ -50,19 +47,15 @@
     	{alert('unknown');}
 	}	
 	</script>
-	<br><button onclick="window.location.reload();" type="button">Reload page</button>
-		<h2 class="special">Color picker</h2><br><br>
 		<input id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" style="width:85%;" type="color" value="#00ffef">
-			<h2 class="special">Geolocation</h2>
-			<p>Click the button to get your coordinates</p>
+			<h2 class="hidden">Geolocation</h2>
 			<button onclick="getLocation()">Try It</button>
-			<p id="demo2"></p>
+			<p id="demo2" class="hidden"></p>
 			<script src="JS/geolocation.js">
 			</script><br><br>
 			<h2 class="special">Web storage</h2>
 			<p><button onclick="clickCounter()" type="button">Click me!</button></p>
 			<div id="result"></div>
-			<p>Click the button to see the counter increase.</p>
 			<script>
                 function clickCounter() {
                   if (typeof(Storage) !== "undefined") {
