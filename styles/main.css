@@ -356,7 +356,8 @@ h1 {
 .card .link {
   text-align: center;
   margin: 0;
-  padding: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .inner div a {
