@@ -3,7 +3,7 @@ html {font-family: "IBM Plex Mono", monospace; font-size: 15px;}
 
 body {
   background: url(/Images/test.jpeg) fixed center no-repeat;
-  background-size: 1500px;
+  background-size: cover;
   margin: 0;
   font-family: "IBM Plex Mono", monospace;
   text-align: center;
@@ -193,8 +193,6 @@ section{
 
 #subheading{transform:translatex(-8px) translatey(68px);}
 
-#picof{position: relative; top: -113px; left: 350px;}
-
 footer{
   position: fixed;
   bottom: 0px;
@@ -239,17 +237,23 @@ h1{
   position: relative;
   transition: transform 0.5s ease-in-out;
   border: 2px solid black;
+  justify-self: stretch;
+  align-self: stretch;
 }
 
-.card:hover{
+/*.card:hover{
   box-shadow: -5px 5px teal, 
   -5px 5px 0px 3px black;
   transform: translate(50px, 5px)!important;
-}
+}*/
   
 .content{font-size:1rem;color:gray;margin-left: 25px;}
 
-.inner{display: flex;}
+.inner{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: auto;
+}
 
 .inner .card .content .date {
   position: relative;
@@ -304,6 +308,7 @@ h1{
 .inner div .date{transform: translateY(85px);}
 
 .parent .card{
+  width: 20.625rem;
   transform: translateX(38px)translateY(27px);
   min-height: 203px;
 }
