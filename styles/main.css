@@ -294,11 +294,11 @@ h1 {
   align-self: stretch;
 }
 
-/*.card:hover{
+.card:hover{
   box-shadow: -5px 5px teal, 
   -5px 5px 0px 3px black;
   transform: translate(50px, 5px)!important;
-}*/
+}
 
 .content {
   font-size: 1rem;
