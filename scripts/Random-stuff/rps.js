@@ -1,5 +1,47 @@
-L = 0;
-W = 0;
+// Fix score count and overall winner
+var clickCount = 0;
+var maxClicks = 5;
+let wins = 0;
+let losses = 0;
+var PlayerSelection;
+	  
+function handleClick() {
+	clickCount++;
+	if (clickCount >= maxClicks) {
+	document.getElementById("rock").disabled = true;
+	document.getElementById("paper").disabled = true;
+	document.getElementById("scissor").disabled = true;
+	document.getElementById("refreshMessage").innerHTML = "Please refresh the page.";
+	}
+}
+
+function Rock(){
+  PlayerSelection = "R";
+  console.log(PlayerSelection);
+  game()
+}
+
+function Paper(){
+  PlayerSelection = "P";
+  console.log(PlayerSelection);
+  game()
+}
+
+function Scissor(){
+  PlayerSelection = "S";
+  console.log(PlayerSelection);
+  game()
+}
+
+var rock = document.getElementById("rock")
+rock.addEventListener("click", Rock);
+
+var paper = document.getElementById("paper")
+paper.addEventListener("click", Paper);
+
+var scissor = document.getElementById("scissor")
+scissor.addEventListener("click", Scissor);
+
 function getComputerChoice() {
   const GameChoices = ["R", "P", "S"];
 
@@ -11,33 +53,33 @@ getComputerChoice();
 function playRound(PlayerSelection, computerSelection) {
   if (PlayerSelection == "R") {
     if (computerSelection == "R") {
-      console.log("Tie");
+      document.getElementById("roundResult").innerHTML = "Tie";    
     } else if (computerSelection == "P") {
-      console.log("You lose");
-      L += 1;
+      document.getElementById("roundResult").innerHTML = "You lose";
+      losses += 1
     } else if (computerSelection == "S") {
-      console.log("you win");
-      W += 1;
+      document.getElementById("roundResult").innerHTML = "You win";
+      wins += 1
     }
   } else if (PlayerSelection == "P") {
     if (computerSelection == "P") {
-      console.log("Tie");
+      document.getElementById("roundResult").innerHTML = "Tie";
     } else if (computerSelection == "S") {
-      console.log("You lose");
-      L += 1;
+      document.getElementById("roundResult").innerHTML = "You lose";
+      losses += 1
     } else if (computerSelection == "R") {
-      console.log("You win");
-      W += 1;
+      document.getElementById("roundResult").innerHTML = "You win";
+      wins += 1
     }
   } else if (PlayerSelection == "S") {
     if (computerSelection == "S") {
-      console.log("Tie");
+      document.getElementById("roundResult").innerHTML = "Tie";
     } else if (computerSelection == "R") {
-      console.log("You lose");
-      L += 1;
+      document.getElementById("roundResult").innerHTML = "You lose";
+      losses += 1
     } else if (computerSelection == "P") {
-      console.log("You win");
-      W += 1;
+      document.getElementById("roundResult").innerHTML = "You win";
+      wins += 1
     }
   }
 }
@@ -45,15 +87,15 @@ function playRound(PlayerSelection, computerSelection) {
 function game() {
   for (let i = 0; i < 5; i++) {
     computerSelection = getComputerChoice();
-    let playerSelection = prompt("Enter your choice: ");
-    roundWinner = playRound(playerSelection, computerSelection);
-    console.log(roundWinner);
+    roundWinner = playRound(PlayerSelection, computerSelection);
+    document.getElementById("wins").innerHTML = wins;
+    document.getElementById("losses").innerHTML = losses;
   }
-  if (W < L) {
+  if (wins < losses) {
     console.log("overall winner is computer");
-  } else if (W > L) {
+  } else if (wins > losses) {
     console.log("overall winner is you");
-  } else if (W == L) {
-    console.log("Its a tie!");
+  } else if (wins == losses) {
+    console.log("It's a tie!");
   }
 }

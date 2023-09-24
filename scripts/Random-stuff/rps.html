@@ -7,8 +7,14 @@
 	<link href="/Images/iIUk6Iv.png" rel="icon" type="image/x-icon">
 	<link href="/styles/main.css" rel="stylesheet">
 	<link rel="canonical" href="https://pg803.github.io">
+	<script src="/scripts/Random-stuff/rps.js" defer></script>
 </head>
 <body>
-    <h1>Open the console!</h1>
-	<script src="/scripts/Random-stuff/rps.js"></script>
+	<button class="btn" id="rock" onclick="handleClick()">Rock</button>
+	<button class="btn" id="paper" onclick="handleClick()">Paper</button>
+	<button class="btn" id="scissor" onclick="handleClick()">Scissors</button>
+	<h1 id="roundResult" style="width: auto!important;"></h1>
+	<!--<p>Wins: <span id="wins">0</span></p>
+  	<p>Losses: <span id="losses">0</span></p>-->
+	<h3 id="refreshMessage"></h3>
 </body>
