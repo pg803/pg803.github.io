@@ -256,11 +256,14 @@ footer {
 }
 
 h1 {
-  width: 92%;
   padding: 10px 0;
   font-family: "IBM Plex Mono", monospace !important;
   color: rgba(7, 224, 197, 255);
   font-size: 40px;
+}
+
+.title {
+  width: 92%;
 }
 
 .quote-box {
@@ -295,10 +298,9 @@ h1 {
   align-self: stretch;
 }
 
-.card:hover{
-  box-shadow: -5px 5px teal, 
-  -5px 5px 0px 3px black;
-  transform: translate(50px, 5px)!important;
+.card:hover {
+  box-shadow: -5px 5px teal, -5px 5px 0px 3px black;
+  transform: translate(50px, 5px) !important;
 }
 
 .content {
@@ -408,7 +410,9 @@ input {
   border-color: hsl(205, 86%, 81%);
 }
 
-.btn:disabled{background-color: #4e697c;}
+.btn:disabled {
+  background-color: #4e697c;
+}
 
 /*Animate on scroll*/
 .hidden {
