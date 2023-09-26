@@ -13,11 +13,13 @@ function handleClick() {
     document.getElementById("refreshMessage").innerHTML =
       "Please refresh the page.";
     if (playerScore > computerScore) {
-      document.getElementById('finalResult').innerHTML = "Overall winner is you!"
+      document.getElementById("finalResult").innerHTML =
+        "Overall winner is you!";
     } else if (playerScore < computerScore) {
-      document.getElementById('finalResult').innerHTML = "Overall winner is the computer!"
+      document.getElementById("finalResult").innerHTML =
+        "Overall winner is the computer!";
     } else {
-      document.getElementById('finalResult').innerHTML = "It's a tie!"
+      document.getElementById("finalResult").innerHTML = "It's a tie!";
     }
   }
 }
@@ -92,10 +94,10 @@ function playRound(PlayerSelection, computerSelection) {
 function updateScore(winner) {
   if (winner === "player") {
     playerScore++;
-    document.getElementById('wins').innerHTML = playerScore;
+    document.getElementById("wins").innerHTML = playerScore;
   } else if (winner === "computer") {
     computerScore++;
-    document.getElementById('losses').innerHTML = computerScore;
+    document.getElementById("losses").innerHTML = computerScore;
   }
 }
 
