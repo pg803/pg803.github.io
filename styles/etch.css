@@ -1,0 +1,25 @@
+html{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.grid-item {
+    color: black;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.grid-item:hover{
+    background-color: gray;
+}
