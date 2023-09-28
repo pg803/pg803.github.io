@@ -2,10 +2,8 @@ html {
   font-family: "IBM Plex Mono", monospace;
   font-size: 15px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 100vh;
 }
 
@@ -23,18 +21,14 @@ html {
   height: 22px;
 }
 
-.grid-item:hover {
-  background-color: gray;
-}
+.grid-item:hover {background-color: gray;}
 
 .btn {
   background-color: #1a374c;
   color: white;
   padding: 10px;
   letter-spacing: 1px;
-  display: inline-block;
   transition: all 0.3s linear;
-  font-size: 0.875rem;
   border: 2px solid black;
   cursor: pointer;
 }

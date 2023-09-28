@@ -27,6 +27,22 @@ body {
   }
 }
 
+
+h1 {
+  padding: 10px 0;
+  font-family: "IBM Plex Mono", monospace !important;
+  color: rgba(7, 224, 197, 255);
+  font-size: 40px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  padding: 30px;
+  color: #a49c90;
+  z-index: 1;
+}
+
 h2 {
   font-size: 2rem;
 }
@@ -247,21 +263,6 @@ section {
   transform: translatex(-8px) translatey(68px);
 }
 
-footer {
-  position: fixed;
-  bottom: 0px;
-  padding: 30px;
-  color: #a49c90;
-  z-index: 1;
-}
-
-h1 {
-  padding: 10px 0;
-  font-family: "IBM Plex Mono", monospace !important;
-  color: rgba(7, 224, 197, 255);
-  font-size: 40px;
-}
-
 .title {
   width: 92%;
 }
@@ -278,17 +279,9 @@ h1 {
 }
 
 /* || Some more other styles */
-button,
-input {
-  color: black;
-}
 
 .center {
   transform: translateX(0px) translateY(73px);
-}
-
-.test2 {
-  font-size: 20px;
 }
 
 .btn {
@@ -296,9 +289,7 @@ input {
   color: white;
   padding: 3.375rem 3.75rem;
   letter-spacing: 1px;
-  display: inline-block;
   transition: all 0.3s linear;
-  font-size: 0.875rem;
   border: 2px solid black;
   cursor: pointer;
   border-radius: 0.5rem;
