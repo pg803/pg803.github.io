@@ -1,6 +1,6 @@
 /* || General styles */
 html {
-  background-color: #151617;
+  background-color: #232629;
   font-family: Cambria, Cochin, Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   text-align: center;
@@ -100,4 +100,9 @@ img {
 .capt {
   color: rgba(7, 224, 197, 255);
   font-style: normal;
+}
+
+.post .ul2 li{
+  width: 470px;
+  transform: translateX(210px);
 }
