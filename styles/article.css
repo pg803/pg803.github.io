@@ -1,14 +1,36 @@
 /* || General styles */
 html {
-  background-color: #232629;
-  font-family: Cambria, Cochin, Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
-  text-align: center;
+  background-color: #020617;
+  font-size: 100%;
   animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   scroll-behavior: smooth;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
+
+body {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+h1 {font-size: 4.9rem; /* 90.4px */}
+
+h2 {font-size: 3.997rem; /* 64px */}
+
+h3 {font-size: 2.827rem; /* 45.28px */}
+
+h4 {font-size: 1.999rem; /* 32px */text-align: left;}
+
+p,ul, li, i {font-size: 1.414rem; /* 22.56px */}
+
+small {font-size: 0.707rem; /* 11.36px */}
 
 @keyframes fadeInAnimation {
   0% {
@@ -38,19 +60,13 @@ i {
 }
 
 /**/
-h1,
-h2 {
-  font-size: 2rem;
-  font-weight: 100;
-  margin: 0;
-  color: white;
-}
 
 .post {
   border-radius: 25px;
   max-width: 1000px;
   margin: 200px auto;
-  background-color: #18191a;
+  margin-top: 0;
+  background-color: #0F172A;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
@@ -61,16 +77,6 @@ h2 {
 .capt {
   font-style: italic;
   font-size: 15px;
-}
-
-h3 {
-  font-size: 30px;
-  color: white;
-  font-weight: light;
-}
-
-h4 {
-  color: white;
 }
 
 .parent {
@@ -105,4 +111,15 @@ img {
 .post .ul2 li{
   width: 470px;
   transform: translateX(210px);
+}
+
+.post figure img{
+  display: inline-block;
+  width: 119%!important;
+  transform: translateX(-87px)translateY(0px);
+  border-radius: 0.5rem;
+}
+
+.post .capt{
+  transform: translateX(0px)translateY(-50px);
 }
