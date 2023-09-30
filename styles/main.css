@@ -30,7 +30,7 @@ body {
   text-align: center;
   font-family: 'Poppins';
   font-weight: 400;
-  color: var(--text);
+  color: #cce0ff;
   animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -335,12 +335,4 @@ section {
 .show {
   filter: blur(0px);
   opacity: 1;
-}
-
-:root{
-  --text: #cce0ff;
-  --background-color: #00040a;
-  --primary: #00dac7;
-  --secondary: #5088ca;
-  --accent: #00fff9;
 }
