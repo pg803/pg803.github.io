@@ -1,4 +1,6 @@
 /* || General styles */
+@import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
+
 html {
   background-color: #020617;
   font-size: 100%;
@@ -7,8 +9,6 @@ html {
   animation-fill-mode: forwards;
   scroll-behavior: smooth;
 }
-
-@import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
 
 body {
   font-family: "Poppins";
