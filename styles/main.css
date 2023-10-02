@@ -1,8 +1,8 @@
 /* || General styles*/
-@import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
+@import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Poppins';
+h1,h2,h3,h4,h5 {
+  font-family: "Poppins";
   font-weight: 700;
 }
 
@@ -17,7 +17,6 @@ h5 {font-size: 1.414rem; /* 22.56px */}
 small {font-size: 0.707rem; /* 11.36px */}
 
 html {
-  font-family: "IBM Plex Mono", monospace;
   font-size: 100%;
   scroll-behavior: smooth;
 }
@@ -26,9 +25,8 @@ body {
   background: url(/Images/daniel-olah-6KQETG8J-zI-unsplash.jpg) fixed center no-repeat;
   background-size: cover;
   margin: 0;
-  font-family: "IBM Plex Mono", monospace;
   text-align: center;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 400;
   color: #cce0ff;
   animation: fadeInAnimation ease 1.5s;
@@ -45,7 +43,6 @@ body {
     opacity: 1;
   }
 }
-
 
 h1 {
   font-size: 5.652rem; /* 90.4px */
@@ -206,6 +203,36 @@ nav a::before {
   font-size: 0.875rem;
   line-height: 1.25rem;
   z-index: 1;
+  transform: translateY(-60px);
+}
+
+.dropbtn {
+  font-weight: bold;
+  background-color: inherit;
+  color: white;
+  padding: 20px;
+  border: none;
+  transition: all ease-in-out 250ms;
+}
+
+.dropdown {
+  display: inline-block;
+  transform: translateX(-470px);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Responive styles */
@@ -288,7 +315,7 @@ section {
 }
 
 .quote-box {
-  background-color: rgba(15,22,43,255);
+  background-color: rgba(15, 22, 43, 255);
   box-shadow: 0 0 7px rgba(7, 224, 197, 255);
   margin-top: 120px;
   margin-left: 337px;
