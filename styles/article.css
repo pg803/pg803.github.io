@@ -8,29 +8,49 @@ html {
   scroll-behavior: smooth;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400');
+@import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Poppins';
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins";
   font-weight: 700;
 }
 
-h1 {font-size: 4.9rem; /* 90.4px */}
+h1 {
+  font-size: 4.9rem; /* 90.4px */
+}
 
-h2 {font-size: 3.997rem; /* 64px */}
+h2 {
+  font-size: 3.997rem; /* 64px */
+}
 
-h3 {font-size: 2.827rem; /* 45.28px */}
+h3 {
+  font-size: 2.827rem; /* 45.28px */
+}
 
-h4 {font-size: 1.999rem; /* 32px */text-align: left;}
+h4 {
+  font-size: 1.999rem; /* 32px */
+  text-align: left;
+}
 
-p,ul, li, i {font-size: 1.414rem; /* 22.56px */}
+p,
+ul,
+li,
+i {
+  font-size: 1.414rem; /* 22.56px */
+}
 
-small {font-size: 0.707rem; /* 11.36px */}
+small {
+  font-size: 0.707rem; /* 11.36px */
+}
 
 @keyframes fadeInAnimation {
   0% {
@@ -51,7 +71,7 @@ a {
   text-decoration: underline turquoise;
 }
 
-b{
+b {
   color: white;
 }
 
@@ -67,7 +87,7 @@ i {
   max-width: 1000px;
   margin: 200px auto;
   margin-top: 0;
-  background-color: #0F172A;
+  background-color: #0f172a;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
@@ -106,18 +126,38 @@ img {
   height: auto;
 }
 
-.post .ul2 li{
+.post .ul2 li {
   width: 470px;
   transform: translateX(210px);
 }
 
-.post figure img{
+.post figure img {
   display: inline-block;
-  width: 119%!important;
-  transform: translateX(-87px)translateY(0px);
+  width: 119% !important;
+  transform: translateX(-87px) translateY(0px);
   border-radius: 0.5rem;
 }
 
-.post .capt{
-  transform: translateX(0px)translateY(-50px);
+.post .capt {
+  transform: translateX(0px) translateY(-50px);
+}
+
+blockquote,
+blockquote::before {
+  color: #999;
+}
+
+blockquote {
+  margin: 0px 0px 20px 0px;
+  padding: 40px 40px 20px 50px;
+}
+
+blockquote::before {
+  content: "\201C";
+  display: block;
+  font-size: 30px;
+  height: 0;
+  left: -20px;
+  position: relative;
+  top: -10px;
 }
