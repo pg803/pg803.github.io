@@ -47,7 +47,6 @@ body {
 h1 {
   font-size: 5.652rem; /* 90.4px */
   padding: 10px 0;
-  font-family: "IBM Plex Mono", monospace !important;
   color: rgba(7, 224, 197, 255);
   font-size: 40px;
 }
