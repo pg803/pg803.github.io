@@ -138,6 +138,15 @@ img {
   border-radius: 0.5rem;
 }
 
+@media screen and (max-width: 600px){
+  .post figure img{
+    display: inline-block!important;
+    width: 119%!important;
+    transform: translateX(-27px)translateY(0px);
+    border-radius: 0.5rem;
+  }  
+}
+
 .post .capt {
   transform: translateX(0px) translateY(-50px);
 }
@@ -160,4 +169,10 @@ blockquote::before {
   left: -20px;
   position: relative;
   top: -10px;
+}
+
+.subtitle{
+  font-size: 15px;
+  transform: translateX(20px)translateY(-20px);
+  font-style: italic;
 }
