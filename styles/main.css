@@ -234,6 +234,18 @@ nav a::before {
   display: block;
 }
 
+@media screen and (max-width: 600px){
+  .hiddenTop{
+    opacity: 1!important;
+    transform: translateX(0px)!important;
+  }  
+}
+
+.hiddenTop{
+  opacity: 0;
+  transform: translateX(6000px);
+}
+
 /* Responive styles */
 @media screen and (max-width: 1000px) {
   .card {

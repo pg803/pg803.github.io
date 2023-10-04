@@ -39,7 +39,7 @@
   .inner .card .content .date {
     position: relative;
     top: 4px;
-    left: -25px;
+    left: -45px;
   }
   
   .text {
@@ -81,7 +81,7 @@
     text-align: center;
     margin: 0;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 6px;
   }
   
   .inner div a {
