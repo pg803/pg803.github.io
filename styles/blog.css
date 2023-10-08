@@ -1,4 +1,4 @@
-@media screen and (min-width: 601px){
+@media screen and (min-width: 1001px){
   .card {
     background-color: rgba(15,22,43,255);
     color: white !important;
@@ -99,7 +99,7 @@
   } 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .card {
     background-color: rgba(15,22,43,255);
     color: white !important;
@@ -194,7 +194,7 @@
   }
   
   .parent .card {
-    width: 20.625rem;
+    width: 100%;
     transform: translateX(38px) translateY(27px);
     min-height: 203px;
   }
