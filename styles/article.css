@@ -1,8 +1,16 @@
 /* || General styles */
 @import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
 
+:root{
+  --text: #f0faf0;
+  --background: #0f172a;
+  --primary: #98ddbc;
+  --secondary: #020617;
+  --accent: #3bacb0;
+}
+
 html {
-  background-color: #020617;
+  background-color: var(--secondary);
   font-size: 100%;
   animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
@@ -52,18 +60,18 @@ p {
 }
 
 a {
-  color: white;
+  color: var(--text);
   text-decoration: underline turquoise;
 }
 
 a:hover{
-  color: white;
+  color: var(--text);
   background-color: rgb(51, 59, 59);
   text-decoration: underline turquoise;
 }
 
 b {
-  color: white;
+  color: var(--text);
 }
 
 i {
@@ -78,7 +86,7 @@ i {
   max-width: 1000px;
   margin: 200px auto;
   margin-top: 0;
-  background-color: #0f172a;
+  background-color: var(--background);
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
