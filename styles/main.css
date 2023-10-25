@@ -1,21 +1,6 @@
 /* || General styles*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
 
-h1,h2,h3,h4,h5 {
-  font-family: "Poppins";
-  font-weight: 700;
-}
-
-h2 {font-size: 3.997rem; /* 64px */}
-
-h3 {font-size: 2.827rem; /* 45.28px */}
-
-h4 {font-size: 1.999rem; /* 32px */}
-
-h5 {font-size: 1.414rem; /* 22.56px */}
-
-small {font-size: 0.707rem; /* 11.36px */}
-
 html {
   font-size: 100%;
   scroll-behavior: smooth;
@@ -44,6 +29,21 @@ body {
   }
 }
 
+h1,h2,h3,h4,h5 {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+h2 {font-size: 3.997rem; /* 64px */}
+
+h3 {font-size: 2.827rem; /* 45.28px */}
+
+h4 {font-size: 1.999rem; /* 32px */}
+
+h5 {font-size: 1.414rem; /* 22.56px */}
+
+small {font-size: 0.707rem; /* 11.36px */}
+
 h1 {
   font-size: 5.652rem; /* 90.4px */
   padding: 10px 0;
@@ -57,10 +57,6 @@ footer {
   padding: 30px;
   color: #a49c90;
   z-index: 1;
-}
-
-h2 {
-  font-size: 2rem;
 }
 
 a {
@@ -99,9 +95,7 @@ a {
   transform: translateX(0px) translateY(-7px);
 }
 
-.topnav .icon {
-  display: none;
-}
+.topnav .icon {display: none;}
 
 .sticky {
   position: fixed;
@@ -129,9 +123,7 @@ a {
   }
 }
 
-nav a:hover {
-  color: gray !important;
-}
+nav a:hover {color: gray !important;}
 
 nav a::before {
   color: #979898;
@@ -234,14 +226,14 @@ nav a::before {
   display: block;
 }
 
-@media screen and (max-width: 600px){
-  .hiddenTop{
-    opacity: 1!important;
-    transform: translateX(0px)!important;
-  }  
+@media screen and (max-width: 600px) {
+  .hiddenTop {
+    opacity: 1 !important;
+    transform: translateX(0px) !important;
+  }
 }
 
-.hiddenTop{
+.hiddenTop {
   opacity: 0;
   transform: translateX(6000px);
 }
@@ -296,19 +288,11 @@ section {
   align-content: center;
 }
 
-.center section h1 {
-  transform: translateX(0px) translateY(70px) !important;
-}
+.center section h1 {transform: translateX(0px) translateY(70px) !important;}
 
-@media (min-width: 1001px) {
-  #heading {
-    width: 888px;
-  }
-}
+@media (min-width: 1001px) {#heading {width: 888px;}}
 
-.background .center h2 {
-  transform: translatex(31px) translatey(34px);
-}
+.background .center h2 {transform: translatex(31px) translatey(34px);}
 
 .subheading {
   line-height: 5em;
@@ -317,13 +301,9 @@ section {
   color: white !important;
 }
 
-#subheading {
-  transform: translatex(-8px) translatey(68px);
-}
+#subheading {transform: translatex(-8px) translatey(68px);}
 
-.title {
-  width: 92%;
-}
+.title {width: 92%;}
 
 .quote-box {
   background-color: rgba(15, 22, 43, 255);
@@ -336,11 +316,9 @@ section {
   transform: translateY(133px);
 }
 
-/* || Some more other styles */
+/* || Random styles */
 
-.center {
-  transform: translateX(0px) translateY(73px);
-}
+.center {transform: translateX(0px) translateY(73px);}
 
 .btn {
   background-color: #1a374c;
@@ -359,9 +337,7 @@ section {
   border-color: hsl(205, 86%, 81%);
 }
 
-.btn:disabled {
-  background-color: #4e697c;
-}
+.btn:disabled {background-color: #4e697c;}
 
 /*Animate on scroll*/
 .hidden {
