@@ -19,10 +19,10 @@
     align-self: stretch;
   }
   
-  .card:hover {
+  /*.card:hover {
     box-shadow: -5px 5px teal, -5px 5px 0px 3px black;
     transform: translate(50px, 5px) !important;
-  }
+  }*/
   
   .content {
     font-size: 1rem;
@@ -199,3 +199,18 @@
     min-height: 203px;
   }
 }
+
+@media (min-width:1001px){
+
+  /* Card */
+  .parent .card{
+   min-height:293px;
+   transform:translatex(0px) translatey(0px);
+  }
+  
+  /* Link */
+  .inner div a{
+   transform:translatex(-35px) translatey(180px);
+  }
+  
+ }
