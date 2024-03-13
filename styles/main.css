@@ -75,7 +75,6 @@ a {
 }
 
 .topnav a {
-  height: 50px;
   transition-duration: 0.4s;
   float: left;
   display: block;
