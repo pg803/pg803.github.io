@@ -175,3 +175,10 @@ blockquote::before {
   transform: translateX(20px)translateY(-20px);
   font-style: italic;
 }
+
+.small{
+  width: 50%!important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
