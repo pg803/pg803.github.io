@@ -143,9 +143,7 @@ nav a::before {
   animation: fadeInAnimation ease 1.5s;
 }
 
-#linkies p {
-  padding-top: 20px;
-}
+#linkies p {padding-top: 20px;}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
@@ -178,7 +176,6 @@ nav a::before {
 
 #myTopnav nav {
   height: 68px;
-  transform: translateY(8px);
 }
 
 #myTopnav .updown img {
@@ -189,14 +186,13 @@ nav a::before {
 
 #para1 {
   position: absolute;
-  right: 50px;
+  right: 470px;
   font-size: 0.875rem;
   line-height: 1.25rem;
   z-index: 1;
-  transform: translateY(-60px);
 }
 
-.dropbtn {
+/*.dropbtn {
   font-weight: bold;
   background-color: inherit;
   color: white;
@@ -223,7 +219,7 @@ nav a::before {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
+}*/
 
 @media screen and (max-width: 600px) {
   .hiddenTop {
@@ -317,7 +313,9 @@ section {
 
 /* || Random styles */
 
-.center {transform: translateX(0px) translateY(73px);}
+.center {
+  transform: translateX(0px) translateY(73px);
+}
 
 .btn {
   background-color: #1a374c;
@@ -349,3 +347,29 @@ section {
   filter: blur(0px);
   opacity: 1;
 }
+
+.current{
+  background-color: rgb(45, 43, 43, 0.6);
+  border-bottom: 1px solid grey;
+  border-radius: 5.5rem;
+}
+
+header #myTopnav .sticky #linkies a{
+  transform: translateY(12px);
+}
+
+header #myTopnav .sticky #linkies .test3 a{transform: translateY(29px)!important;}
+
+.test3{
+  background-color: rgba(41, 39, 39, 0.5)!important;
+  border-radius: 5.5rem;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+#linkies .test3{
+  min-height: 71px;
+  width: 438px;
+}
+
+#linkies .updown img{transform: translateY(-34px);}

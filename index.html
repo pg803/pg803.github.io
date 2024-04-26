@@ -16,7 +16,7 @@
 	<script>
 		setInterval(function test(){
     		var time = new Date().toLocaleTimeString();
-    		document.getElementById('para1').innerHTML = time;
+    		document.getElementById('para12').innerHTML = time;
 		}, 100);
 	</script>
 </head>
@@ -24,22 +24,17 @@
     <header><br>
 		<div class="topnav" id="myTopnav">
 			<nav class="sticky">
-            <a href="index.html" class="updown"><img src="/Images/img.png" alt="A picture of the favicon"></a>
-			<div class="linkies" id="linkies">
-				<a href="https://github.com/pg803/pg803.github.io/"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-				<a href="index.html">Home</a>
-				<a href="blog.html">Blog</a>
-				<a class="dropdown">
-					<a class="dropbtn">Random stuff</a>
-					<div class="dropdown-content">
-						<a href="scripts/Random-stuff/sketch.html">Sketch</a>
-						<a href="scripts/Random-stuff/rps.html">Rock paper scissors</a>
-					</div>
-				</a>
-				<a href="scripts/Random-stuff/sketch.html" class="hiddenTop">Sketch</a>
-				<a href="scripts/Random-stuff/rps.html" class="hiddenTop">Rock paper scissors</a>
-				<a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
-				<a href="" id="para1"></a><br>
+			<div class="linkies" id="linkies" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+				<div class="test3">
+					<a href="index.html" class="updown"><img src="/Images/img.png" alt="A picture of the favicon"></a>
+					<a href="index.html" class="current"><u>Home</u></a>
+					<a href="blog.html">Blog</a>
+					<a href="https://github.com/pg803/pg803.github.io/"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+						<!--<a href="scripts/Random-stuff/sketch.html">Sketch</a>
+						<a href="scripts/Random-stuff/rps.html">Rock paper scissors</a>-->
+					<a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+					<a href="" id="para12"></a><br>
+				</div>
 			</div>
 			</nav>
 		</div>
@@ -93,7 +88,7 @@
 	</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<script src="/scripts/quotes.js"></script>
 	<footer>
-		pg803. Built from scratch <a href="https://github.com/pg803/pg803.github.io/" style="position: relative;right:-10px;"><i class="fa fa-github" aria-hidden="true"></i></a><br>Image - Daniel Olah
+		pg803. Built from scratch <a href="https://github.com/pg803/pg803.github.io/" style="position: relative;right:-10px;"><i class="fa fa-github" aria-hidden="true"></i></a>
 	</footer>
 	<script>
 		function myFunction() {
