@@ -298,7 +298,7 @@ section {
 
 #subheading {transform: translatex(-8px) translatey(68px);}
 
-.title {width: 92%;}
+.title {width: 92%;display: flex; flex-direction: row; align-items: left; justify-content: left;}
 
 .quote-box {
   background-color: rgba(15, 22, 43, 255);
@@ -315,6 +315,13 @@ section {
 
 .center {
   transform: translateX(0px) translateY(73px);
+}
+
+.center section i{ 
+  transform: translateX(-55px)translateY(-31px);
+  height: 75px;
+  width: 404px;
+  font-size: 41px;
 }
 
 .btn {
@@ -349,8 +356,7 @@ section {
 }
 
 .current{
-  background-color: rgb(45, 43, 43, 0.6);
-  border-bottom: 1px solid grey;
+  background-color: rgba(86, 83, 83, 0.6);
   border-radius: 5.5rem;
 }
 
@@ -361,7 +367,7 @@ header #myTopnav .sticky #linkies a{
 header #myTopnav .sticky #linkies .test3 a{transform: translateY(29px)!important;}
 
 .test3{
-  background-color: rgba(41, 39, 39, 0.5)!important;
+
   border-radius: 5.5rem;
   padding-left: 10px;
   padding-bottom: 5px;
@@ -373,3 +379,11 @@ header #myTopnav .sticky #linkies .test3 a{transform: translateY(29px)!important
 }
 
 #linkies .updown img{transform: translateY(-34px);}
+
+#logo-scroll{ background-color: rgba(0, 0, 0, 0)}
+
+#logo-scroll {transform: translateY(14px);}
+
+header #myTopnav .sticky #linkies #logo-scroll a{transform: translateY(19px)!important;}
+
+#logo-scroll{height:81px;transform: translateY(24px);}
