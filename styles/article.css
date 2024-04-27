@@ -36,33 +36,18 @@ h3 {font-size: 2.827rem; /* 45.28px */}
 
 h4 {font-size: 1.999rem; /* 32px */ text-align: left;}
 
-p,
-ul,
-li,
-i {
-  font-size: 1.414rem; /* 22.56px */
-}
+p,ul,li,i {font-size: 1.414rem; /* 22.56px */}
 
 small {font-size: 0.707rem; /* 11.36px */}
 
 @keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
-li,
-p {
-  line-height: 1.5;
-}
+li,p {line-height: 1.5;}
 
-a {
-  color: var(--text);
-  text-decoration: underline turquoise;
-}
+a {color: var(--text);text-decoration: underline turquoise;}
 
 a:hover{
   color: var(--text);
@@ -70,14 +55,9 @@ a:hover{
   text-decoration: underline turquoise;
 }
 
-b {
-  color: var(--text);
-}
+b {color: var(--text);}
 
-i {
-  font-size: 1.6rem;
-  color: #99a0ac;
-}
+i {font-size: 1.6rem;color: #99a0ac;}
 
 /**/
 
@@ -146,9 +126,7 @@ img {
   }  
 }
 
-.post .capt {
-  transform: translateX(0px) translateY(-50px);
-}
+.post .capt {transform: translateX(0px) translateY(-50px);}
 
 blockquote,
 blockquote::before {

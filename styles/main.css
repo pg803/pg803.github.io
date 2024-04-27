@@ -59,10 +59,7 @@ footer {
   z-index: 1;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
+a {color: white;text-decoration: none;}
 
 /*navbar*/
 .topnav {
@@ -104,23 +101,11 @@ a {
   z-index: 1;
 }
 
-.updown {
-  color: rgb(92, 158, 149) !important;
-  font-size: 30px !important;
-  animation: updown 1.5s ease infinite;
-}
-
-@keyframes updown {
-  0% {
-    transform: translateY(-2%);
-  }
-  50% {
-    transform: translateY(2%);
-  }
-  100% {
-    transform: translateY(-2%);
-  }
-}
+/*@keyframes updown {
+  0% {transform: translateY(-2%);}
+  50% {transform: translateY(2%);}
+  100% {transform: translateY(-2%);}
+}*/
 
 nav a:hover {color: gray !important;}
 
@@ -142,8 +127,6 @@ nav a::before {
   visibility: visible;
   animation: fadeInAnimation ease 1.5s;
 }
-
-#linkies p {padding-top: 20px;}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
@@ -167,15 +150,10 @@ nav a::before {
     display: block;
     text-align: left;
   }
-}
-
-#myTopnav nav h3 {
-  position: relative;
-  left: 400px;
-}
-
-#myTopnav nav {
-  height: 68px;
+  .hiddenTop {
+    opacity: 1 !important;
+    transform: translateX(0px) !important;
+  }
 }
 
 #myTopnav .updown img {
@@ -192,46 +170,42 @@ nav a::before {
   z-index: 1;
 }
 
-/*.dropbtn {
-  font-weight: bold;
-  background-color: inherit;
-  color: white;
-  padding: 20px;
-  border: none;
-  transition: all ease-in-out 250ms;
-}
-
-.dropdown {
-  display: inline-block;
-  transform: translateX(-470px);
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}*/
-
-@media screen and (max-width: 600px) {
-  .hiddenTop {
-    opacity: 1 !important;
-    transform: translateX(0px) !important;
-  }
-}
-
 .hiddenTop {
   opacity: 0;
   transform: translateX(6000px);
 }
+
+.current{
+  background-color: rgba(86, 83, 83, 0.6);
+  border-radius: 5.5rem;
+}
+
+header #myTopnav .sticky #linkies a{
+  transform: translateY(12px);
+}
+
+header #myTopnav .sticky #linkies .test3 a{transform: translateY(29px)!important;}
+
+.test3{
+  border-radius: 5.5rem;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+#linkies .test3{
+  min-height: 71px;
+  width: 438px;
+}
+
+#linkies .updown img{transform: translateY(-34px);}
+
+#logo-scroll{ background-color: rgba(0, 0, 0, 0)}
+
+#logo-scroll {transform: translateY(14px);}
+
+header #myTopnav .sticky #linkies #logo-scroll a{transform: translateY(19px)!important;}
+
+#logo-scroll{height:81px;transform: translateY(24px);}
 
 /* Responive styles */
 @media screen and (max-width: 1000px) {
@@ -296,8 +270,6 @@ section {
   color: white !important;
 }
 
-#subheading {transform: translatex(-8px) translatey(68px);}
-
 .title {width: 92%;display: flex; flex-direction: row; align-items: left; justify-content: left;}
 
 .quote-box {
@@ -313,9 +285,7 @@ section {
 
 /* || Random styles */
 
-.center {
-  transform: translateX(0px) translateY(73px);
-}
+.center {transform: translateY(73px);}
 
 .center section i{ 
   transform: translateX(-55px)translateY(-31px);
@@ -324,7 +294,7 @@ section {
   font-size: 41px;
 }
 
-.btn {
+/*.btn {
   background-color: #1a374c;
   color: white;
   padding: 3.375rem 3.75rem;
@@ -341,7 +311,7 @@ section {
   border-color: hsl(205, 86%, 81%);
 }
 
-.btn:disabled {background-color: #4e697c;}
+.btn:disabled {background-color: #4e697c;}*/
 
 /*Animate on scroll*/
 .hidden {
@@ -354,36 +324,3 @@ section {
   filter: blur(0px);
   opacity: 1;
 }
-
-.current{
-  background-color: rgba(86, 83, 83, 0.6);
-  border-radius: 5.5rem;
-}
-
-header #myTopnav .sticky #linkies a{
-  transform: translateY(12px);
-}
-
-header #myTopnav .sticky #linkies .test3 a{transform: translateY(29px)!important;}
-
-.test3{
-
-  border-radius: 5.5rem;
-  padding-left: 10px;
-  padding-bottom: 5px;
-}
-
-#linkies .test3{
-  min-height: 71px;
-  width: 438px;
-}
-
-#linkies .updown img{transform: translateY(-34px);}
-
-#logo-scroll{ background-color: rgba(0, 0, 0, 0)}
-
-#logo-scroll {transform: translateY(14px);}
-
-header #myTopnav .sticky #linkies #logo-scroll a{transform: translateY(19px)!important;}
-
-#logo-scroll{height:81px;transform: translateY(24px);}
