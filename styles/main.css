@@ -324,3 +324,5 @@ section {
   filter: blur(0px);
   opacity: 1;
 }
+
+.main{float: right;}
