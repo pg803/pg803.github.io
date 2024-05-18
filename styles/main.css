@@ -7,8 +7,6 @@ html {
 }
 
 body {
-  /*background: url(/Images/ESO_-_Milky_Way.jpg) fixed center no-repeat;
-  background-size: cover;*/
   background-image: repeating-radial-gradient(circle at right, #434343 1%, black 99.5%);
   margin: 0;
   text-align: center;
@@ -39,6 +37,13 @@ h1,h2,h3,h4,h5 {
   font-weight: 700;
 }
 
+h1 {
+  font-size: 5.652rem; /* 90.4px */
+  padding: 10px 0;
+  color: rgba(7, 224, 197, 255);
+  font-size: 40px;
+}
+
 h2 {font-size: 3.997rem; /* 64px */}
 
 h3 {font-size: 2.827rem; /* 45.28px */}
@@ -49,13 +54,6 @@ h5 {font-size: 1.414rem; /* 22.56px */}
 
 small {font-size: 0.707rem; /* 11.36px */}
 
-h1 {
-  font-size: 5.652rem; /* 90.4px */
-  padding: 10px 0;
-  color: rgba(7, 224, 197, 255);
-  font-size: 40px;
-}
-
 footer {
   position: fixed;
   bottom: 0px;
@@ -64,7 +62,10 @@ footer {
   z-index: 1;
 }
 
-a {color: white;text-decoration: none;}
+a {
+  color: white;
+  text-decoration: none;
+}
 
 /*navbar*/
 .topnav {
@@ -95,7 +96,9 @@ a {color: white;text-decoration: none;}
   transform: translateX(0px) translateY(-7px);
 }
 
-.topnav .icon {display: none;}
+.topnav .icon {
+  display: none;
+}
 
 .sticky {
   position: fixed;
@@ -111,7 +114,9 @@ a {color: white;text-decoration: none;}
   100% {transform: translateY(-2%);}
 }*/
 
-nav a:hover {color: gray !important;}
+nav a:hover {
+  color: gray !important;
+}
 
 nav a::before {
   color: #979898;
@@ -126,10 +131,31 @@ nav a::before {
 
 .linkies {
   position: relative;
-  top: -10px;
-  display: block;
-  visibility: visible;
-  animation: fadeInAnimation ease 1.5s;
+  animation: fadeInAnimation ease 1s;
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;
+}
+
+header #myTopnav .sticky #linkies #logo-scroll a{
+  transform: translateY(19px)!important;
+}
+
+#logo-scroll{
+  height:81px;
+  margin: 14px;
+}
+
+
+#myTopnav .updown img {
+  display: inline-block;
+  height: 75px;
+}
+
+#myTopnav .updown {
+  position: relative;
+  bottom: 33px;
 }
 
 @media screen and (max-width: 600px) {
@@ -160,20 +186,6 @@ nav a::before {
   }
 }
 
-#myTopnav .updown img {
-  display: inline-block;
-  transform: translateX(4px) translateY(-27px);
-  height: 75px;
-}
-
-#para1 {
-  position: absolute;
-  right: 470px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  z-index: 1;
-}
-
 .hiddenTop {
   opacity: 0;
   transform: translateX(6000px);
@@ -183,12 +195,6 @@ nav a::before {
   background-color: rgba(86, 83, 83, 0.6);
   border-radius: 5.5rem;
 }
-
-header #myTopnav .sticky #linkies a{
-  transform: translateY(12px);
-}
-
-header #myTopnav .sticky #linkies .test3 a{transform: translateY(29px)!important;}
 
 .test3{
   border-radius: 5.5rem;
@@ -200,16 +206,6 @@ header #myTopnav .sticky #linkies .test3 a{transform: translateY(29px)!important
   min-height: 71px;
   width: 438px;
 }
-
-#linkies .updown img{transform: translateY(-34px);}
-
-#logo-scroll{ background-color: rgba(0, 0, 0, 0)}
-
-#logo-scroll {transform: translateY(14px);}
-
-header #myTopnav .sticky #linkies #logo-scroll a{transform: translateY(19px)!important;}
-
-#logo-scroll{height:81px;transform: translateY(24px);}
 
 /* Responive styles */
 @media screen and (max-width: 1000px) {
@@ -242,6 +238,9 @@ header #myTopnav .sticky #linkies #logo-scroll a{transform: translateY(19px)!imp
   .card {
     padding-bottom: 100px !important;
   }
+  #heading {
+    width: 888px;
+  }
 }
 
 /* || Page text styles*/
@@ -261,11 +260,13 @@ section {
   align-content: center;
 }
 
-.center section h1 {transform: translateX(0px) translateY(70px) !important;}
+.center section h1 {
+  transform: translateX(0px) translateY(70px) !important;
+}
 
-@media (min-width: 1001px) {#heading {width: 888px;}}
-
-.background .center h2 {transform: translatex(31px) translatey(34px);}
+.background .center h2 {
+  transform: translatex(31px) translatey(34px);
+}
 
 .subheading {
   line-height: 5em;
@@ -274,7 +275,13 @@ section {
   color: white !important;
 }
 
-.title {width: 92%;display: flex; flex-direction: row; align-items: left; justify-content: left;}
+.title {
+  width: 92%;
+  display: flex; 
+  flex-direction: row; 
+  align-items: left; 
+  justify-content: left;
+}  
 
 .quote-box {
   background-color: rgba(15, 22, 43, 255);
@@ -289,7 +296,9 @@ section {
 
 /* || Random styles */
 
-.center {transform: translateY(73px);}
+.center {
+  transform: translateY(73px);
+}
 
 .center section i{ 
   transform: translateX(-55px)translateY(-31px);
