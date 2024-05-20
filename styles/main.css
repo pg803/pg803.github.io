@@ -139,11 +139,11 @@ nav a::before {
 }
 
 header #myTopnav .sticky #linkies #logo-scroll a{
-  transform: translateY(19px)!important;
+  transform: translateY(9px)!important;
 }
 
 #logo-scroll{
-  height:81px;
+  height:71px;
   margin: 14px;
 }
 

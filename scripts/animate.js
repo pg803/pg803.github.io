@@ -17,5 +17,5 @@ var win = window,
 
 win.onscroll = function(){
    var stop = (this.scrollY || docEl.scrollTop)  - (docEl.clientTop || 0);
-   $logo.style.backgroundColor =  stop > 100 ? "rgba(41, 39, 39, 0.5)!important;":"rgba(41, 39, 39, 0.9)" ;
+   $logo.style.backdropFilter = stop > 100 ? "blur(50px)!important;":"blur(50px)";
 };
